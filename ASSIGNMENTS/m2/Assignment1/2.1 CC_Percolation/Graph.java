@@ -1,4 +1,3 @@
-import java.util.NoSuchElementException;
 /**
  * Class for graph.
  */
@@ -22,17 +21,17 @@ public class Graph {
     /**
      * Constructs the object.
      *
-     * @param      v1     Integer variable.
+     * @param      v0     Integer variable.
      */
-    public Graph(int v1) {
-        if (v1 < 0) {
+    public Graph(final int v0) {
+        if (v0 < 0) {
             throw new IllegalArgumentException(
                 "Number of vertices must be nonnegative");
         }
-        this.v = v1;
+        this.v = v0;
         this.e = 0;
         adj = (Bag<Integer>[]) new Bag[v];
-        for (int i = 0; i < v1; i++) {
+        for (int i = 0; i < v0; i++) {
             adj[i] = new Bag<Integer>();
         }
     }
@@ -66,15 +65,15 @@ public class Graph {
     /**
      * Adds an edge.
      *
-     * @param      v     Integer variable.
+     * @param      v1     Integer variable.
      * @param      w     Integer variable.
      */
-    public void addEdge(final int v, final int w) {
-        validateVertex(v);
+    public void addEdge(final int v1, final int w) {
+        validateVertex(v1);
         validateVertex(w);
         e++;
-        adj[v].add(w);
-        adj[w].add(v);
+        adj[v1].add(w);
+        adj[w].add(v1);
     }
 
     /**
@@ -85,9 +84,9 @@ public class Graph {
      *
      * @return     True if has edge, False otherwise.
      */
-    public boolean hasEdge(final int v, final int w) {
+    public boolean hasEdge(final int v2, final int w) {
         for (int each : adj[w]) {
-            if (each == v) {
+            if (each == v2) {
                 return true;
             }
         }
@@ -96,24 +95,24 @@ public class Graph {
     /**
      * Iterable.
      *
-     * @param      v     Integer variable.
+     * @param      v3    Integer variable.
      *
      * @return     adjacent of vertices.
      */
-    public Iterable<Integer> adj(final int v) {
-        validateVertex(v);
-        return adj[v];
+    public Iterable<Integer> adj(final int v3) {
+        validateVertex(v3);
+        return adj[v3];
     }
     /**
      * Degree.
      *
-     * @param      v     Integer variable.
+     * @param      v4     Integer variable.
      *
      * @return     degree of vertex.
      */
-    public int degree(final int v) {
-        validateVertex(v);
-        return adj[v].size();
+    public int degree(final int v4) {
+        validateVertex(v4);
+        return adj[v4].size();
     }
     /**
      * Returns a string representation of the object.

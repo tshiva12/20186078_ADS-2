@@ -1,18 +1,21 @@
+/**
+ * Class for cc.
+ */
 public class CC {
     /**
-     * Boolean array. 
+     * Boolean array.
      */
     private boolean[] marked;
     /**
-     * Integer array. 
+     * Integer array.
      */
     private int[] id;
     /**
-     * Integer array. 
+     * Integer array.
      */
     private int[] size;
     /**
-     * Integer variable.. 
+     * Integer variable..
      */
     private int count;
 

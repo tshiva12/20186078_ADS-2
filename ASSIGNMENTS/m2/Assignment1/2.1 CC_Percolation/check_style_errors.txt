@@ -2,21 +2,12 @@ Starting audit...
 Audit done.
 Starting audit...
 [ERROR] G:\MSIT\1-1\20186078_ADS-2\ASSIGNMENTS\m2\Assignment1\2.1 CC_Percolation\CC.java:0: File does not end with a newline. [NewlineAtEndOfFile]
-[ERROR] G:\MSIT\1-1\20186078_ADS-2\ASSIGNMENTS\m2\Assignment1\2.1 CC_Percolation\CC.java:1: Missing a Javadoc comment. [JavadocType]
-[ERROR] G:\MSIT\1-1\20186078_ADS-2\ASSIGNMENTS\m2\Assignment1\2.1 CC_Percolation\CC.java:3: Line has trailing spaces. [RegexpSingleline]
-[ERROR] G:\MSIT\1-1\20186078_ADS-2\ASSIGNMENTS\m2\Assignment1\2.1 CC_Percolation\CC.java:7: Line has trailing spaces. [RegexpSingleline]
-[ERROR] G:\MSIT\1-1\20186078_ADS-2\ASSIGNMENTS\m2\Assignment1\2.1 CC_Percolation\CC.java:11: Line has trailing spaces. [RegexpSingleline]
-[ERROR] G:\MSIT\1-1\20186078_ADS-2\ASSIGNMENTS\m2\Assignment1\2.1 CC_Percolation\CC.java:15: Line has trailing spaces. [RegexpSingleline]
 Audit done.
-Checkstyle ends with 6 errors.
+Checkstyle ends with 1 errors.
 Starting audit...
-[ERROR] G:\MSIT\1-1\20186078_ADS-2\ASSIGNMENTS\m2\Assignment1\2.1 CC_Percolation\Graph.java:1:8: Unused import - java.util.NoSuchElementException. [UnusedImports]
-[ERROR] G:\MSIT\1-1\20186078_ADS-2\ASSIGNMENTS\m2\Assignment1\2.1 CC_Percolation\Graph.java:27:18: Parameter v1 should be final. [FinalParameters]
-[ERROR] G:\MSIT\1-1\20186078_ADS-2\ASSIGNMENTS\m2\Assignment1\2.1 CC_Percolation\Graph.java:72:35: 'v' hides a field. [HiddenField]
-[ERROR] G:\MSIT\1-1\20186078_ADS-2\ASSIGNMENTS\m2\Assignment1\2.1 CC_Percolation\Graph.java:88:38: 'v' hides a field. [HiddenField]
-[ERROR] G:\MSIT\1-1\20186078_ADS-2\ASSIGNMENTS\m2\Assignment1\2.1 CC_Percolation\Graph.java:103:44: 'v' hides a field. [HiddenField]
-[ERROR] G:\MSIT\1-1\20186078_ADS-2\ASSIGNMENTS\m2\Assignment1\2.1 CC_Percolation\Graph.java:114:33: 'v' hides a field. [HiddenField]
+[ERROR] G:\MSIT\1-1\20186078_ADS-2\ASSIGNMENTS\m2\Assignment1\2.1 CC_Percolation\Graph.java:82:8: Unused @param tag for 'v'. [JavadocMethod]
+[ERROR] G:\MSIT\1-1\20186078_ADS-2\ASSIGNMENTS\m2\Assignment1\2.1 CC_Percolation\Graph.java:87:38: Expected @param tag for 'v2'. [JavadocMethod]
 Audit done.
-Checkstyle ends with 6 errors.
+Checkstyle ends with 2 errors.
 Starting audit...
 Audit done.
