@@ -34,8 +34,8 @@ class GraphList {
         this.v = Integer.parseInt(scan.nextLine());
         if (v < 0) {
             throw new
-             IllegalArgumentException
-             ("number of vertices in a Graph must be nonnegative");
+             IllegalArgumentException(
+                "number of vertices in a Graph must be nonnegative");
         }
         adj = (Bag<Integer>[]) new Bag[v];
         for (int i = 0; i < v; i++) {
@@ -45,8 +45,8 @@ class GraphList {
         tokens = scan.nextLine().split(",");
         if (e1 < 0) {
             throw new
-             IllegalArgumentException
-             ("number of edges in a Graph must be nonnegative");
+             IllegalArgumentException(
+                "number of edges in a Graph must be nonnegative");
         }
         for (int i = 0; i < e1; i++) {
             String[] tokens1 = scan.nextLine().split(" ");

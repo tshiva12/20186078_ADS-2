@@ -2,7 +2,5 @@ Starting audit...
 Audit done.
 Starting audit...
 [ERROR] G:\MSIT\1-1\20186078_ADS-2\ASSIGNMENTS\m1\Assignment1\1.1 Graph\Solution.java:0: File does not end with a newline. [NewlineAtEndOfFile]
-[ERROR] G:\MSIT\1-1\20186078_ADS-2\ASSIGNMENTS\m1\Assignment1\1.1 Graph\Solution.java:38:14: '(' should be on the previous line. [MethodParamPad]
-[ERROR] G:\MSIT\1-1\20186078_ADS-2\ASSIGNMENTS\m1\Assignment1\1.1 Graph\Solution.java:49:14: '(' should be on the previous line. [MethodParamPad]
 Audit done.
-Checkstyle ends with 3 errors.
+Checkstyle ends with 1 errors.
