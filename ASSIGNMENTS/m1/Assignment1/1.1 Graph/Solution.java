@@ -1,12 +1,35 @@
 import java.util.Scanner;
+/**
+ * List of graphs.
+ */
 class GraphList {
+	/**
+	 * Integer variable.
+	 */
 	private int v;
+	/**
+	 * Integer variable.
+	 */
 	private int e;
+	/**
+	 * Bag array
+	 */
 	private Bag<Integer>[] adj;
+	/**
+	 * Bag array.
+	 */
 	private String[] tokens;
+	/**
+	 * Constructs the object.
+	 */
 	GraphList() {
 		//default constructor is not used.
 	}
+	/**
+	 * Constructs the object.
+	 *
+	 * @param      scan  The scan
+	 */
 	GraphList(final Scanner scan) {
 		this.v = Integer.parseInt(scan.nextLine());
         if (v < 0) {
@@ -26,12 +49,28 @@ class GraphList {
             addEdge(Integer.parseInt(tokens1[0]), Integer.parseInt(tokens1[1])); 
         }
     }
+    /**
+     * vertex.
+     *
+     * @return     vertex.
+     */
     public int v() {
         return v;
     }
+    /**
+     * edge.
+     *
+     * @return     edges.
+     */
     public int e() {
         return e;
     }
+    /**
+     * Adds an edge.
+     *
+     * @param      v1    The v 1
+     * @param      w1    The w 1
+     */
     public void addEdge(final int v1, final int w1) {
         if (v1 == w1) {
         	return;
@@ -42,9 +81,24 @@ class GraphList {
         adj[v1].add(w1);
         adj[w1].add(v1);
     }
+    /**
+     * Iterable
+     *
+     * @param      v2    The v 2
+     *
+     * @return     vertex.
+     */
     public Iterable<Integer> adj(final int v2) {
        	return adj[v2];
     }
+    /**
+     * Determines if it has edge.
+     *
+     * @param      v3    The v 3
+     * @param      w3    The w 3
+     *
+     * @return     True if has edge, False otherwise.
+     */
     public boolean hasEdge(final int v3, final int w3) {
       	for (int a:adj(v3)) {
       		if (a == w3) {
@@ -53,6 +107,11 @@ class GraphList {
        	}
        	return false;
     }
+    /**
+     * Returns a string representation of the object.
+     *
+     * @return     String representation of the object.
+     */
     public String toString() {
        	StringBuilder sb = new StringBuilder();
        	sb.append(v + " vertices, " + e + " edges" + "\n");
@@ -71,14 +130,37 @@ class GraphList {
         }
 	}
 }
+/**
+ * Class for graph matrix.
+ */
 class GraphMatrix {
+	/**
+	 * String array.
+	 */
     private String[] tokens;
+    /**
+     * 2-d Matrix;
+     */
     private int[][] matrix;
+    /**
+     * Integer variable.
+     */
     private int v;
+    /**
+     * Ibtrger variabe.
+     */
     private int e;
+    /**
+     * Constructs the object.
+     */
     GraphMatrix() {
         e = 0;
     }
+    /**
+     * Constructs the object.
+     *
+     * @param      scan  The scan
+     */
     GraphMatrix(final Scanner scan) {
         this.v = Integer.parseInt(scan.nextLine());
         matrix = new int[v][v];
@@ -89,6 +171,12 @@ class GraphMatrix {
             addEdge(Integer.parseInt(tokens1[0]), Integer.parseInt(tokens1[1]));
         }
     }
+    /**
+     * Adds an edge.
+     *
+     * @param      v1    The v 1
+     * @param      w1    The w 1
+     */
     public void addEdge(final int v1, final int w1) {
         if (v1 != w1) {
             if (!hasEdge(v1, w1)) {
@@ -98,12 +186,23 @@ class GraphMatrix {
             }
         }
     }
+    /**
+     * Determines if it has edge.
+     *
+     * @param      v2    The v 2
+     * @param      w2    The w 2
+     *
+     * @return     True if has edge, False otherwise.
+     */
     public boolean hasEdge(final int v2, final int w2) {
         if (matrix[v2][w2] == 1) {
             return true;
         }
         return false;
     }
+    /**
+     * print.
+     */
     public void print() {
         String str1 = "";
         str1 += v + " vertices, " + e + " edges" + "\n";
@@ -121,10 +220,21 @@ class GraphMatrix {
         }
     }
 }
+/**
+ * Class Solution.
+ */
 public final class Solution {
+	/**
+	 * Constructs the object.
+	 */
 	private Solution() {
 		//default constructor is not used.
 	}
+	/**
+	 * main function.
+	 *
+	 * @param      args  The arguments
+	 */
 	public static void main(final String[] args) {
 		Scanner scan = new Scanner(System.in);
 		String str1 = scan.nextLine();
