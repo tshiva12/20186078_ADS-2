@@ -10,11 +10,11 @@ public class Graph {
     /**
      * Integer variable.
      */
-    private final int V;
+    private final int v;
     /**
      * Integer variable.
      */
-    private int E;
+    private int e;
     /**
      * Bag variable.
      */
@@ -22,18 +22,18 @@ public class Graph {
     /**
      * Constructs the object.
      *
-     * @param      V     Integer variable.
+     * @param      v1     Integer variable.
      */
-    public Graph(int V) {
-        if (V < 0) {
+    public Graph(int v1) {
+        if (v1 < 0) {
             throw new IllegalArgumentException(
                 "Number of vertices must be nonnegative");
         }
-        this.V = V;
-        this.E = 0;
-        adj = (Bag<Integer>[]) new Bag[V];
-        for (int v = 0; v < V; v++) {
-            adj[v] = new Bag<Integer>();
+        this.v = v1;
+        this.e = 0;
+        adj = (Bag<Integer>[]) new Bag[v];
+        for (int i = 0; i < v1; i++) {
+            adj[i] = new Bag<Integer>();
         }
     }
     /**
@@ -41,26 +41,26 @@ public class Graph {
      *
      * @return the number of vertices in this graph
      */
-    public int V() {
-        return V;
+    public int v() {
+        return v;
     }
     /**
      * Returns the number of edges in this graph.
      *
      * @return the number of edges in this graph
      */
-    public int E() {
-        return E;
+    public int e() {
+        return e;
     }
     /**
      * Validate vertex.
      *
-     * @param      v     Integer variable.
+     * @param      v1    Integer variable.
      */
-    private void validateVertex(int v) {
-        if (v < 0 || v >= V) {
+    private void validateVertex(final int v1) {
+        if (v1 < 0 || v1 >= v) {
             throw new IllegalArgumentException(
-                "vertex " + v + " is not between 0 and " + (V - 1));
+                "vertex " + v1 + " is not between 0 and " + (v1 - 1));
         }
     }
     /**
@@ -69,10 +69,10 @@ public class Graph {
      * @param      v     Integer variable.
      * @param      w     Integer variable.
      */
-    public void addEdge(int v, int w) {
+    public void addEdge(final int v, final int w) {
         validateVertex(v);
         validateVertex(w);
-        E++;
+        e++;
         adj[v].add(w);
         adj[w].add(v);
     }
@@ -85,7 +85,7 @@ public class Graph {
      *
      * @return     True if has edge, False otherwise.
      */
-    public boolean hasEdge(int v, int w) {
+    public boolean hasEdge(final int v, final int w) {
         for (int each : adj[w]) {
             if (each == v) {
                 return true;
@@ -100,7 +100,7 @@ public class Graph {
      *
      * @return     adjacent of vertices.
      */
-    public Iterable<Integer> adj(int v) {
+    public Iterable<Integer> adj(final int v) {
         validateVertex(v);
         return adj[v];
     }
@@ -111,7 +111,7 @@ public class Graph {
      *
      * @return     degree of vertex.
      */
-    public int degree(int v) {
+    public int degree(final int v) {
         validateVertex(v);
         return adj[v].size();
     }
@@ -122,10 +122,10 @@ public class Graph {
      */
     public String toString() {
         StringBuilder s = new StringBuilder();
-        s.append(V + " vertices, " + E + " edges " + NEWLINE);
-        for (int v = 0; v < V; v++) {
-            s.append(v + ": ");
-            for (int w : adj[v]) {
+        s.append(v + " vertices, " + e + " edges " + NEWLINE);
+        for (int i = 0; i < v; i++) {
+            s.append(i + ": ");
+            for (int w : adj[i]) {
                 s.append(w + " ");
             }
             s.append(NEWLINE);

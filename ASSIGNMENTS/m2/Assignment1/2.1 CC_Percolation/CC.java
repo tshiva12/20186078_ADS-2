@@ -1,38 +1,50 @@
 public class CC {
+    /**
+     * Boolean array. 
+     */
     private boolean[] marked;
+    /**
+     * Integer array. 
+     */
     private int[] id;
+    /**
+     * Integer array. 
+     */
     private int[] size;
+    /**
+     * Integer variable.. 
+     */
     private int count;
 
     /**
      * Computes the connected components of the undirected graph.
      *
-     * @param G the undirected graph
+     * @param g the undirected graph
      */
-    public CC(Graph G) {
-        marked = new boolean[G.V()];
-        id = new int[G.V()];
-        size = new int[G.V()];
-        for (int v = 0; v < G.V(); v++) {
-            if (!marked[v]) {
-                dfs(G, v);
+    public CC(final Graph g) {
+        marked = new boolean[g.v()];
+        id = new int[g.v()];
+        size = new int[g.v()];
+        for (int i = 0; i < g.v(); i++) {
+            if (!marked[i]) {
+                dfs(g, i);
                 count++;
             }
         }
     }
     /**
-     * DFS
+     * DFS.
      *
-     * @param      G     Graph variable.
+     * @param      g     { parameter_description }
      * @param      v     Integer variable.
      */
-    private void dfs(Graph G, int v) {
+    private void dfs(final Graph g, final int v) {
         marked[v] = true;
         id[v] = count;
         size[count]++;
-        for (int w : G.adj(v)) {
+        for (int w : g.adj(v)) {
             if (!marked[w]) {
-                dfs(G, w);
+                dfs(g, w);
             }
         }
     }
@@ -43,18 +55,20 @@ public class CC {
      *
      * @return     the component id of the connected component containing vertex
      */
-    public int id(int v) {
+    public int id(final int v) {
         validateVertex(v);
         return id[v];
     }
 
     /**
-     * Returns the number of vertices in the connected component containing vertex {@code v}.
+     * Returns the number of vertices in the connected component
+     *  containing vertex {@code v}.
      *
      * @param  v the vertex
-     * @return the number of vertices in the connected component containing vertex {@code v}
+     * @return the number of vertices in the connected component
+     *  containing vertex {@code v}
      */
-    public int size(int v) {
+    public int size(final int v) {
         validateVertex(v);
         return size[id[v]];
     }
@@ -76,7 +90,7 @@ public class CC {
      * @param      w     the other vertex
      * @return     true else false
      */
-    public boolean connected(int v, int w) {
+    public boolean connected(final int v, final int w) {
         validateVertex(v);
         validateVertex(w);
         return id(v) == id(w);
@@ -89,21 +103,21 @@ public class CC {
      *
      * @return     boolean value.
      */
-    public boolean areConnected(int v, int w) {
+    public boolean areConnected(final int v, final int w) {
         validateVertex(v);
         validateVertex(w);
         return id(v) == id(w);
     }
     /**
-     * validate vertex
+     * validate vertex.
      *
      * @param      v     Integer variable.
      */
-    private void validateVertex(int v) {
-        int V = marked.length;
-        if (v < 0 || v >= V) {
+    private void validateVertex(final int v) {
+        int v1 = marked.length;
+        if (v < 0 || v >= v1) {
             throw new IllegalArgumentException(
-                "vertex " + v + " is not between 0 and " + (V-1));
+                "vertex " + v + " is not between 0 and " + (v1 - 1));
         }
     }
 }
