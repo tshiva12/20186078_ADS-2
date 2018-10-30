@@ -9,7 +9,7 @@ public class Bag<Item> implements Iterable<Item> {
     /**
      * Number of elements in bag.
      */
-    private int N;
+    private int n;
     /**
      * Node variable.
      */
@@ -32,7 +32,7 @@ public class Bag<Item> implements Iterable<Item> {
     */
     public Bag() {
         first = null;
-        N = 0;
+        n = 0;
     }
 
     /**
@@ -49,7 +49,7 @@ public class Bag<Item> implements Iterable<Item> {
      * @return     size of bag.
      */
     public int size() {
-        return N;
+        return n;
     }
     /**
      * Add the item to the bag.
@@ -57,12 +57,12 @@ public class Bag<Item> implements Iterable<Item> {
      *
      * @param      item  The item
      */
-    public void add(Item item) {
+    public void add(final Item item) {
         Node oldfirst = first;
         first = new Node();
         first.item = item;
         first.next = oldfirst;
-        N++;
+        n++;
     }
     /**
      * Return an iterator that iterates over the items in the bag.
@@ -70,7 +70,7 @@ public class Bag<Item> implements Iterable<Item> {
      * @return     iterator.
      */
     public Iterator<Item> iterator()  {
-        return new ListIterator();  
+        return new ListIterator();
     }
     /**
      * Class for list iterator.
@@ -85,7 +85,7 @@ public class Bag<Item> implements Iterable<Item> {
          *
          * @return     True if has next, False otherwise.
          */
-        public boolean hasNext() { 
+        public boolean hasNext() {
             return current != null;
         }
         /**
@@ -100,12 +100,16 @@ public class Bag<Item> implements Iterable<Item> {
          * @return     item in the bag.
          */
         public Item next() {
-            if (!hasNext()) { 
+            if (!hasNext()) {
                 throw new NoSuchElementException();
             }
             Item item = current.item;
-            current = current.next; 
+            current = current.next;
             return item;
         }
     }
 }
+
+
+
+
