@@ -2,13 +2,7 @@ Starting audit...
 Audit done.
 Starting audit...
 [ERROR] G:\MSIT\1-1\20186078_ADS-2\ASSIGNMENTS\m1\Assignment1\1.1 Graph\Solution.java:0: File does not end with a newline. [NewlineAtEndOfFile]
-[ERROR] G:\MSIT\1-1\20186078_ADS-2\ASSIGNMENTS\m1\Assignment1\1.1 Graph\Solution.java:6:1: File contains tab characters (this is the first instance). [FileTabCharacter]
-[ERROR] G:\MSIT\1-1\20186078_ADS-2\ASSIGNMENTS\m1\Assignment1\1.1 Graph\Solution.java:14: First sentence should end with a period. [JavadocStyle]
-[ERROR] G:\MSIT\1-1\20186078_ADS-2\ASSIGNMENTS\m1\Assignment1\1.1 Graph\Solution.java:36: Line is longer than 80 characters (found 104). [LineLength]
-[ERROR] G:\MSIT\1-1\20186078_ADS-2\ASSIGNMENTS\m1\Assignment1\1.1 Graph\Solution.java:45: Line is longer than 80 characters (found 101). [LineLength]
-[ERROR] G:\MSIT\1-1\20186078_ADS-2\ASSIGNMENTS\m1\Assignment1\1.1 Graph\Solution.java:49: Line has trailing spaces. [RegexpSingleline]
-[ERROR] G:\MSIT\1-1\20186078_ADS-2\ASSIGNMENTS\m1\Assignment1\1.1 Graph\Solution.java:49: Line is longer than 80 characters (found 81). [LineLength]
-[ERROR] G:\MSIT\1-1\20186078_ADS-2\ASSIGNMENTS\m1\Assignment1\1.1 Graph\Solution.java:84: First sentence should end with a period. [JavadocStyle]
-[ERROR] G:\MSIT\1-1\20186078_ADS-2\ASSIGNMENTS\m1\Assignment1\1.1 Graph\Solution.java:141: First sentence should end with a period. [JavadocStyle]
+[ERROR] G:\MSIT\1-1\20186078_ADS-2\ASSIGNMENTS\m1\Assignment1\1.1 Graph\Solution.java:37: Line is longer than 80 characters (found 91). [LineLength]
+[ERROR] G:\MSIT\1-1\20186078_ADS-2\ASSIGNMENTS\m1\Assignment1\1.1 Graph\Solution.java:47: Line is longer than 80 characters (found 88). [LineLength]
 Audit done.
-Checkstyle ends with 9 errors.
+Checkstyle ends with 3 errors.

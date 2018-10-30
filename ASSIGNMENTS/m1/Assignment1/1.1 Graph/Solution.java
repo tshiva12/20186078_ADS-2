@@ -3,37 +3,38 @@ import java.util.Scanner;
  * List of graphs.
  */
 class GraphList {
-	/**
-	 * Integer variable.
-	 */
-	private int v;
-	/**
-	 * Integer variable.
-	 */
-	private int e;
-	/**
-	 * Bag array
-	 */
-	private Bag<Integer>[] adj;
-	/**
-	 * Bag array.
-	 */
-	private String[] tokens;
-	/**
-	 * Constructs the object.
-	 */
-	GraphList() {
-		//default constructor is not used.
-	}
-	/**
-	 * Constructs the object.
-	 *
-	 * @param      scan  The scan
-	 */
-	GraphList(final Scanner scan) {
-		this.v = Integer.parseInt(scan.nextLine());
+    /**
+     * Integer variable.
+     */
+    private int v;
+    /**
+     * Integer variable.
+     */
+    private int e;
+    /**
+     * Bag array.
+     */
+    private Bag<Integer>[] adj;
+    /**
+     * Bag array.
+     */
+    private String[] tokens;
+    /**
+     * Constructs the object.
+     */
+    GraphList() {
+        //default constructor is not used.
+    }
+    /**
+     * Constructs the object.
+     *
+     * @param      scan  The scan
+     */
+    GraphList(final Scanner scan) {
+        this.v = Integer.parseInt(scan.nextLine());
         if (v < 0) {
-        	throw new IllegalArgumentException("number of vertices in a Graph must be nonnegative");
+            throw new
+             IllegalArgumentException("number of vertices in a Graph must be nonnegative");
         }
         adj = (Bag<Integer>[]) new Bag[v];
         for (int i = 0; i < v; i++) {
@@ -42,11 +43,13 @@ class GraphList {
         int e1 = Integer.parseInt(scan.nextLine());
         tokens = scan.nextLine().split(",");
         if (e1 < 0) {
-        	throw new IllegalArgumentException("number of edges in a Graph must be nonnegative");
+            throw new
+             IllegalArgumentException("number of edges in a Graph must be nonnegative");
         }
         for (int i = 0; i < e1; i++) {
-           	String[] tokens1 = scan.nextLine().split(" ");
-            addEdge(Integer.parseInt(tokens1[0]), Integer.parseInt(tokens1[1])); 
+            String[] tokens1 = scan.nextLine().split(" ");
+            addEdge(Integer.parseInt(tokens1[0]),
+             Integer.parseInt(tokens1[1]));
         }
     }
     /**
@@ -73,23 +76,23 @@ class GraphList {
      */
     public void addEdge(final int v1, final int w1) {
         if (v1 == w1) {
-        	return;
+            return;
         }
         if (!hasEdge(v1, w1)) {
-        	e++;
+            e++;
         }
         adj[v1].add(w1);
         adj[w1].add(v1);
     }
     /**
-     * Iterable
+     * Iterable.
      *
      * @param      v2    The v 2
      *
      * @return     vertex.
      */
     public Iterable<Integer> adj(final int v2) {
-       	return adj[v2];
+        return adj[v2];
     }
     /**
      * Determines if it has edge.
@@ -100,12 +103,12 @@ class GraphList {
      * @return     True if has edge, False otherwise.
      */
     public boolean hasEdge(final int v3, final int w3) {
-      	for (int a:adj(v3)) {
-      		if (a == w3) {
-       			return true;
-       		}
-       	}
-       	return false;
+        for (int a:adj(v3)) {
+            if (a == w3) {
+                return true;
+            }
+        }
+        return false;
     }
     /**
      * Returns a string representation of the object.
@@ -113,33 +116,33 @@ class GraphList {
      * @return     String representation of the object.
      */
     public String toString() {
-       	StringBuilder sb = new StringBuilder();
-       	sb.append(v + " vertices, " + e + " edges" + "\n");
-       	if (e > 0) {
-       		for (int i = 0; i < v; i++) {
-       			sb.append(tokens[i] + ": ");
-       			for (int j : adj[i]) {
-       				sb.append(tokens[j] + " ");
-       			}
-       			sb.append("\n");
-       		}
-       		return sb.toString();
-       	} else {
-       		sb.append("No edges");
-       		return sb.toString();
+        StringBuilder sb = new StringBuilder();
+        sb.append(v + " vertices, " + e + " edges" + "\n");
+        if (e > 0) {
+            for (int i = 0; i < v; i++) {
+                sb.append(tokens[i] + ": ");
+                for (int j : adj[i]) {
+                    sb.append(tokens[j] + " ");
+                }
+                sb.append("\n");
+            }
+            return sb.toString();
+        } else {
+            sb.append("No edges");
+            return sb.toString();
         }
-	}
+    }
 }
 /**
  * Class for graph matrix.
  */
 class GraphMatrix {
-	/**
-	 * String array.
-	 */
+    /**
+     * String array.
+     */
     private String[] tokens;
     /**
-     * 2-d Matrix;
+     * 2-d Matrix.
      */
     private int[][] matrix;
     /**
@@ -224,31 +227,31 @@ class GraphMatrix {
  * Class Solution.
  */
 public final class Solution {
-	/**
-	 * Constructs the object.
-	 */
-	private Solution() {
-		//default constructor is not used.
-	}
-	/**
-	 * main function.
-	 *
-	 * @param      args  The arguments
-	 */
-	public static void main(final String[] args) {
-		Scanner scan = new Scanner(System.in);
-		String str1 = scan.nextLine();
-		switch (str1) {
-			case "List" :
-			GraphList graphlist = new GraphList(scan);
-			System.out.println(graphlist);
-			break;
-			case "Matrix" :
-			GraphMatrix graphmatrix = new GraphMatrix(scan);
-			graphmatrix.print();
-			break;
-			default:
-			break;
-		}
-	}
+    /**
+     * Constructs the object.
+     */
+    private Solution() {
+        //default constructor is not used.
+    }
+    /**
+     * main function.
+     *
+     * @param      args  The arguments
+     */
+    public static void main(final String[] args) {
+        Scanner scan = new Scanner(System.in);
+        String str1 = scan.nextLine();
+        switch (str1) {
+            case "List" :
+            GraphList graphlist = new GraphList(scan);
+            System.out.println(graphlist);
+            break;
+            case "Matrix" :
+            GraphMatrix graphmatrix = new GraphMatrix(scan);
+            graphmatrix.print();
+            break;
+            default:
+            break;
+        }
+    }
 }
