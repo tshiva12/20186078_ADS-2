@@ -1,13 +1,8 @@
 Starting audit...
 Audit done.
 Starting audit...
-[ERROR] G:\MSIT\1-1\20186078_ADS-2\ASSIGNMENTS\m2\Assignment1\2.1 CC_Percolation\CC.java:0: File does not end with a newline. [NewlineAtEndOfFile]
 Audit done.
-Checkstyle ends with 1 errors.
 Starting audit...
-[ERROR] G:\MSIT\1-1\20186078_ADS-2\ASSIGNMENTS\m2\Assignment1\2.1 CC_Percolation\Graph.java:82:8: Unused @param tag for 'v'. [JavadocMethod]
-[ERROR] G:\MSIT\1-1\20186078_ADS-2\ASSIGNMENTS\m2\Assignment1\2.1 CC_Percolation\Graph.java:87:38: Expected @param tag for 'v2'. [JavadocMethod]
 Audit done.
-Checkstyle ends with 2 errors.
 Starting audit...
 Audit done.

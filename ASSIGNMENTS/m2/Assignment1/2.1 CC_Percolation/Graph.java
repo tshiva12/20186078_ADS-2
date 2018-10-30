@@ -79,7 +79,7 @@ public class Graph {
     /**
      * Determines if it has edge.
      *
-     * @param      v     { parameter_description }
+     * @param      v2     { parameter_description }
      * @param      w     { parameter_description }
      *
      * @return     True if has edge, False otherwise.
