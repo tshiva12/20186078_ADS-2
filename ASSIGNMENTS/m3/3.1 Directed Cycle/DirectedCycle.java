@@ -3,19 +3,19 @@
  */
 public class DirectedCycle {
     /**
-     * {marked[v] = has vertex v been marked?}.
+     * boolean array.
      */
     private boolean[] marked;
     /**
-     * {edgeTo[v] = previous vertex on path to v}.
+     * Integer array.
      */
     private int[] edgeTo;
     /**
-     * {onStack[v] = is vertex on the stack?}.
+     * boolean array.
      */
     private boolean[] onStack;
     /**
-     * {directed cycle (or null if no such cycle)}.
+     * Stack.
      */
     private Stack<Integer> cycle;
 
@@ -25,10 +25,10 @@ public class DirectedCycle {
      * @param G the digraph
      */
     public DirectedCycle(Digraph G) {
-        marked  = new boolean[G.V()];
-        onStack = new boolean[G.V()];
-        edgeTo  = new int[G.V()];
-        for (int v = 0; v < G.V(); v++)
+        marked  = new boolean[G.vertices()];
+        onStack = new boolean[G.vertices()];
+        edgeTo  = new int[G.vertices()];
+        for (int v = 0; v < G.vertices(); v++)
             if (!marked[v] && cycle == null) dfs(G, v);
     }
 
