@@ -1,33 +1,13 @@
 Starting audit...
 Audit done.
 Starting audit...
-[ERROR] G:\MSIT\1-1\20186078_ADS-2\ASSIGNMENTS\m3\3.1 Directed Cycle\Digraph.java:1:8: Unused import - java.util.NoSuchElementException. [UnusedImports]
-[ERROR] G:\MSIT\1-1\20186078_ADS-2\ASSIGNMENTS\m3\3.1 Directed Cycle\Digraph.java:29:8: Unused @param tag for 'V'. [JavadocMethod]
-[ERROR] G:\MSIT\1-1\20186078_ADS-2\ASSIGNMENTS\m3\3.1 Directed Cycle\Digraph.java:32:30: Expected @param tag for 'v1'. [JavadocMethod]
-[ERROR] G:\MSIT\1-1\20186078_ADS-2\ASSIGNMENTS\m3\3.1 Directed Cycle\Digraph.java:33: 'if' construct must use '{}'s. [NeedBraces]
-[ERROR] G:\MSIT\1-1\20186078_ADS-2\ASSIGNMENTS\m3\3.1 Directed Cycle\Digraph.java:33: Line is longer than 80 characters (found 110). [LineLength]
-[ERROR] G:\MSIT\1-1\20186078_ADS-2\ASSIGNMENTS\m3\3.1 Directed Cycle\Digraph.java:47:34: Name 'G' must match pattern '^[a-z][a-zA-Z0-9]*$'. [ParameterName]
-[ERROR] G:\MSIT\1-1\20186078_ADS-2\ASSIGNMENTS\m3\3.1 Directed Cycle\Digraph.java:50: 'for' construct must use '{}'s. [NeedBraces]
-[ERROR] G:\MSIT\1-1\20186078_ADS-2\ASSIGNMENTS\m3\3.1 Directed Cycle\Digraph.java:62: Line has trailing spaces. [RegexpSingleline]
-[ERROR] G:\MSIT\1-1\20186078_ADS-2\ASSIGNMENTS\m3\3.1 Directed Cycle\Digraph.java:83:5: Missing a Javadoc comment. [JavadocMethod]
-[ERROR] G:\MSIT\1-1\20186078_ADS-2\ASSIGNMENTS\m3\3.1 Directed Cycle\Digraph.java:84: 'if' construct must use '{}'s. [NeedBraces]
-[ERROR] G:\MSIT\1-1\20186078_ADS-2\ASSIGNMENTS\m3\3.1 Directed Cycle\Digraph.java:85: Line is longer than 80 characters (found 106). [LineLength]
-[ERROR] G:\MSIT\1-1\20186078_ADS-2\ASSIGNMENTS\m3\3.1 Directed Cycle\Digraph.java:93: Line has trailing spaces. [RegexpSingleline]
-[ERROR] G:\MSIT\1-1\20186078_ADS-2\ASSIGNMENTS\m3\3.1 Directed Cycle\Digraph.java:121: Line has trailing spaces. [RegexpSingleline]
-[ERROR] G:\MSIT\1-1\20186078_ADS-2\ASSIGNMENTS\m3\3.1 Directed Cycle\Digraph.java:158: Line has trailing spaces. [RegexpSingleline]
-[ERROR] G:\MSIT\1-1\20186078_ADS-2\ASSIGNMENTS\m3\3.1 Directed Cycle\Digraph.java:158: Line is longer than 80 characters (found 95). [LineLength]
 Audit done.
-Checkstyle ends with 15 errors.
 Starting audit...
 [ERROR] G:\MSIT\1-1\20186078_ADS-2\ASSIGNMENTS\m3\3.1 Directed Cycle\DirectedCycle.java:0: File does not end with a newline. [NewlineAtEndOfFile]
-[ERROR] G:\MSIT\1-1\20186078_ADS-2\ASSIGNMENTS\m3\3.1 Directed Cycle\DirectedCycle.java:27:40: Name 'G' must match pattern '^[a-z][a-zA-Z0-9]*$'. [ParameterName]
 [ERROR] G:\MSIT\1-1\20186078_ADS-2\ASSIGNMENTS\m3\3.1 Directed Cycle\DirectedCycle.java:31: 'for' construct must use '{}'s. [NeedBraces]
 [ERROR] G:\MSIT\1-1\20186078_ADS-2\ASSIGNMENTS\m3\3.1 Directed Cycle\DirectedCycle.java:32: 'if' construct must use '{}'s. [NeedBraces]
-[ERROR] G:\MSIT\1-1\20186078_ADS-2\ASSIGNMENTS\m3\3.1 Directed Cycle\DirectedCycle.java:41:36: Name 'G' must match pattern '^[a-z][a-zA-Z0-9]*$'. [ParameterName]
-[ERROR] G:\MSIT\1-1\20186078_ADS-2\ASSIGNMENTS\m3\3.1 Directed Cycle\DirectedCycle.java:72: Line is longer than 80 characters (found 83). [LineLength]
-[ERROR] G:\MSIT\1-1\20186078_ADS-2\ASSIGNMENTS\m3\3.1 Directed Cycle\DirectedCycle.java:96: Line is longer than 80 characters (found 93). [LineLength]
 Audit done.
-Checkstyle ends with 7 errors.
+Checkstyle ends with 3 errors.
 Starting audit...
 Audit done.
 Starting audit...

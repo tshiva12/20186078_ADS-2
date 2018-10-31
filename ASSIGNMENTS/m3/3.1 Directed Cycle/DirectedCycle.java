@@ -22,31 +22,31 @@ public class DirectedCycle {
     /**
      * Constructs the object.
      *
-     * @param      G     Digraph.
+     * @param      g     Digraph.
      */
-    public DirectedCycle(final Digraph G) {
-        marked  = new boolean[G.vertices()];
-        onStack = new boolean[G.vertices()];
-        edgeTo  = new int[G.vertices()];
-        for (int v = 0; v < G.vertices(); v++)
-            if (!marked[v] && cycle == null) dfs(G, v);
+    public DirectedCycle(final Digraph g) {
+        marked  = new boolean[g.vertices()];
+        onStack = new boolean[g.vertices()];
+        edgeTo  = new int[g.vertices()];
+        for (int v = 0; v < g.vertices(); v++)
+            if (!marked[v] && cycle == null) dfs(g, v);
     }
 
     /**
      * dfs find the path of a directed graph.
      *
-     * @param      G     Digraph.
+     * @param      g1     Digraph.
      * @param      v     Integer vertex.
      */
-    private void dfs(final Digraph G, final int v) {
+    private void dfs(final Digraph g1, final int v) {
         onStack[v] = true;
         marked[v] = true;
-        for (int w : G.adj(v)) {
+        for (int w : g1.adj(v)) {
             if (cycle != null) {
                 return;
             } else if (!marked[w]) {
                 edgeTo[w] = v;
-                dfs(G, w);
+                dfs(g1, w);
             } else if (onStack[w]) {
                 cycle = new Stack<Integer>();
                 for (int x = v; x != w; x = edgeTo[x]) {
@@ -54,7 +54,6 @@ public class DirectedCycle {
                 }
                 cycle.push(w);
                 cycle.push(v);
-                assert check();
             }
         }
         onStack[v] = false;
@@ -69,7 +68,8 @@ public class DirectedCycle {
     }
 
     /**
-     * Returns a directed cycle if the digraph has a directed cycle, and otherwise.
+     * Returns a directed cycle if the digraph has a
+     *  directed cycle, and otherwise.
      *
      * @return     a directed cycle if the digraph has a
      *             directed cycle, and otherwise
@@ -93,7 +93,8 @@ public class DirectedCycle {
                 last = v;
             }
             if (first != last) {
-                System.out.println("cycle begins with %d and ends with %d\n" + first + last);
+                System.out.println(
+                    "cycle begins with %d and ends with %d\n" + first + last);
                 return false;
             }
         }
