@@ -99,11 +99,6 @@ Starting audit...
 Audit done.
 Checkstyle ends with 9 errors.
 Starting audit...
-[ERROR] G:\MSIT\1-1\20186078_ADS-2\ASSIGNMENTS\m3\3.1 Directed Cycle\Graph.java:118:26: Parameter v4 should be final. [FinalParameters]
-[ERROR] G:\MSIT\1-1\20186078_ADS-2\ASSIGNMENTS\m3\3.1 Directed Cycle\Graph.java:129:25: Parameter v5 should be final. [FinalParameters]
-Audit done.
-Checkstyle ends with 2 errors.
-Starting audit...
 [ERROR] G:\MSIT\1-1\20186078_ADS-2\ASSIGNMENTS\m3\3.1 Directed Cycle\Solution.java:0: File does not end with a newline. [NewlineAtEndOfFile]
 [ERROR] G:\MSIT\1-1\20186078_ADS-2\ASSIGNMENTS\m3\3.1 Directed Cycle\Solution.java:2: Missing a Javadoc comment. [JavadocType]
 [ERROR] G:\MSIT\1-1\20186078_ADS-2\ASSIGNMENTS\m3\3.1 Directed Cycle\Solution.java:3:1: File contains tab characters (this is the first instance). [FileTabCharacter]
