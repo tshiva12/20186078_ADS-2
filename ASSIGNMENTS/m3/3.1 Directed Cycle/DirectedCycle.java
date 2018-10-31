@@ -28,8 +28,11 @@ public class DirectedCycle {
         marked  = new boolean[g.vertices()];
         onStack = new boolean[g.vertices()];
         edgeTo  = new int[g.vertices()];
-        for (int v = 0; v < g.vertices(); v++)
-            if (!marked[v] && cycle == null) dfs(g, v);
+        for (int v = 0; v < g.vertices(); v++) {
+            if (!marked[v] && cycle == null) {
+                dfs(g, v);
+            }
+        }
     }
 
     /**
@@ -101,3 +104,6 @@ public class DirectedCycle {
         return true;
     }
 }
+
+
+
