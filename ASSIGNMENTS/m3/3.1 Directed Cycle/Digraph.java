@@ -40,6 +40,22 @@ public class Digraph {
             adj[i] = new Bag<Integer>();
         }
     }
+    public Digraph(Digraph g) {
+        this(g.v());
+        this.e = g.e();
+        for (int i = 0; i < v; i++)
+            this.indegree[i] = g.indegree(i);
+        for (int j = 0; j < g.v(); j++) {
+            // reverse so that adjacency list is in same order as original
+            Stack<Integer> reverse = new Stack<Integer>();
+            for (int w : g.adj[j]) {
+                reverse.push(w);
+            }
+            for (int w : reverse) {
+                adj[j].add(w);
+            }
+        }
+    }
     /**
      * Returns the number of vertices in this graph.
      *

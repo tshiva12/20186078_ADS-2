@@ -30,10 +30,13 @@ Starting audit...
 Audit done.
 Checkstyle ends with 28 errors.
 Starting audit...
-[ERROR] G:\MSIT\1-1\20186078_ADS-2\ASSIGNMENTS\m3\3.1 Directed Cycle\Digraph.java:118:26: Parameter v4 should be final. [FinalParameters]
-[ERROR] G:\MSIT\1-1\20186078_ADS-2\ASSIGNMENTS\m3\3.1 Directed Cycle\Digraph.java:129:25: Parameter v5 should be final. [FinalParameters]
+[ERROR] G:\MSIT\1-1\20186078_ADS-2\ASSIGNMENTS\m3\3.1 Directed Cycle\Digraph.java:43:5: Missing a Javadoc comment. [JavadocMethod]
+[ERROR] G:\MSIT\1-1\20186078_ADS-2\ASSIGNMENTS\m3\3.1 Directed Cycle\Digraph.java:43:20: Parameter g should be final. [FinalParameters]
+[ERROR] G:\MSIT\1-1\20186078_ADS-2\ASSIGNMENTS\m3\3.1 Directed Cycle\Digraph.java:46: 'for' construct must use '{}'s. [NeedBraces]
+[ERROR] G:\MSIT\1-1\20186078_ADS-2\ASSIGNMENTS\m3\3.1 Directed Cycle\Digraph.java:134:26: Parameter v4 should be final. [FinalParameters]
+[ERROR] G:\MSIT\1-1\20186078_ADS-2\ASSIGNMENTS\m3\3.1 Directed Cycle\Digraph.java:145:25: Parameter v5 should be final. [FinalParameters]
 Audit done.
-Checkstyle ends with 2 errors.
+Checkstyle ends with 5 errors.
 Starting audit...
 [ERROR] G:\MSIT\1-1\20186078_ADS-2\ASSIGNMENTS\m3\3.1 Directed Cycle\DirectedCycle.java:0: File does not end with a newline. [NewlineAtEndOfFile]
 [ERROR] G:\MSIT\1-1\20186078_ADS-2\ASSIGNMENTS\m3\3.1 Directed Cycle\DirectedCycle.java:26:26: Parameter G should be final. [FinalParameters]
