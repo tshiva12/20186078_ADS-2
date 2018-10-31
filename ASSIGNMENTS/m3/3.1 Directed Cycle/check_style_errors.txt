@@ -72,13 +72,6 @@ Checkstyle ends with 9 errors.
 Starting audit...
 Audit done.
 Starting audit...
-[ERROR] G:\MSIT\1-1\20186078_ADS-2\ASSIGNMENTS\m3\3.1 Directed Cycle\Stack.java:0: File does not end with a newline. [NewlineAtEndOfFile]
-[ERROR] G:\MSIT\1-1\20186078_ADS-2\ASSIGNMENTS\m3\3.1 Directed Cycle\Stack.java:12:17: Name 'N' must match pattern '^[a-z][a-zA-Z0-9]*$'. [MemberName]
 [ERROR] G:\MSIT\1-1\20186078_ADS-2\ASSIGNMENTS\m3\3.1 Directed Cycle\Stack.java:58:22: Parameter item should be final. [FinalParameters]
-[ERROR] G:\MSIT\1-1\20186078_ADS-2\ASSIGNMENTS\m3\3.1 Directed Cycle\Stack.java:107: Line has trailing spaces. [RegexpSingleline]
-[ERROR] G:\MSIT\1-1\20186078_ADS-2\ASSIGNMENTS\m3\3.1 Directed Cycle\Stack.java:114:5: File contains tab characters (this is the first instance). [FileTabCharacter]
-[ERROR] G:\MSIT\1-1\20186078_ADS-2\ASSIGNMENTS\m3\3.1 Directed Cycle\Stack.java:123: Line has trailing spaces. [RegexpSingleline]
-[ERROR] G:\MSIT\1-1\20186078_ADS-2\ASSIGNMENTS\m3\3.1 Directed Cycle\Stack.java:129: Line has trailing spaces. [RegexpSingleline]
-[ERROR] G:\MSIT\1-1\20186078_ADS-2\ASSIGNMENTS\m3\3.1 Directed Cycle\Stack.java:142: Line has trailing spaces. [RegexpSingleline]
 Audit done.
-Checkstyle ends with 8 errors.
+Checkstyle ends with 1 errors.
