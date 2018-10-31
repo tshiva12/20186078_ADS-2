@@ -1,8 +1,19 @@
 import java.util.Scanner;
+/**
+ * main class.
+ */
 public final class Solution {
+	/**
+	 * Constructs the object.
+	 */
 	private Solution() {
 		// default constructor is not used.
 	}
+	/**
+	 * main function.
+	 *
+	 * @param      args  The arguments
+	 */
 	public static void main(String[] args) {
 		Scanner scan = new Scanner(System.in);
 		int vertices = Integer.parseInt(scan.nextLine());
