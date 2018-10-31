@@ -1,64 +1,80 @@
-########## Testcase 0: Passed ##########
+########## Testcase 0: Failed ##########
 Expected Output: 
 Cycle doesn't exists.
 
 Your Output: 
-Cycle doesn't exists.
+Exception in thread "main" java.lang.NoSuchMethodError: Digraph.V()I
+	at DirectedCycle.<init>(DirectedCycle.java:28)
+	at Solution.main(Solution.java:29)
 ----------------------------------------
 
-########## Testcase 1: Passed ##########
+########## Testcase 1: Failed ##########
 Expected Output: 
 Cycle doesn't exists.
 
 Your Output: 
+Exception in thread "main" java.lang.NoSuchMethodError: Digraph.V()I
+	at DirectedCycle.<init>(DirectedCycle.java:28)
+	at Solution.main(Solution.java:29)
+----------------------------------------
+
+########## Testcase 2: Failed ##########
+Expected Output: 
+Cycle exists.
+
+Your Output: 
+Exception in thread "main" java.lang.NoSuchMethodError: Digraph.V()I
+	at DirectedCycle.<init>(DirectedCycle.java:28)
+	at Solution.main(Solution.java:29)
+----------------------------------------
+
+########## Testcase 3: Failed ##########
+Expected Output: 
+Cycle exists.
+
+Your Output: 
+Exception in thread "main" java.lang.NoSuchMethodError: Digraph.V()I
+	at DirectedCycle.<init>(DirectedCycle.java:28)
+	at Solution.main(Solution.java:29)
+----------------------------------------
+
+########## Testcase 4: Failed ##########
+Expected Output: 
+Cycle exists.
+
+Your Output: 
+Exception in thread "main" java.lang.NoSuchMethodError: Digraph.V()I
+	at DirectedCycle.<init>(DirectedCycle.java:28)
+	at Solution.main(Solution.java:29)
+----------------------------------------
+
+########## Testcase 5: Failed ##########
+Expected Output: 
+Cycle exists.
+
+Your Output: 
+Exception in thread "main" java.lang.NoSuchMethodError: Digraph.V()I
+	at DirectedCycle.<init>(DirectedCycle.java:28)
+	at Solution.main(Solution.java:29)
+----------------------------------------
+
+########## Testcase 6: Failed ##########
+Expected Output: 
 Cycle doesn't exists.
+
+Your Output: 
+Exception in thread "main" java.lang.NoSuchMethodError: Digraph.V()I
+	at DirectedCycle.<init>(DirectedCycle.java:28)
+	at Solution.main(Solution.java:29)
 ----------------------------------------
 
-########## Testcase 2: Passed ##########
+########## Testcase 7: Failed ##########
 Expected Output: 
 Cycle exists.
 
 Your Output: 
-Cycle exists.
-----------------------------------------
-
-########## Testcase 3: Passed ##########
-Expected Output: 
-Cycle exists.
-
-Your Output: 
-Cycle exists.
-----------------------------------------
-
-########## Testcase 4: Passed ##########
-Expected Output: 
-Cycle exists.
-
-Your Output: 
-Cycle exists.
-----------------------------------------
-
-########## Testcase 5: Passed ##########
-Expected Output: 
-Cycle exists.
-
-Your Output: 
-Cycle exists.
-----------------------------------------
-
-########## Testcase 6: Passed ##########
-Expected Output: 
-Cycle doesn't exists.
-
-Your Output: 
-Cycle doesn't exists.
-----------------------------------------
-
-########## Testcase 7: Passed ##########
-Expected Output: 
-Cycle exists.
-
-Your Output: 
-Cycle exists.
+Exception in thread "main" java.lang.NoSuchMethodError: Digraph.V()I
+	at DirectedCycle.<init>(DirectedCycle.java:28)
+	at Solution.main(Solution.java:29)
 ----------------------------------------
 
