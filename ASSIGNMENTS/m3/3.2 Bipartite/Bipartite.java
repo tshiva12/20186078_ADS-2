@@ -94,7 +94,7 @@ public class Bipartite {
     }
 
     /**
-     * Returns an odd-length cycle if the graph is not bipartite, and
+     * Iterable.
      *
      * @return     cycle.
      */
@@ -102,3 +102,6 @@ public class Bipartite {
         return cycle;
     }
 }
+
+
+

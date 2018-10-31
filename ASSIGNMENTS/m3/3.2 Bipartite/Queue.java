@@ -52,7 +52,7 @@ public class Queue<Item> implements Iterable<Item> {
      * @return     number of elements.
      */
     public  int size() {
-        return n;     
+        return n;
     }
     /**
      * Return the item least recently added to the queue. Throw an exception if
@@ -74,10 +74,12 @@ public class Queue<Item> implements Iterable<Item> {
     public void enqueue(final Item item) {
         Node x = new Node();
         x.item = item;
-        if (isEmpty()) { 
-            first = x;     last = x;
+        if (isEmpty()) {
+            first = x;
+            last = x;
         } else {
-            last.next = x; last = x;
+            last.next = x;
+            last = x;
         }
         n++;
     }
@@ -95,7 +97,9 @@ public class Queue<Item> implements Iterable<Item> {
         Item item = first.item;
         first = first.next;
         n--;
-        if (isEmpty()) last = null;
+        if (isEmpty()) {
+            last = null;
+        }
         return item;
     }
 
@@ -110,7 +114,7 @@ public class Queue<Item> implements Iterable<Item> {
             s.append(item + " ");
         }
         return s.toString();
-    } 
+    }
     /**
      * Return an iterator that iterates over the items on the queue in FIFO
      * order.
@@ -118,7 +122,7 @@ public class Queue<Item> implements Iterable<Item> {
      * @return     list iterator.
      */
     public Iterator<Item> iterator()  {
-        return new ListIterator();  
+        return new ListIterator();
     }
     /**
      * Class for list iterator.
@@ -133,7 +137,7 @@ public class Queue<Item> implements Iterable<Item> {
          *
          * @return     True if has next, False otherwise.
          */
-        public boolean hasNext() { 
+        public boolean hasNext() {
             return current != null;
         }
         /**
@@ -152,8 +156,11 @@ public class Queue<Item> implements Iterable<Item> {
                 throw new NoSuchElementException();
             }
             Item item = current.item;
-            current = current.next; 
+            current = current.next;
             return item;
         }
     }
 }
+
+
+
