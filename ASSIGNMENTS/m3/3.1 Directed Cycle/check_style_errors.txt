@@ -88,19 +88,16 @@ Audit done.
 Checkstyle ends with 54 errors.
 Starting audit...
 [ERROR] G:\MSIT\1-1\20186078_ADS-2\ASSIGNMENTS\m3\3.1 Directed Cycle\DirectedCycle.java:0: File does not end with a newline. [NewlineAtEndOfFile]
-[ERROR] G:\MSIT\1-1\20186078_ADS-2\ASSIGNMENTS\m3\3.1 Directed Cycle\DirectedCycle.java:26:26: Parameter G should be final. [FinalParameters]
-[ERROR] G:\MSIT\1-1\20186078_ADS-2\ASSIGNMENTS\m3\3.1 Directed Cycle\DirectedCycle.java:26:34: Name 'G' must match pattern '^[a-z][a-zA-Z0-9]*$'. [ParameterName]
-[ERROR] G:\MSIT\1-1\20186078_ADS-2\ASSIGNMENTS\m3\3.1 Directed Cycle\DirectedCycle.java:30: 'for' construct must use '{}'s. [NeedBraces]
-[ERROR] G:\MSIT\1-1\20186078_ADS-2\ASSIGNMENTS\m3\3.1 Directed Cycle\DirectedCycle.java:31: 'if' construct must use '{}'s. [NeedBraces]
-[ERROR] G:\MSIT\1-1\20186078_ADS-2\ASSIGNMENTS\m3\3.1 Directed Cycle\DirectedCycle.java:39:22: Parameter G should be final. [FinalParameters]
-[ERROR] G:\MSIT\1-1\20186078_ADS-2\ASSIGNMENTS\m3\3.1 Directed Cycle\DirectedCycle.java:39:30: Name 'G' must match pattern '^[a-z][a-zA-Z0-9]*$'. [ParameterName]
-[ERROR] G:\MSIT\1-1\20186078_ADS-2\ASSIGNMENTS\m3\3.1 Directed Cycle\DirectedCycle.java:39:33: Parameter v should be final. [FinalParameters]
-[ERROR] G:\MSIT\1-1\20186078_ADS-2\ASSIGNMENTS\m3\3.1 Directed Cycle\DirectedCycle.java:43: 'if' construct must use '{}'s. [NeedBraces]
-[ERROR] G:\MSIT\1-1\20186078_ADS-2\ASSIGNMENTS\m3\3.1 Directed Cycle\DirectedCycle.java:47:13: '}' at column 13 should be on the same line as the next part of a multi-block statement (one that directly contains multiple blocks: if/else-if/else, do/while or try/catch/finally). [RightCurly]
-[ERROR] G:\MSIT\1-1\20186078_ADS-2\ASSIGNMENTS\m3\3.1 Directed Cycle\DirectedCycle.java:84: 'if' construct must use '{}'s. [NeedBraces]
-[ERROR] G:\MSIT\1-1\20186078_ADS-2\ASSIGNMENTS\m3\3.1 Directed Cycle\DirectedCycle.java:88: Line is longer than 80 characters (found 93). [LineLength]
+[ERROR] G:\MSIT\1-1\20186078_ADS-2\ASSIGNMENTS\m3\3.1 Directed Cycle\DirectedCycle.java:27:26: Parameter G should be final. [FinalParameters]
+[ERROR] G:\MSIT\1-1\20186078_ADS-2\ASSIGNMENTS\m3\3.1 Directed Cycle\DirectedCycle.java:27:34: Name 'G' must match pattern '^[a-z][a-zA-Z0-9]*$'. [ParameterName]
+[ERROR] G:\MSIT\1-1\20186078_ADS-2\ASSIGNMENTS\m3\3.1 Directed Cycle\DirectedCycle.java:31: 'for' construct must use '{}'s. [NeedBraces]
+[ERROR] G:\MSIT\1-1\20186078_ADS-2\ASSIGNMENTS\m3\3.1 Directed Cycle\DirectedCycle.java:32: 'if' construct must use '{}'s. [NeedBraces]
+[ERROR] G:\MSIT\1-1\20186078_ADS-2\ASSIGNMENTS\m3\3.1 Directed Cycle\DirectedCycle.java:42:22: Parameter G should be final. [FinalParameters]
+[ERROR] G:\MSIT\1-1\20186078_ADS-2\ASSIGNMENTS\m3\3.1 Directed Cycle\DirectedCycle.java:42:30: Name 'G' must match pattern '^[a-z][a-zA-Z0-9]*$'. [ParameterName]
+[ERROR] G:\MSIT\1-1\20186078_ADS-2\ASSIGNMENTS\m3\3.1 Directed Cycle\DirectedCycle.java:42:33: Parameter v should be final. [FinalParameters]
+[ERROR] G:\MSIT\1-1\20186078_ADS-2\ASSIGNMENTS\m3\3.1 Directed Cycle\DirectedCycle.java:103: Line is longer than 80 characters (found 93). [LineLength]
 Audit done.
-Checkstyle ends with 12 errors.
+Checkstyle ends with 9 errors.
 Starting audit...
 [ERROR] G:\MSIT\1-1\20186078_ADS-2\ASSIGNMENTS\m3\3.1 Directed Cycle\Graph.java:118:26: Parameter v4 should be final. [FinalParameters]
 [ERROR] G:\MSIT\1-1\20186078_ADS-2\ASSIGNMENTS\m3\3.1 Directed Cycle\Graph.java:129:25: Parameter v5 should be final. [FinalParameters]
