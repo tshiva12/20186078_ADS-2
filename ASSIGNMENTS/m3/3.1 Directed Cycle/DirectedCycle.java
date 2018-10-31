@@ -20,11 +20,11 @@ public class DirectedCycle {
     private Stack<Integer> cycle;
 
     /**
-     * Determines whether the digraph {@code G} has a directed cycle and, if so,
-     * finds such a cycle.
-     * @param G the digraph
+     * Constructs the object.
+     *
+     * @param      G     Digraph.
      */
-    public DirectedCycle(Digraph G) {
+    public DirectedCycle(final Digraph G) {
         marked  = new boolean[G.vertices()];
         onStack = new boolean[G.vertices()];
         edgeTo  = new int[G.vertices()];
@@ -33,24 +33,20 @@ public class DirectedCycle {
     }
 
     /**
-     * {check that algorithm computes
-     * either the topological order or finds a directed cycle}.
+     * dfs find the path of a directed graph.
      *
-     * @param      G     {Digraph}
-     * @param      v     {Source Vertex}
+     * @param      G     Digraph.
+     * @param      v     Integer vertex.
      */
-    private void dfs(Digraph G, int v) {
+    private void dfs(final Digraph G, final int v) {
         onStack[v] = true;
         marked[v] = true;
         for (int w : G.adj(v)) {
-            // short circuit if directed cycle found
             if (cycle != null) {
                 return;
-            // found new vertex, so recur
             } else if (!marked[w]) {
                 edgeTo[w] = v;
                 dfs(G, w);
-                // trace back directed cycle
             } else if (onStack[w]) {
                 cycle = new Stack<Integer>();
                 for (int x = v; x != w; x = edgeTo[x]) {
@@ -63,35 +59,32 @@ public class DirectedCycle {
         }
         onStack[v] = false;
     }
-
     /**
-     * Does the digraph have a directed cycle?
-     * @return {@code true} if the digraph has a directed cycle,
-     * {@code false} otherwise
+     * Determines if it has cycle.
+     *
+     * @return     True if has cycle, False otherwise.
      */
     public boolean hasCycle() {
         return cycle != null;
     }
 
     /**
-     * Returns a directed cycle if the digraph has a
-     * directed cycle, and {@code null} otherwise.
-     * @return a directed cycle (as an iterable) if the digraph
-     * has a directed cycle,
-     * and {@code null} otherwise
+     * Returns a directed cycle if the digraph has a directed cycle, and otherwise.
+     *
+     * @return     a directed cycle if the digraph has a
+     *             directed cycle, and otherwise
      */
     public Iterable<Integer> cycle() {
         return cycle;
     }
 
     /**
-     * {certify that digraph has a directed cycle if it reports one}.
+     * certify that digraph has a directed cycle if it reports one.
      *
-     * @return     {Boolean}
+     * @return     Boolean value.
      */
     private boolean check() {
         if (hasCycle()) {
-            // verify cycle
             int first = -1, last = -1;
             for (int v : cycle()) {
                 if (first == -1) {
