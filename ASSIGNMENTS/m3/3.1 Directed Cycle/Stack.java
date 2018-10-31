@@ -70,10 +70,11 @@ public class Stack<Item> implements Iterable<Item> {
     public Item pop() {
         if (isEmpty()) {
             throw new RuntimeException("Stack underflow");
-        Item item = first.item;        // save item to return
-        first = first.next;            // delete first node
+        }
+        Item item = first.item;
+        first = first.next;
         N--;
-        return item;                   // return the saved item
+        return item;
     }
     /**
      * peek.
