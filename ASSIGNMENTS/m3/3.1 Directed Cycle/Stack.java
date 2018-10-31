@@ -55,7 +55,7 @@ public class Stack<Item> implements Iterable<Item> {
      *
      * @param      item  The item
      */
-    public void push(Item item) {
+    public void push(final Item item) {
         Node oldfirst = first;
         first = new Node();
         first.item = item;
