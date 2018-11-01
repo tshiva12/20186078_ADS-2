@@ -21,6 +21,12 @@ public final class Solution {
 		if (strtype1.equals("Graph")) {
 			WordNet wordnet = new WordNet(synsets, hypernyms);
 		}
+		if (strtype1.equals("Queries")) {
+			String[] str1 = StdIn.readString().split(" ");
+			if (str1[0].equals("null")) {
+				System.out.println("IllegalArgumentException");
+			}
+		}
 
 	}
 }
