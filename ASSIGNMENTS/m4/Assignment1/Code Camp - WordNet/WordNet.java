@@ -1,6 +1,6 @@
 import java.util.Arrays;
 public class WordNet {
-
+    private int vertices;
     // constructor takes the name of the two input files
     public WordNet(String synsets, String hypernyms) {
         readSynsetFile(synsets, hypernyms);
@@ -8,20 +8,19 @@ public class WordNet {
 
     public void readSynsetFile(String filename, String hypernyms) {
         int id = 0;
-        int nov = 0;
         try{
             In in = new In(".\\Files\\" + filename);
             String[] str1 = null;
             while (!in.isEmpty()) {
-                nov++;
+                vertices++;
                 String[] tokens = in.readString().split(",");
                 id = Integer.parseInt(tokens[0]);
                 str1 = tokens[1].split(" ");
             }
-            Digraph dig = new Digraph(nov);
+            Digraph dig = new Digraph(vertices);
             readHypernymFile(hypernyms, dig);
         } catch (Exception e) {
-            System.out.println("not found");
+            System.out.println(e.getMessage());
         }
     }
         
@@ -35,13 +34,22 @@ public class WordNet {
                 }
             }
             DirectedCycle dc = new DirectedCycle(dig1);
+            int count = 0;
+            for (int i = 0; i < vertices; i++) {
+                if (dig1.outdegree(i) == 0) {
+                    count++;
+                }                
+            }
+            if (count > 1) {
+                throw new IllegalArgumentException("Multiple roots");
+            }
             if (dc.hasCycle()) {
                 System.out.println("Cycle detected");
             } else {
                 System.out.println(dig1);
             }    
         } catch (Exception e) {
-            System.out.println("not found");
+            System.out.println(e.getMessage());
         }
     }
     // returns all WordNet nouns
