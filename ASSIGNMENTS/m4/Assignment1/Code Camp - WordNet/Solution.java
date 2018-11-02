@@ -25,7 +25,6 @@ public final class Solution {
                     WordNet wordnet = new WordNet(synsets, hypernyms);
                     wordnet.show();
                 } catch (Exception e) {
-                    System.out.println("graph");
                     System.out.println(e.getMessage());
                 }
                 break;
@@ -34,6 +33,8 @@ public final class Solution {
                     WordNet wordnet1 = new WordNet(synsets, hypernyms);
                     while (StdIn.hasNextLine()) {
                         String[] str1 = StdIn.readLine().split(" ");
+
+
                         if (str1[0].equals("null")) {
                             throw new IllegalArgumentException("IllegalArgumentException");
                         }

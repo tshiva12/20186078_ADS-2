@@ -188,21 +188,19 @@ Your Output:
 7:
 ----------------------------------------
 
-########## Testcase 9: Failed ##########
+########## Testcase 9: Passed ##########
 Expected Output: 
 Multiple roots
 
 Your Output: 
-graph
 Multiple roots
 ----------------------------------------
 
-########## Testcase 10: Failed ##########
+########## Testcase 10: Passed ##########
 Expected Output: 
 Multiple roots
 
 Your Output: 
-graph
 Multiple roots
 ----------------------------------------
 
@@ -246,12 +244,11 @@ Your Output:
 
 ----------------------------------------
 
-########## Testcase 14: Failed ##########
+########## Testcase 14: Passed ##########
 Expected Output: 
 Cycle detected
 
 Your Output: 
-graph
 Cycle detected
 ----------------------------------------
 

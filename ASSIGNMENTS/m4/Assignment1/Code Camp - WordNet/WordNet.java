@@ -16,9 +16,10 @@ public class WordNet {
         sap = new SAP(dig);
     }
     public int readSynsetFile(final String filename) {
+        int temp = 0;
         In in = new In(".\\Files\\" + filename);
         while (!in.isEmpty()) {
-            vertices++;
+            temp++;
             // ArrayList<Integer> al = new ArrayList<Integer>(); 
             String[] tokens = in.readLine().split(",");
             int id = Integer.parseInt(tokens[0]);
@@ -36,7 +37,7 @@ public class WordNet {
                 st.put(nouns[i], al);
             }
         }
-        return vertices;
+        return temp;
     }
         
     public void readHypernymFile(String hypernyms) {
