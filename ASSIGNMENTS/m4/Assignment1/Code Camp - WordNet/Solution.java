@@ -1,3 +1,4 @@
+import java.util.*;
 /**
  * class Solution.
  */
@@ -15,19 +16,38 @@ public final class Solution {
      * @param      args  The arguments
      */
     public static void main(final String[] args) {
-        String synsets = StdIn.readString();
-        String hypernyms = StdIn.readString();
-        String strtype1 = StdIn.readString();
-        if (strtype1.equals("Graph")) {
-            WordNet wordnet = new WordNet(synsets, hypernyms);
-        }
-        if (strtype1.equals("Queries")) {
-            String[] str1 = StdIn.readString().split(" ");
-            if (str1[0].equals("null")) {
-                System.out.println("IllegalArgumentException");
+        String synsets = StdIn.readLine();
+        String hypernyms = StdIn.readLine();
+        String strtype1 = StdIn.readLine();
+        // if (strtype1.equals("Graph")) {
+        //     WordNet wordnet = new WordNet(synsets, hypernyms);
+        // }
+        // if (strtype1.equals("Queries")) {
+        //     String[] str1 = StdIn.readString().split(" ");
+        //     if (str1[0].equals("null")) {
+        //         System.out.println("IllegalArgumentException");
+        //     }
+        // }
+        try {
+            switch (strtype1) {
+                case "Graph" :
+                    WordNet wordnet = new WordNet(synsets, hypernyms);
+                break;
+                case "Queries" :
+                    while (StdIn.hasNextLine()) {
+                        // WordNet wordnet1 = new WordNet(synsets, hypernyms);
+                        String[] str1 = StdIn.readLine().split(" ");
+                        if (str1[0].equals("null")) {
+                            throw new IllegalArgumentException("IllegalArgumentException");
+                        }
+                    }
+                break;
+                default :
+                break;
             }
+        } catch (Exception e) {
+            System.out.println(e.getMessage());
         }
-
     }
 }
 
