@@ -67,7 +67,7 @@ public class WordNet {
                 throw new IllegalArgumentException("Multiple roots");
             }
             if (dc.hasCycle()) {
-                System.out.println("Cycle detected");
+                throw new Exception("Cycle detected");
             } else {
                 System.out.println(dig1);
             }    

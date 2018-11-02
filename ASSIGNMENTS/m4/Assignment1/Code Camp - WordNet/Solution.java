@@ -19,15 +19,6 @@ public final class Solution {
         String synsets = StdIn.readLine();
         String hypernyms = StdIn.readLine();
         String strtype1 = StdIn.readLine();
-        // if (strtype1.equals("Graph")) {
-        //     WordNet wordnet = new WordNet(synsets, hypernyms);
-        // }
-        // if (strtype1.equals("Queries")) {
-        //     String[] str1 = StdIn.readString().split(" ");
-        //     if (str1[0].equals("null")) {
-        //         System.out.println("IllegalArgumentException");
-        //     }
-        // }
         try {
             switch (strtype1) {
                 case "Graph" :
