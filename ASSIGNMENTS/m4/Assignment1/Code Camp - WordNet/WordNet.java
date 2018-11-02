@@ -9,8 +9,12 @@ public class WordNet {
     // constructor takes the name of the two input files
     WordNet(final String synsets, final String hypernyms) {
         st = new LinearProbingHashST<String, ArrayList<Integer>>();
+
         synlist = new ArrayList<String>();
         vertices = readSynsetFile(synsets);
+        // for (String s: st.keys()) {
+        //     // System.out.println(s+"16");
+        // }
         dig = new Digraph(vertices);
         readHypernymFile(hypernyms);
         sap = new SAP(dig);
@@ -18,10 +22,14 @@ public class WordNet {
     public int readSynsetFile(final String filename) {
         int temp = 0;
         In in = new In(".\\Files\\" + filename);
+        // String line = in.readLine();
         while (!in.isEmpty()) {
+        // while (!line.equals(null)) {
             temp++;
             // ArrayList<Integer> al = new ArrayList<Integer>(); 
             String[] tokens = in.readLine().split(",");
+            // String[] tokens = line.split(",");
+            // System.out.println(tokens[0] + ": " + tokens[1]);
             int id = Integer.parseInt(tokens[0]);
             synlist.add(id, tokens[1]);
             String[] nouns = tokens[1].split(" ");
@@ -36,6 +44,8 @@ public class WordNet {
                 }
                 st.put(nouns[i], al);
             }
+            // line = in.readLine();
+                // break;
         }
         return temp;
     }
@@ -45,6 +55,7 @@ public class WordNet {
         while (!in1.isEmpty()) {
             String[] tokens2 = in1.readString().split(",");
             for (int i = 1; i < tokens2.length; i++) {
+                // System.out.println(tokens2[i]);
                 dig.addEdge(Integer.parseInt(tokens2[0]), Integer.parseInt(tokens2[i]));
             }
         }   
