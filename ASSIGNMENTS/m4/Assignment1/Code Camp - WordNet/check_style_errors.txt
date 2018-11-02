@@ -343,8 +343,6 @@ Starting audit...
 [ERROR] G:\MSIT\1-1\20186078_ADS-2\ASSIGNMENTS\m4\Assignment1\Code Camp - WordNet\WordNet.java:7:5: Missing a Javadoc comment. [JavadocVariable]
 [ERROR] G:\MSIT\1-1\20186078_ADS-2\ASSIGNMENTS\m4\Assignment1\Code Camp - WordNet\WordNet.java:8:5: Missing a Javadoc comment. [JavadocVariable]
 [ERROR] G:\MSIT\1-1\20186078_ADS-2\ASSIGNMENTS\m4\Assignment1\Code Camp - WordNet\WordNet.java:10:5: Missing a Javadoc comment. [JavadocMethod]
-[ERROR] G:\MSIT\1-1\20186078_ADS-2\ASSIGNMENTS\m4\Assignment1\Code Camp - WordNet\WordNet.java:16:33: '+' is not preceded with whitespace. [WhitespaceAround]
-[ERROR] G:\MSIT\1-1\20186078_ADS-2\ASSIGNMENTS\m4\Assignment1\Code Camp - WordNet\WordNet.java:16:34: '+' is not followed by whitespace. [WhitespaceAround]
 [ERROR] G:\MSIT\1-1\20186078_ADS-2\ASSIGNMENTS\m4\Assignment1\Code Camp - WordNet\WordNet.java:22:5: Class 'WordNet' looks like designed for extension (can be subclassed), but the method 'readSynsetFile' does not have javadoc that explains how to do that safely. If class is not designed for extension consider making the class 'WordNet' final or making the method 'readSynsetFile' static/final/abstract/empty, or adding allowed annotation for the method. [DesignForExtension]
 [ERROR] G:\MSIT\1-1\20186078_ADS-2\ASSIGNMENTS\m4\Assignment1\Code Camp - WordNet\WordNet.java:22:5: Missing a Javadoc comment. [JavadocMethod]
 [ERROR] G:\MSIT\1-1\20186078_ADS-2\ASSIGNMENTS\m4\Assignment1\Code Camp - WordNet\WordNet.java:29: Line has trailing spaces. [RegexpSingleline]
@@ -372,4 +370,4 @@ Starting audit...
 [ERROR] G:\MSIT\1-1\20186078_ADS-2\ASSIGNMENTS\m4\Assignment1\Code Camp - WordNet\WordNet.java:105:23: Parameter nounA should be final. [FinalParameters]
 [ERROR] G:\MSIT\1-1\20186078_ADS-2\ASSIGNMENTS\m4\Assignment1\Code Camp - WordNet\WordNet.java:105:37: Parameter nounB should be final. [FinalParameters]
 Audit done.
-Checkstyle ends with 37 errors.
+Checkstyle ends with 35 errors.
