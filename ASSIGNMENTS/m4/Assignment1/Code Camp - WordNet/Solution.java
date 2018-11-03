@@ -1,4 +1,3 @@
-import java.util.*;
 /**
  * class Solution.
  */
@@ -34,16 +33,22 @@ public final class Solution {
                     WordNet wordnet1 = new WordNet(synsets, hypernyms);
                     //System.out.println("lkl");
                     while (StdIn.hasNextLine()) {
-                        String[] str1 = StdIn.readLine().split(" ");
+                        String str = StdIn.readLine();
+                        String[] str1 = str.split(" ");
                         //System.out.println(Arrays.toString(str1));
                         if (str1[0].equals("null")) {
-                            throw new IllegalArgumentException("IllegalArgumentException");
+                            throw new IllegalArgumentException(
+                                "IllegalArgumentException");
                         } else {
-                        System.out.println("distance = " + wordnet1.distance(str1[0], str1[1]) + ", " + "ancestor = " + wordnet1.sap(str1[0], str1[1]));
+                            System.out.println(
+                                "distance = " + wordnet1.distance(
+                                    str1[0], str1[1])
+                                 + ", " + "ancestor = "
+                                  + wordnet1.sap(str1[0], str1[1]));
+                        }
                     }
-                }
                 } catch (Exception e) {
-                    e.printStackTrace();
+                    // e.printStackTrace();
                     System.out.println(e.getMessage());
                 }
                 break;

@@ -8,9 +8,8 @@ public class WordNet {
     private SAP sap;
     // constructor takes the name of the two input files
     WordNet(final String synsets, final String hypernyms) {
-        st = new LinearProbingHashST<String, ArrayList<Integer>>();
-
         synlist = new ArrayList<String>();
+        st = new LinearProbingHashST<String, ArrayList<Integer>>();
         vertices = readSynsetFile(synsets);
         // for (String s: st.keys()) {
         //     // System.out.println(s+"16");
@@ -21,7 +20,7 @@ public class WordNet {
     }
     public int readSynsetFile(final String filename) {
         int temp = 0;
-        In in = new In(".\\Files\\" + filename);
+        In in = new In("./Files/" + filename);
         // String line = in.readLine();
         while (!in.isEmpty()) {
         // while (!line.equals(null)) {
@@ -51,9 +50,9 @@ public class WordNet {
     }
         
     public void readHypernymFile(String hypernyms) {
-        In in1 = new In(".\\Files\\" + hypernyms);
+        In in1 = new In("./Files/" + hypernyms);
         while (!in1.isEmpty()) {
-            String[] tokens2 = in1.readString().split(",");
+            String[] tokens2 = in1.readLine().split(",");
             for (int i = 1; i < tokens2.length; i++) {
                 // System.out.println(tokens2[i]);
                 dig.addEdge(Integer.parseInt(tokens2[0]), Integer.parseInt(tokens2[i]));
@@ -112,3 +111,4 @@ public class WordNet {
         return synlist.get(id);
     }
 }
+
