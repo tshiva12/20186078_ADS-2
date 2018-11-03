@@ -171,6 +171,3 @@ public class WordNet {
         return synlist.get(id);
     }
 }
-
-
-
