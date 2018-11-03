@@ -38,11 +38,11 @@ public final class Solution {
                         //System.out.println(Arrays.toString(str1));
                         if (str1[0].equals("null")) {
                             throw new IllegalArgumentException(
-                            	"IllegalArgumentException");
+                                "IllegalArgumentException");
                         } else {
                             System.out.println(
                                 "distance = " + wordnet1.distance(
-                                	str1[0], str1[1])
+                                    str1[0], str1[1])
                                  + ", " + "ancestor = "
                                   + wordnet1.sap(str1[0], str1[1]));
                         }
