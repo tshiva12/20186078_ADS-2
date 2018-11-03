@@ -1,12 +1,36 @@
 import java.util.List;
 import java.util.ArrayList;
+/**
+ * Class for word net.
+ */
 public class WordNet {
+    /**
+     * Integer variable.
+     */
     private int vertices;
+    /**
+     * Hashing.
+     */
     private LinearProbingHashST<String, ArrayList<Integer>> st;
+    /**
+     * Array list.
+     */
     private ArrayList<String> synlist;
+    /**
+     * Digrapg object.
+     */
     private Digraph dig;
+    /**
+     * SAP object.
+     */
     private SAP sap;
-    // constructor takes the name of the two input files
+    /**
+     * Constructs the object.
+     * constructor takes the name of the two input files.
+     *
+     * @param      synsets    The synsets
+     * @param      hypernyms  The hypernyms
+     */
     WordNet(final String synsets, final String hypernyms) {
         synlist = new ArrayList<String>();
         st = new LinearProbingHashST<String, ArrayList<Integer>>();
@@ -18,6 +42,13 @@ public class WordNet {
         readHypernymFile(hypernyms);
         sap = new SAP(dig);
     }
+    /**
+     * Reads a synset file.
+     *
+     * @param      filename  The filename
+     *
+     * @return     temp value.
+     */
     public int readSynsetFile(final String filename) {
         int temp = 0;
         In in = new In("./Files/" + filename);
@@ -48,7 +79,11 @@ public class WordNet {
         }
         return temp;
     }
-        
+    /**
+     * Reads a hypernym file.
+     *
+     * @param      hypernyms  The hypernyms
+     */
     public void readHypernymFile(String hypernyms) {
         In in1 = new In("./Files/" + hypernyms);
         while (!in1.isEmpty()) {
@@ -59,6 +94,9 @@ public class WordNet {
             }
         }   
     }
+    /**
+     * show method display the output of digraph object.
+     */
     public void show() {
         DirectedCycle dc = new DirectedCycle(dig);
         if (dc.hasCycle()) {
@@ -76,20 +114,36 @@ public class WordNet {
             System.out.println(dig);
         }
     }
-    // returns all WordNet nouns
+    /**
+     * returns all WordNet nouns.
+     *
+     * @return     keys.
+     */
     public Iterable<String> nouns() {
         return st.keys();
     }
-
-    // is the word a WordNet noun?
+    /**
+     * Determines if noun.
+     * is the word a WordNet noun ?
+     *
+     * @param      word  The word
+     *
+     * @return     True if noun, False otherwise.
+     */
     public boolean isNoun(String word) {
         if (word.equals("null")) {
             throw new IllegalArgumentException();
         }
         return st.contains(word);
     }
-
-    // distance between nounA and nounB (defined below)
+    /**
+     * distance between nounA and nounB.
+     *
+     * @param      nounA  The noun a
+     * @param      nounB  The noun b
+     *
+     * @return     distance.
+     */
     public int distance(String nounA, String nounB) {
         ArrayList<Integer> nounA1 = st.get(nounA);
         ArrayList<Integer> nounB1 = st.get(nounB);
@@ -98,9 +152,15 @@ public class WordNet {
         }
         return sap.length(nounA1, nounB1);
     }
-
-    // a synset (second field of synsets.txt) that is the common ancestor of nounA and nounB
-    // in a shortest ancestral path (defined below)
+    /**
+     * a synset that is the common ancestor of nounA and nounB
+     * in a shortest ancestral path
+     *
+     * @param      nounA  The noun a
+     * @param      nounB  The noun b
+     *
+     * @return     shortest ancestor path.
+     */
     public String sap(String nounA, String nounB) {
         ArrayList<Integer> nounA1 = st.get(nounA);
         ArrayList<Integer> nounB1 = st.get(nounB);
