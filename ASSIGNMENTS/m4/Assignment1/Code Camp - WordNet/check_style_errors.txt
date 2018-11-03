@@ -196,9 +196,8 @@ Audit done.
 Checkstyle ends with 141 errors.
 Starting audit...
 [ERROR] G:\MSIT\1-1\20186078_ADS-2\ASSIGNMENTS\m4\Assignment1\Code Camp - WordNet\LinearProbingHashST.java:0: File does not end with a newline. [NewlineAtEndOfFile]
-[ERROR] G:\MSIT\1-1\20186078_ADS-2\ASSIGNMENTS\m4\Assignment1\Code Camp - WordNet\LinearProbingHashST.java:88:22: 'typecast' is not followed by whitespace. [WhitespaceAfter]
 Audit done.
-Checkstyle ends with 2 errors.
+Checkstyle ends with 1 errors.
 Starting audit...
 Audit done.
 Starting audit...

@@ -85,7 +85,7 @@ class LinearProbingHashST<Key, Value> {
     private int hash(final Key key) {
         final int eleven = 11;
         String s = (String) key;
-        return ((int)s.charAt(0) * eleven) % m;
+        return ((int) s.charAt(0) * eleven) % m;
     }
     /**
      * Increses the size.
