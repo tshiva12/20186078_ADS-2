@@ -196,30 +196,9 @@ Audit done.
 Checkstyle ends with 141 errors.
 Starting audit...
 [ERROR] G:\MSIT\1-1\20186078_ADS-2\ASSIGNMENTS\m4\Assignment1\Code Camp - WordNet\LinearProbingHashST.java:0: File does not end with a newline. [NewlineAtEndOfFile]
-[ERROR] G:\MSIT\1-1\20186078_ADS-2\ASSIGNMENTS\m4\Assignment1\Code Camp - WordNet\LinearProbingHashST.java:72: Line is longer than 80 characters (found 81). [LineLength]
-[ERROR] G:\MSIT\1-1\20186078_ADS-2\ASSIGNMENTS\m4\Assignment1\Code Camp - WordNet\LinearProbingHashST.java:85:28: 'typecast' is not followed by whitespace. [WhitespaceAfter]
-[ERROR] G:\MSIT\1-1\20186078_ADS-2\ASSIGNMENTS\m4\Assignment1\Code Camp - WordNet\LinearProbingHashST.java:86:22: 'typecast' is not followed by whitespace. [WhitespaceAfter]
-[ERROR] G:\MSIT\1-1\20186078_ADS-2\ASSIGNMENTS\m4\Assignment1\Code Camp - WordNet\LinearProbingHashST.java:86:36: '11' is a magic number. [MagicNumber]
-[ERROR] G:\MSIT\1-1\20186078_ADS-2\ASSIGNMENTS\m4\Assignment1\Code Camp - WordNet\LinearProbingHashST.java:91: Line has trailing spaces. [RegexpSingleline]
-[ERROR] G:\MSIT\1-1\20186078_ADS-2\ASSIGNMENTS\m4\Assignment1\Code Camp - WordNet\LinearProbingHashST.java:115: Line is longer than 80 characters (found 82). [LineLength]
-[ERROR] G:\MSIT\1-1\20186078_ADS-2\ASSIGNMENTS\m4\Assignment1\Code Camp - WordNet\LinearProbingHashST.java:121:19: '/' is not preceded with whitespace. [WhitespaceAround]
-[ERROR] G:\MSIT\1-1\20186078_ADS-2\ASSIGNMENTS\m4\Assignment1\Code Camp - WordNet\LinearProbingHashST.java:121:20: '/' is not followed by whitespace. [WhitespaceAround]
-[ERROR] G:\MSIT\1-1\20186078_ADS-2\ASSIGNMENTS\m4\Assignment1\Code Camp - WordNet\LinearProbingHashST.java:122:21: '*' is not preceded with whitespace. [WhitespaceAround]
-[ERROR] G:\MSIT\1-1\20186078_ADS-2\ASSIGNMENTS\m4\Assignment1\Code Camp - WordNet\LinearProbingHashST.java:122:22: '*' is not followed by whitespace. [WhitespaceAround]
-[ERROR] G:\MSIT\1-1\20186078_ADS-2\ASSIGNMENTS\m4\Assignment1\Code Camp - WordNet\LinearProbingHashST.java:147: 'for' construct must use '{}'s. [NeedBraces]
-[ERROR] G:\MSIT\1-1\20186078_ADS-2\ASSIGNMENTS\m4\Assignment1\Code Camp - WordNet\LinearProbingHashST.java:183:28: '/' is not preceded with whitespace. [WhitespaceAround]
-[ERROR] G:\MSIT\1-1\20186078_ADS-2\ASSIGNMENTS\m4\Assignment1\Code Camp - WordNet\LinearProbingHashST.java:183:29: '/' is not followed by whitespace. [WhitespaceAround]
-[ERROR] G:\MSIT\1-1\20186078_ADS-2\ASSIGNMENTS\m4\Assignment1\Code Camp - WordNet\LinearProbingHashST.java:183:29: '8' is a magic number. [MagicNumber]
-[ERROR] G:\MSIT\1-1\20186078_ADS-2\ASSIGNMENTS\m4\Assignment1\Code Camp - WordNet\LinearProbingHashST.java:184:21: '/' is not preceded with whitespace. [WhitespaceAround]
-[ERROR] G:\MSIT\1-1\20186078_ADS-2\ASSIGNMENTS\m4\Assignment1\Code Camp - WordNet\LinearProbingHashST.java:184:22: '/' is not followed by whitespace. [WhitespaceAround]
-[ERROR] G:\MSIT\1-1\20186078_ADS-2\ASSIGNMENTS\m4\Assignment1\Code Camp - WordNet\LinearProbingHashST.java:209:18: '*' is not preceded with whitespace. [WhitespaceAround]
-[ERROR] G:\MSIT\1-1\20186078_ADS-2\ASSIGNMENTS\m4\Assignment1\Code Camp - WordNet\LinearProbingHashST.java:209:19: '*' is not followed by whitespace. [WhitespaceAround]
-[ERROR] G:\MSIT\1-1\20186078_ADS-2\ASSIGNMENTS\m4\Assignment1\Code Camp - WordNet\LinearProbingHashST.java:210: Line is longer than 80 characters (found 85). [LineLength]
-[ERROR] G:\MSIT\1-1\20186078_ADS-2\ASSIGNMENTS\m4\Assignment1\Code Camp - WordNet\LinearProbingHashST.java:214: Line has trailing spaces. [RegexpSingleline]
-[ERROR] G:\MSIT\1-1\20186078_ADS-2\ASSIGNMENTS\m4\Assignment1\Code Camp - WordNet\LinearProbingHashST.java:216:13: '}' at column 13 should be on the same line as the next part of a multi-block statement (one that directly contains multiple blocks: if/else-if/else, do/while or try/catch/finally). [RightCurly]
-[ERROR] G:\MSIT\1-1\20186078_ADS-2\ASSIGNMENTS\m4\Assignment1\Code Camp - WordNet\LinearProbingHashST.java:218: Line is longer than 80 characters (found 104). [LineLength]
+[ERROR] G:\MSIT\1-1\20186078_ADS-2\ASSIGNMENTS\m4\Assignment1\Code Camp - WordNet\LinearProbingHashST.java:88:22: 'typecast' is not followed by whitespace. [WhitespaceAfter]
 Audit done.
-Checkstyle ends with 23 errors.
+Checkstyle ends with 2 errors.
 Starting audit...
 Audit done.
 Starting audit...

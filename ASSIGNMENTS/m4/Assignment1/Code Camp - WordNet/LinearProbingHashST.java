@@ -69,7 +69,8 @@ class LinearProbingHashST<Key, Value> {
      */
     public boolean contains(final Key key) {
         if (key == null) {
-            throw new IllegalArgumentException("argument to contains() is null");
+            throw new IllegalArgumentException(
+                "argument to contains() is null");
         }
         return get(key) != null;
     }
@@ -82,13 +83,13 @@ class LinearProbingHashST<Key, Value> {
      * @return     return hash vale.
      */
     private int hash(final Key key) {
-        String s = (String)key;
-        return ((int)s.charAt(0) * 11) % m;
+        final int eleven = 11;
+        String s = (String) key;
+        return ((int)s.charAt(0) * eleven) % m;
     }
     /**
      * Increses the size.
      * Time complexity is logN.
-     * 
      * @param      capacity  The capacity
      */
     private void resize(final int capacity) {
@@ -112,14 +113,15 @@ class LinearProbingHashST<Key, Value> {
      */
     public void put(final Key key, final Value val) {
         if (key == null) {
-            throw new IllegalArgumentException("first argument to put() is null");
+            throw new IllegalArgumentException(
+                "first argument to put() is null");
         }
         if (val == null) {
             delete(key);
             return;
         }
-        if (n >= m/2) {
-            resize(2*m);
+        if (n >= m / 2) {
+            resize(2 * m);
         }
         int i;
         for (i = hash(key); keys[i] != null; i = (i + 1) % m) {
@@ -144,10 +146,11 @@ class LinearProbingHashST<Key, Value> {
         if (key == null) {
             throw new IllegalArgumentException("argument to get() is null");
         }
-        for (int i = hash(key); keys[i] != null; i = (i + 1) % m)
+        for (int i = hash(key); keys[i] != null; i = (i + 1) % m) {
             if (keys[i].equals(key)) {
                 return vals[i];
             }
+        }
         return null;
     }
     /**
@@ -180,8 +183,8 @@ class LinearProbingHashST<Key, Value> {
             i = (i + 1) % m;
         }
         n--;
-        if (n > 0 && n <= m/8) {
-            resize(m/2);
+        if (n > 0 && n <= m / 2 * 2 * 2) {
+            resize(m / 2);
         }
     }
     /**
@@ -206,17 +209,21 @@ class LinearProbingHashST<Key, Value> {
      * @return     return boolean value.
      */
     private boolean check() {
-        if (m < 2*n) {
-            System.err.println("Hash table size m = " + m + "; array size n = " + n);
+        if (m < 2 * n) {
+            System.err.println(
+                "Hash table size m = " + m + "; array size n = " + n);
             return false;
         }
         for (int i = 0; i < m; i++) {
-            if (keys[i] == null) { 
+            if (keys[i] == null) {
                 continue;
-            }
-            else if (get(keys[i]) != vals[i]) {
-                System.err.println("get[" + keys[i] + "] = " + get(keys[i]) + "; vals[i] = " + vals[i]);
+            } else if (get(keys[i]) != vals[i]) {
+                System.err.println(
+                    "get[" + keys[i] + "] = " + get(keys[i])
+                     + "; vals[i] = " + vals[i]);
                 return false;
+            } else {
+                System.out.println("not found");
             }
         }
         return true;
