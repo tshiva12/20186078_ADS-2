@@ -224,16 +224,8 @@ Starting audit...
 Audit done.
 Starting audit...
 [ERROR] G:\MSIT\1-1\20186078_ADS-2\ASSIGNMENTS\m4\Assignment1\Code Camp - WordNet\SAP.java:0: File does not end with a newline. [NewlineAtEndOfFile]
-[ERROR] G:\MSIT\1-1\20186078_ADS-2\ASSIGNMENTS\m4\Assignment1\Code Camp - WordNet\SAP.java:1: Missing a Javadoc comment. [JavadocType]
-[ERROR] G:\MSIT\1-1\20186078_ADS-2\ASSIGNMENTS\m4\Assignment1\Code Camp - WordNet\SAP.java:16:16: Parameter g should be final. [FinalParameters]
-[ERROR] G:\MSIT\1-1\20186078_ADS-2\ASSIGNMENTS\m4\Assignment1\Code Camp - WordNet\SAP.java:30:23: Parameter v should be final. [FinalParameters]
-[ERROR] G:\MSIT\1-1\20186078_ADS-2\ASSIGNMENTS\m4\Assignment1\Code Camp - WordNet\SAP.java:30:44: Parameter w should be final. [FinalParameters]
-[ERROR] G:\MSIT\1-1\20186078_ADS-2\ASSIGNMENTS\m4\Assignment1\Code Camp - WordNet\SAP.java:43:25: Parameter v should be final. [FinalParameters]
-[ERROR] G:\MSIT\1-1\20186078_ADS-2\ASSIGNMENTS\m4\Assignment1\Code Camp - WordNet\SAP.java:43:46: Parameter w should be final. [FinalParameters]
-[ERROR] G:\MSIT\1-1\20186078_ADS-2\ASSIGNMENTS\m4\Assignment1\Code Camp - WordNet\SAP.java:44: Line is longer than 80 characters (found 83). [LineLength]
-[ERROR] G:\MSIT\1-1\20186078_ADS-2\ASSIGNMENTS\m4\Assignment1\Code Camp - WordNet\SAP.java:45: Line is longer than 80 characters (found 83). [LineLength]
 Audit done.
-Checkstyle ends with 9 errors.
+Checkstyle ends with 1 errors.
 Starting audit...
 Audit done.
 Starting audit...
@@ -372,17 +364,5 @@ Audit done.
 Checkstyle ends with 129 errors.
 Starting audit...
 [ERROR] G:\MSIT\1-1\20186078_ADS-2\ASSIGNMENTS\m4\Assignment1\Code Camp - WordNet\WordNet.java:0: File does not end with a newline. [NewlineAtEndOfFile]
-[ERROR] G:\MSIT\1-1\20186078_ADS-2\ASSIGNMENTS\m4\Assignment1\Code Camp - WordNet\WordNet.java:1:8: Unused import - java.util.List. [UnusedImports]
-[ERROR] G:\MSIT\1-1\20186078_ADS-2\ASSIGNMENTS\m4\Assignment1\Code Camp - WordNet\WordNet.java:59: Line has trailing spaces. [RegexpSingleline]
-[ERROR] G:\MSIT\1-1\20186078_ADS-2\ASSIGNMENTS\m4\Assignment1\Code Camp - WordNet\WordNet.java:87:34: Parameter hypernyms should be final. [FinalParameters]
-[ERROR] G:\MSIT\1-1\20186078_ADS-2\ASSIGNMENTS\m4\Assignment1\Code Camp - WordNet\WordNet.java:93: Line is longer than 80 characters (found 88). [LineLength]
-[ERROR] G:\MSIT\1-1\20186078_ADS-2\ASSIGNMENTS\m4\Assignment1\Code Camp - WordNet\WordNet.java:95: Line has trailing spaces. [RegexpSingleline]
-[ERROR] G:\MSIT\1-1\20186078_ADS-2\ASSIGNMENTS\m4\Assignment1\Code Camp - WordNet\WordNet.java:109: Line has trailing spaces. [RegexpSingleline]
-[ERROR] G:\MSIT\1-1\20186078_ADS-2\ASSIGNMENTS\m4\Assignment1\Code Camp - WordNet\WordNet.java:133:27: Parameter word should be final. [FinalParameters]
-[ERROR] G:\MSIT\1-1\20186078_ADS-2\ASSIGNMENTS\m4\Assignment1\Code Camp - WordNet\WordNet.java:147:25: Parameter nounA should be final. [FinalParameters]
-[ERROR] G:\MSIT\1-1\20186078_ADS-2\ASSIGNMENTS\m4\Assignment1\Code Camp - WordNet\WordNet.java:147:39: Parameter nounB should be final. [FinalParameters]
-[ERROR] G:\MSIT\1-1\20186078_ADS-2\ASSIGNMENTS\m4\Assignment1\Code Camp - WordNet\WordNet.java:155: First sentence should end with a period. [JavadocStyle]
-[ERROR] G:\MSIT\1-1\20186078_ADS-2\ASSIGNMENTS\m4\Assignment1\Code Camp - WordNet\WordNet.java:164:23: Parameter nounA should be final. [FinalParameters]
-[ERROR] G:\MSIT\1-1\20186078_ADS-2\ASSIGNMENTS\m4\Assignment1\Code Camp - WordNet\WordNet.java:164:37: Parameter nounB should be final. [FinalParameters]
 Audit done.
-Checkstyle ends with 13 errors.
+Checkstyle ends with 1 errors.

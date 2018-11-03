@@ -1,3 +1,6 @@
+/**
+ * Class for sap.
+ */
 public class SAP {
     /**
      * Digraph object.
@@ -13,7 +16,7 @@ public class SAP {
      *
      * @param      g     digraph variable.
      */
-    public SAP(Digraph g) {
+    public SAP(final Digraph g) {
         this.digraph = g;
         this.distance = 0;
     }
@@ -27,7 +30,7 @@ public class SAP {
      *
      * @return     distance.
      */
-    public int length(Iterable<Integer> v, Iterable<Integer> w) {
+    public int length(final Iterable<Integer> v, final Iterable<Integer> w) {
         ancestor(v, w);
         return distance;
     }
@@ -40,9 +43,11 @@ public class SAP {
      *
      * @return     ancestor.
      */
-    public int ancestor(Iterable<Integer> v, Iterable<Integer> w) {
-        BreadthFirstDirectedPaths bfsv = new BreadthFirstDirectedPaths(digraph, v);
-        BreadthFirstDirectedPaths bfsw = new BreadthFirstDirectedPaths(digraph, w);
+    public int ancestor(final Iterable<Integer> v, final Iterable<Integer> w) {
+        BreadthFirstDirectedPaths bfsv
+         = new BreadthFirstDirectedPaths(digraph, v);
+        BreadthFirstDirectedPaths bfsw
+         = new BreadthFirstDirectedPaths(digraph, w);
         distance = Integer.MAX_VALUE;
         int ancestor = -1;
         for (int i = 0; i < digraph.vertices(); i++) {
