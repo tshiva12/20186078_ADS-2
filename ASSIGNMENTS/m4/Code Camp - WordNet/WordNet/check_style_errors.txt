@@ -244,11 +244,9 @@ Starting audit...
 Audit done.
 Checkstyle ends with 18 errors.
 Starting audit...
-[ERROR] G:\MSIT\1-1\20186078_ADS-2\ASSIGNMENTS\m4\Code Camp - WordNet\WordNet\Solution.java:40: Line is longer than 80 characters (found 91). [LineLength]
-[ERROR] G:\MSIT\1-1\20186078_ADS-2\ASSIGNMENTS\m4\Code Camp - WordNet\WordNet\Solution.java:43: Line is longer than 80 characters (found 83). [LineLength]
-[ERROR] G:\MSIT\1-1\20186078_ADS-2\ASSIGNMENTS\m4\Code Camp - WordNet\WordNet\Solution.java:44: Line is longer than 80 characters (found 90). [LineLength]
+[ERROR] G:\MSIT\1-1\20186078_ADS-2\ASSIGNMENTS\m4\Code Camp - WordNet\WordNet\Solution.java:41:29: File contains tab characters (this is the first instance). [FileTabCharacter]
 Audit done.
-Checkstyle ends with 3 errors.
+Checkstyle ends with 1 errors.
 Starting audit...
 Audit done.
 Starting audit...

@@ -37,11 +37,14 @@ public final class Solution {
                         String[] str1 = str.split(" ");
                         //System.out.println(Arrays.toString(str1));
                         if (str1[0].equals("null")) {
-                            throw new IllegalArgumentException("IllegalArgumentException");
+                            throw new IllegalArgumentException(
+                            	"IllegalArgumentException");
                         } else {
                             System.out.println(
-                                "distance = " + wordnet1.distance(str1[0], str1[1])
-                                 + ", " + "ancestor = " + wordnet1.sap(str1[0], str1[1]));
+                                "distance = " + wordnet1.distance(
+                                	str1[0], str1[1])
+                                 + ", " + "ancestor = "
+                                  + wordnet1.sap(str1[0], str1[1]));
                         }
                     }
                 } catch (Exception e) {
