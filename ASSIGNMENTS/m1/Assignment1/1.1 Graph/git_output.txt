@@ -1,0 +1,6 @@
+[master cf4b53b] "ads2_m1_a1_1: 8/8 testcases passed. Cannot run hidden testcases as Server is unreachablecheck_style score: 1/1 "
+ 1 file changed, 1 insertion(+), 1 deletion(-)
+ rewrite ASSIGNMENTS/m1/Assignment1/1.1 Graph/result/score.json (80%)
+Branch 'master' set up to track remote branch 'master' from 'origin'.
+To https://github.com/tshiva12/20186078_ADS-2.git
+   be5bbab..cf4b53b  master -> master

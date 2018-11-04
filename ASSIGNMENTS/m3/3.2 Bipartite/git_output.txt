@@ -1,0 +1,6 @@
+[master 2619a12] "ads2_m3_a2_1: 5/5 testcases passed. Cannot run hidden testcases as Server is unreachablecheck_style score: 1/1 "
+ 1 file changed, 1 insertion(+), 1 deletion(-)
+ rewrite ASSIGNMENTS/m3/3.2 Bipartite/result/score.json (73%)
+Branch 'master' set up to track remote branch 'master' from 'origin'.
+To https://github.com/tshiva12/20186078_ADS-2.git
+   c83828e..2619a12  master -> master

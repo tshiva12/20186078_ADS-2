@@ -1,0 +1,133 @@
+warning: LF will be replaced by CRLF in ASSIGNMENTS/m6mid1/ADS-2Week-1/In.java.
+The file will have its original line endings in your working directory.
+warning: LF will be replaced by CRLF in ASSIGNMENTS/m6mid1/ADS-2Week-1/Solution.java.
+The file will have its original line endings in your working directory.
+warning: LF will be replaced by CRLF in ASSIGNMENTS/m6mid1/ADS-2Week-1/StdIn.java.
+The file will have its original line endings in your working directory.
+warning: LF will be replaced by CRLF in ASSIGNMENTS/m6mid1/ADS-2Week-1/WebContent.txt.
+The file will have its original line endings in your working directory.
+warning: LF will be replaced by CRLF in ASSIGNMENTS/m6mid1/ADS-2Week-1/testcases/input000.txt.
+The file will have its original line endings in your working directory.
+warning: LF will be replaced by CRLF in ASSIGNMENTS/m6mid1/ADS-2Week-1/testcases/input001.txt.
+The file will have its original line endings in your working directory.
+warning: LF will be replaced by CRLF in ASSIGNMENTS/m6mid1/ADS-2Week-1/testcases/input002.txt.
+The file will have its original line endings in your working directory.
+warning: LF will be replaced by CRLF in ASSIGNMENTS/m6mid1/ADS-2Week-1/testcases/input003.txt.
+The file will have its original line endings in your working directory.
+warning: LF will be replaced by CRLF in ASSIGNMENTS/m6mid1/ADS-2Week-1/testcases/input004.txt.
+The file will have its original line endings in your working directory.
+warning: LF will be replaced by CRLF in ASSIGNMENTS/m6mid1/ADS-2Week-1/testcases/input005.txt.
+The file will have its original line endings in your working directory.
+warning: LF will be replaced by CRLF in ASSIGNMENTS/m6mid1/ADS-2Week-1/testcases/input006.txt.
+The file will have its original line endings in your working directory.
+warning: LF will be replaced by CRLF in ASSIGNMENTS/m6mid1/ADS-2Week-1/testcases/input007.txt.
+The file will have its original line endings in your working directory.
+warning: LF will be replaced by CRLF in ASSIGNMENTS/m6mid1/ADS-2Week-1/testcases/input008.txt.
+The file will have its original line endings in your working directory.
+warning: LF will be replaced by CRLF in ASSIGNMENTS/m6mid1/ADS-2Week-1/testcases/input009.txt.
+The file will have its original line endings in your working directory.
+warning: LF will be replaced by CRLF in ASSIGNMENTS/m6mid1/ADS-2Week-1/testcases/input010.txt.
+The file will have its original line endings in your working directory.
+warning: LF will be replaced by CRLF in ASSIGNMENTS/m6mid1/ADS-2Week-1/testcases/input011.txt.
+The file will have its original line endings in your working directory.
+warning: LF will be replaced by CRLF in ASSIGNMENTS/m6mid1/ADS-2Week-1/testcases/output000.txt.
+The file will have its original line endings in your working directory.
+warning: LF will be replaced by CRLF in ASSIGNMENTS/m6mid1/ADS-2Week-1/testcases/output001.txt.
+The file will have its original line endings in your working directory.
+warning: LF will be replaced by CRLF in ASSIGNMENTS/m6mid1/ADS-2Week-1/testcases/output002.txt.
+The file will have its original line endings in your working directory.
+warning: LF will be replaced by CRLF in ASSIGNMENTS/m6mid1/ADS-2Week-1/testcases/output003.txt.
+The file will have its original line endings in your working directory.
+warning: LF will be replaced by CRLF in ASSIGNMENTS/m6mid1/ADS-2Week-1/testcases/output004.txt.
+The file will have its original line endings in your working directory.
+warning: LF will be replaced by CRLF in ASSIGNMENTS/m6mid1/ADS-2Week-1/testcases/output005.txt.
+The file will have its original line endings in your working directory.
+warning: LF will be replaced by CRLF in ASSIGNMENTS/m6mid1/ADS-2Week-1/testcases/output006.txt.
+The file will have its original line endings in your working directory.
+warning: LF will be replaced by CRLF in ASSIGNMENTS/m6mid1/ADS-2Week-1/testcases/output007.txt.
+The file will have its original line endings in your working directory.
+warning: LF will be replaced by CRLF in ASSIGNMENTS/m6mid1/ADS-2Week-1/testcases/output008.txt.
+The file will have its original line endings in your working directory.
+warning: LF will be replaced by CRLF in ASSIGNMENTS/m6mid1/ADS-2Week-1/testcases/output009.txt.
+The file will have its original line endings in your working directory.
+warning: LF will be replaced by CRLF in ASSIGNMENTS/m6mid1/ADS-2Week-1/testcases/output010.txt.
+The file will have its original line endings in your working directory.
+warning: LF will be replaced by CRLF in ASSIGNMENTS/m6mid1/ADS-2Week-1/testcases/output011.txt.
+The file will have its original line endings in your working directory.
+[master c83828e] "ads2_m6_a1_1: 0/12 testcases passed. Cannot run hidden testcases as Server is unreachablecheck_style score: 0/1 "
+ 72 files changed, 2825 insertions(+)
+ create mode 100644 ASSIGNMENTS/m6mid1/ADS-2Week-1/Bag$1.class
+ create mode 100644 ASSIGNMENTS/m6mid1/ADS-2Week-1/Bag$ListIterator.class
+ create mode 100644 ASSIGNMENTS/m6mid1/ADS-2Week-1/Bag$Node.class
+ create mode 100644 ASSIGNMENTS/m6mid1/ADS-2Week-1/Bag.class
+ create mode 100644 ASSIGNMENTS/m6mid1/ADS-2Week-1/Bag.java
+ create mode 100644 ASSIGNMENTS/m6mid1/ADS-2Week-1/Digraph.class
+ create mode 100644 ASSIGNMENTS/m6mid1/ADS-2Week-1/Digraph.java
+ create mode 100644 ASSIGNMENTS/m6mid1/ADS-2Week-1/In.java
+ create mode 100644 ASSIGNMENTS/m6mid1/ADS-2Week-1/PageRank.class
+ create mode 100644 ASSIGNMENTS/m6mid1/ADS-2Week-1/Queue.java
+ create mode 100644 ASSIGNMENTS/m6mid1/ADS-2Week-1/ReadMe.pdf
+ create mode 100644 ASSIGNMENTS/m6mid1/ADS-2Week-1/Solution.class
+ create mode 100644 ASSIGNMENTS/m6mid1/ADS-2Week-1/Solution.java
+ create mode 100644 ASSIGNMENTS/m6mid1/ADS-2Week-1/Stack.java
+ create mode 100644 ASSIGNMENTS/m6mid1/ADS-2Week-1/StdIn.java
+ create mode 100644 ASSIGNMENTS/m6mid1/ADS-2Week-1/WebContent.txt
+ create mode 100644 ASSIGNMENTS/m6mid1/ADS-2Week-1/WebSearch.class
+ create mode 100644 ASSIGNMENTS/m6mid1/ADS-2Week-1/check_style_errors.txt
+ create mode 100644 ASSIGNMENTS/m6mid1/ADS-2Week-1/git_output.txt
+ create mode 100644 ASSIGNMENTS/m6mid1/ADS-2Week-1/md5/input000.txt
+ create mode 100644 ASSIGNMENTS/m6mid1/ADS-2Week-1/md5/input001.txt
+ create mode 100644 ASSIGNMENTS/m6mid1/ADS-2Week-1/md5/input002.txt
+ create mode 100644 ASSIGNMENTS/m6mid1/ADS-2Week-1/md5/input003.txt
+ create mode 100644 ASSIGNMENTS/m6mid1/ADS-2Week-1/md5/input004.txt
+ create mode 100644 ASSIGNMENTS/m6mid1/ADS-2Week-1/md5/input005.txt
+ create mode 100644 ASSIGNMENTS/m6mid1/ADS-2Week-1/md5/input006.txt
+ create mode 100644 ASSIGNMENTS/m6mid1/ADS-2Week-1/md5/input007.txt
+ create mode 100644 ASSIGNMENTS/m6mid1/ADS-2Week-1/md5/input008.txt
+ create mode 100644 ASSIGNMENTS/m6mid1/ADS-2Week-1/md5/input009.txt
+ create mode 100644 ASSIGNMENTS/m6mid1/ADS-2Week-1/md5/input010.txt
+ create mode 100644 ASSIGNMENTS/m6mid1/ADS-2Week-1/md5/input011.txt
+ create mode 100644 ASSIGNMENTS/m6mid1/ADS-2Week-1/md5/output000.txt
+ create mode 100644 ASSIGNMENTS/m6mid1/ADS-2Week-1/md5/output001.txt
+ create mode 100644 ASSIGNMENTS/m6mid1/ADS-2Week-1/md5/output002.txt
+ create mode 100644 ASSIGNMENTS/m6mid1/ADS-2Week-1/md5/output003.txt
+ create mode 100644 ASSIGNMENTS/m6mid1/ADS-2Week-1/md5/output004.txt
+ create mode 100644 ASSIGNMENTS/m6mid1/ADS-2Week-1/md5/output005.txt
+ create mode 100644 ASSIGNMENTS/m6mid1/ADS-2Week-1/md5/output006.txt
+ create mode 100644 ASSIGNMENTS/m6mid1/ADS-2Week-1/md5/output007.txt
+ create mode 100644 ASSIGNMENTS/m6mid1/ADS-2Week-1/md5/output008.txt
+ create mode 100644 ASSIGNMENTS/m6mid1/ADS-2Week-1/md5/output009.txt
+ create mode 100644 ASSIGNMENTS/m6mid1/ADS-2Week-1/md5/output010.txt
+ create mode 100644 ASSIGNMENTS/m6mid1/ADS-2Week-1/md5/output011.txt
+ create mode 100644 ASSIGNMENTS/m6mid1/ADS-2Week-1/md5/problem_id.txt
+ create mode 100644 ASSIGNMENTS/m6mid1/ADS-2Week-1/md5/score.txt
+ create mode 100644 ASSIGNMENTS/m6mid1/ADS-2Week-1/result/score.json
+ create mode 100644 ASSIGNMENTS/m6mid1/ADS-2Week-1/testcases/input000.txt
+ create mode 100644 ASSIGNMENTS/m6mid1/ADS-2Week-1/testcases/input001.txt
+ create mode 100644 ASSIGNMENTS/m6mid1/ADS-2Week-1/testcases/input002.txt
+ create mode 100644 ASSIGNMENTS/m6mid1/ADS-2Week-1/testcases/input003.txt
+ create mode 100644 ASSIGNMENTS/m6mid1/ADS-2Week-1/testcases/input004.txt
+ create mode 100644 ASSIGNMENTS/m6mid1/ADS-2Week-1/testcases/input005.txt
+ create mode 100644 ASSIGNMENTS/m6mid1/ADS-2Week-1/testcases/input006.txt
+ create mode 100644 ASSIGNMENTS/m6mid1/ADS-2Week-1/testcases/input007.txt
+ create mode 100644 ASSIGNMENTS/m6mid1/ADS-2Week-1/testcases/input008.txt
+ create mode 100644 ASSIGNMENTS/m6mid1/ADS-2Week-1/testcases/input009.txt
+ create mode 100644 ASSIGNMENTS/m6mid1/ADS-2Week-1/testcases/input010.txt
+ create mode 100644 ASSIGNMENTS/m6mid1/ADS-2Week-1/testcases/input011.txt
+ create mode 100644 ASSIGNMENTS/m6mid1/ADS-2Week-1/testcases/output000.txt
+ create mode 100644 ASSIGNMENTS/m6mid1/ADS-2Week-1/testcases/output001.txt
+ create mode 100644 ASSIGNMENTS/m6mid1/ADS-2Week-1/testcases/output002.txt
+ create mode 100644 ASSIGNMENTS/m6mid1/ADS-2Week-1/testcases/output003.txt
+ create mode 100644 ASSIGNMENTS/m6mid1/ADS-2Week-1/testcases/output004.txt
+ create mode 100644 ASSIGNMENTS/m6mid1/ADS-2Week-1/testcases/output005.txt
+ create mode 100644 ASSIGNMENTS/m6mid1/ADS-2Week-1/testcases/output006.txt
+ create mode 100644 ASSIGNMENTS/m6mid1/ADS-2Week-1/testcases/output007.txt
+ create mode 100644 ASSIGNMENTS/m6mid1/ADS-2Week-1/testcases/output008.txt
+ create mode 100644 ASSIGNMENTS/m6mid1/ADS-2Week-1/testcases/output009.txt
+ create mode 100644 ASSIGNMENTS/m6mid1/ADS-2Week-1/testcases/output010.txt
+ create mode 100644 ASSIGNMENTS/m6mid1/ADS-2Week-1/testcases/output011.txt
+ create mode 100644 ASSIGNMENTS/m6mid1/ADS-2Week-1/testcases/problem_id.txt
+ create mode 100644 ASSIGNMENTS/m6mid1/ADS-2Week-1/testcases_output.txt
+Branch 'master' set up to track remote branch 'master' from 'origin'.
+To https://github.com/tshiva12/20186078_ADS-2.git
+   12f4eb8..c83828e  master -> master
