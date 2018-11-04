@@ -1,14 +1,42 @@
 import java.util.Scanner;
 class PageRank {
 	private Digraph digraph;
+	private Digraph revdigraph;
+	private double[] pageranks;
+	private double vertices;
 	PageRank(Digraph dig) {
 		this.digraph = dig;
+		pageranks = new double[dig.vertices()];
 	}
 	public double getPR(int v) {
-		return 0;
+		// the reverse digraph is used to find the incoming nodes in the graph.
+		revdigraph = digraph.reverse();
+		vertices = revdigraph.vertices();
+		// initially
+		for (int i = 0; i < pageranks.length; i++) {
+			pageranks[i] = 1 / vertices;
+		}
+		// iterate through 1000 times.
+		for (int i = 1; i < 1000; i++) {
+			// iterate through for every node
+			for (int j = 0; j < digraph.vertices(); j++) {
+				double d = 0.0;
+				// adjacent vertices
+				for (int k : revdigraph.adj(j)) {
+					d += pageranks[k] / (double) digraph.outdegree(k);
+				}
+				pageranks[j] = d;
+			}
+		}
+		return pageranks[v];
 	}
 	public String toString() {
-		return null;
+		double d2 = getPR(0);
+		String str = "";
+		for (int i = 0; i < pageranks.length; i++) {
+			str += i + " - " + pageranks[i] + "\n";
+		}
+		return str;
 	}
 
 }
@@ -28,9 +56,15 @@ public class Solution {
 		int vertices = Integer.parseInt(scan.nextLine());
 		Digraph digraph = new Digraph(vertices);
 		for (int i = 0; i < vertices; i++) {
-			
+			String[] strarray = scan.nextLine().split(" ");
+			for (int j = 1; j < strarray.length; j++) {
+				digraph.addEdge(Integer.parseInt(strarray[0]),
+				 Integer.parseInt(strarray[j]));
+			}
 		}
+		System.out.println(digraph.toString());
 		PageRank pr = new PageRank(digraph);
+		System.out.println(pr);
 		// iterate count of vertices times 
 		// to read the adjacency list from std input
 		// and build the graph
