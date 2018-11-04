@@ -150,26 +150,18 @@ Starting audit...
 Audit done.
 Starting audit...
 [ERROR] G:\MSIT\1-1\20186078_ADS-2\ASSIGNMENTS\m6mid1\ADS-2Week-1\Solution.java:0: File does not end with a newline. [NewlineAtEndOfFile]
-[ERROR] G:\MSIT\1-1\20186078_ADS-2\ASSIGNMENTS\m6mid1\ADS-2Week-1\Solution.java:6:1: File contains tab characters (this is the first instance). [FileTabCharacter]
-[ERROR] G:\MSIT\1-1\20186078_ADS-2\ASSIGNMENTS\m6mid1\ADS-2Week-1\Solution.java:27:18: Parameter dig should be final. [FinalParameters]
-[ERROR] G:\MSIT\1-1\20186078_ADS-2\ASSIGNMENTS\m6mid1\ADS-2Week-1\Solution.java:38:29: Parameter v should be final. [FinalParameters]
-[ERROR] G:\MSIT\1-1\20186078_ADS-2\ASSIGNMENTS\m6mid1\ADS-2Week-1\Solution.java:39: Line is longer than 80 characters (found 87). [LineLength]
-[ERROR] G:\MSIT\1-1\20186078_ADS-2\ASSIGNMENTS\m6mid1\ADS-2Week-1\Solution.java:47:37: '1000' is a magic number. [MagicNumber]
-[ERROR] G:\MSIT\1-1\20186078_ADS-2\ASSIGNMENTS\m6mid1\ADS-2Week-1\Solution.java:53: Line is longer than 80 characters (found 94). [LineLength]
-[ERROR] G:\MSIT\1-1\20186078_ADS-2\ASSIGNMENTS\m6mid1\ADS-2Week-1\Solution.java:97: Line is longer than 80 characters (found 81). [LineLength]
+[ERROR] G:\MSIT\1-1\20186078_ADS-2\ASSIGNMENTS\m6mid1\ADS-2Week-1\Solution.java:47:29: '1000' is a magic number. [MagicNumber]
 [ERROR] G:\MSIT\1-1\20186078_ADS-2\ASSIGNMENTS\m6mid1\ADS-2Week-1\Solution.java:111: Line has trailing spaces. [RegexpSingleline]
 [ERROR] G:\MSIT\1-1\20186078_ADS-2\ASSIGNMENTS\m6mid1\ADS-2Week-1\Solution.java:114: Line has trailing spaces. [RegexpSingleline]
 [ERROR] G:\MSIT\1-1\20186078_ADS-2\ASSIGNMENTS\m6mid1\ADS-2Week-1\Solution.java:115: Line has trailing spaces. [RegexpSingleline]
-[ERROR] G:\MSIT\1-1\20186078_ADS-2\ASSIGNMENTS\m6mid1\ADS-2Week-1\Solution.java:116: Line is longer than 80 characters (found 87). [LineLength]
 [ERROR] G:\MSIT\1-1\20186078_ADS-2\ASSIGNMENTS\m6mid1\ADS-2Week-1\Solution.java:117: Line has trailing spaces. [RegexpSingleline]
 [ERROR] G:\MSIT\1-1\20186078_ADS-2\ASSIGNMENTS\m6mid1\ADS-2Week-1\Solution.java:119: Line has trailing spaces. [RegexpSingleline]
 [ERROR] G:\MSIT\1-1\20186078_ADS-2\ASSIGNMENTS\m6mid1\ADS-2Week-1\Solution.java:121: Line has trailing spaces. [RegexpSingleline]
 [ERROR] G:\MSIT\1-1\20186078_ADS-2\ASSIGNMENTS\m6mid1\ADS-2Week-1\Solution.java:124: Line has trailing spaces. [RegexpSingleline]
-[ERROR] G:\MSIT\1-1\20186078_ADS-2\ASSIGNMENTS\m6mid1\ADS-2Week-1\Solution.java:126: Line is longer than 80 characters (found 85). [LineLength]
 [ERROR] G:\MSIT\1-1\20186078_ADS-2\ASSIGNMENTS\m6mid1\ADS-2Week-1\Solution.java:127: Line has trailing spaces. [RegexpSingleline]
 [ERROR] G:\MSIT\1-1\20186078_ADS-2\ASSIGNMENTS\m6mid1\ADS-2Week-1\Solution.java:132: Line has trailing spaces. [RegexpSingleline]
 Audit done.
-Checkstyle ends with 19 errors.
+Checkstyle ends with 11 errors.
 Starting audit...
 Audit done.
 Starting audit...
