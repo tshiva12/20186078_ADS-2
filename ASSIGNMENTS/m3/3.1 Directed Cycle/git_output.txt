@@ -1,7 +1,0 @@
-[master 1a5112b] "ads2_m3_a1_1: 8/8 testcases passed. Cannot run hidden testcases as Server is unreachablecheck_style score: 1/1 "
- 4 files changed, 20 insertions(+), 18 deletions(-)
- rewrite ASSIGNMENTS/m3/3.1 Directed Cycle/check_style_errors.txt (74%)
- rewrite ASSIGNMENTS/m3/3.1 Directed Cycle/result/score.json (80%)
-Branch 'master' set up to track remote branch 'master' from 'origin'.
-To https://github.com/tshiva12/20186078_ADS-2.git
-   8d033a0..1a5112b  master -> master
