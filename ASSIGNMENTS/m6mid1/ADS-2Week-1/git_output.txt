@@ -1,0 +1,11 @@
+[master 661134f] "ads2_m6_a1_1: 3/12 testcases passed. Cannot run hidden testcases as Server is unreachablecheck_style score: 0/1 "
+ 1 file changed, 1 insertion(+), 1 deletion(-)
+ rewrite ASSIGNMENTS/m6mid1/ADS-2Week-1/result/score.json (86%)
+To https://github.com/tshiva12/20186078_ADS-2.git
+ ! [rejected]        master -> master (fetch first)
+error: failed to push some refs to 'https://github.com/tshiva12/20186078_ADS-2.git'
+hint: Updates were rejected because the remote contains work that you do
+hint: not have locally. This is usually caused by another repository pushing
+hint: to the same ref. You may want to first integrate the remote changes
+hint: (e.g., 'git pull ...') before pushing again.
+hint: See the 'Note about fast-forwards' in 'git push --help' for details.
