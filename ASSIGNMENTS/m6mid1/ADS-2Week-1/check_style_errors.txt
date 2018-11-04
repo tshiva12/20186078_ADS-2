@@ -150,18 +150,8 @@ Starting audit...
 Audit done.
 Starting audit...
 [ERROR] G:\MSIT\1-1\20186078_ADS-2\ASSIGNMENTS\m6mid1\ADS-2Week-1\Solution.java:0: File does not end with a newline. [NewlineAtEndOfFile]
-[ERROR] G:\MSIT\1-1\20186078_ADS-2\ASSIGNMENTS\m6mid1\ADS-2Week-1\Solution.java:47:29: '1000' is a magic number. [MagicNumber]
-[ERROR] G:\MSIT\1-1\20186078_ADS-2\ASSIGNMENTS\m6mid1\ADS-2Week-1\Solution.java:111: Line has trailing spaces. [RegexpSingleline]
-[ERROR] G:\MSIT\1-1\20186078_ADS-2\ASSIGNMENTS\m6mid1\ADS-2Week-1\Solution.java:114: Line has trailing spaces. [RegexpSingleline]
-[ERROR] G:\MSIT\1-1\20186078_ADS-2\ASSIGNMENTS\m6mid1\ADS-2Week-1\Solution.java:115: Line has trailing spaces. [RegexpSingleline]
-[ERROR] G:\MSIT\1-1\20186078_ADS-2\ASSIGNMENTS\m6mid1\ADS-2Week-1\Solution.java:117: Line has trailing spaces. [RegexpSingleline]
-[ERROR] G:\MSIT\1-1\20186078_ADS-2\ASSIGNMENTS\m6mid1\ADS-2Week-1\Solution.java:119: Line has trailing spaces. [RegexpSingleline]
-[ERROR] G:\MSIT\1-1\20186078_ADS-2\ASSIGNMENTS\m6mid1\ADS-2Week-1\Solution.java:121: Line has trailing spaces. [RegexpSingleline]
-[ERROR] G:\MSIT\1-1\20186078_ADS-2\ASSIGNMENTS\m6mid1\ADS-2Week-1\Solution.java:124: Line has trailing spaces. [RegexpSingleline]
-[ERROR] G:\MSIT\1-1\20186078_ADS-2\ASSIGNMENTS\m6mid1\ADS-2Week-1\Solution.java:127: Line has trailing spaces. [RegexpSingleline]
-[ERROR] G:\MSIT\1-1\20186078_ADS-2\ASSIGNMENTS\m6mid1\ADS-2Week-1\Solution.java:132: Line has trailing spaces. [RegexpSingleline]
 Audit done.
-Checkstyle ends with 11 errors.
+Checkstyle ends with 1 errors.
 Starting audit...
 Audit done.
 Starting audit...

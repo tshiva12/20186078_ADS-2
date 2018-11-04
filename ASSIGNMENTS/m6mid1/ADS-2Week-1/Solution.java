@@ -43,8 +43,12 @@ class PageRank {
         for (int i = 0; i < pageranks.length; i++) {
             pageranks[i] = 1.0 / digraph.vertices();
         }
+        /**
+         * Integer variable.
+         */
+        final int thousand = 1000;
         // iterate through 1000 times.
-        for (int i = 1; i < 1000; i++) {
+        for (int i = 1; i < thousand; i++) {
             // iterate through for every node
             for (int j = 0; j < digraph.vertices(); j++) {
                 double d = 0.0;
@@ -108,27 +112,19 @@ public final class Solution {
         System.out.println(digraph.toString());
         PageRank pr = new PageRank(digraph);
         System.out.println(pr);
-        // iterate count of vertices times 
+        // iterate count of vertices times
         // to read the adjacency list from std input
         // and build the graph
-        
-        
         // Create page rank object and pass the graph object to the constructor
-        
         // print the page rank object
-        
         // This part is only for the final test case
-        
         // File path to the web content
         String file = "WebContent.txt";
-        
         // instantiate web search object
         // and pass the page rank object and the file path to the constructor
-        
         // read the search queries from std in
         // remove the q= prefix and extract the search word
         // pass the word to iAmFeelingLucky method of web search
         // print the return value of iAmFeelingLucky
-        
     }
 }
