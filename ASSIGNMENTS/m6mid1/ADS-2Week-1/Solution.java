@@ -1,20 +1,47 @@
 import java.util.Scanner;
+/**
+ * class Solution.
+ */
 class PageRank {
+	/**
+	 * Digraph object.
+	 */
 	private Digraph digraph;
+	/**
+	 * Digraph object.
+	 */
 	private Digraph revdigraph;
+	/**
+	 * double array.
+	 */
 	private double[] pageranks;
+	/**
+	 * double variable.
+	 */
 	private double vertices;
-	PageRank(Digraph dig) {
+	/**
+	 * Constructs the object.
+	 *
+	 * @param      dig   The dig
+	 */
+	PageRank(final Digraph dig) {
 		this.digraph = dig;
 		pageranks = new double[dig.vertices()];
 	}
+	/**
+	 * Gets the pr.
+	 *
+	 * @param      v     Integer variable.
+	 *
+	 * @return     The pr.
+	 */
 	public double getPR(int v) {
 		// the reverse digraph is used to find the incoming nodes in the graph.
 		revdigraph = digraph.reverse();
 		vertices = revdigraph.vertices();
 		// initially
 		for (int i = 0; i < pageranks.length; i++) {
-			pageranks[i] = 1 / vertices;
+			pageranks[i] = 1.0 / digraph.vertices();
 		}
 		// iterate through 1000 times.
 		for (int i = 1; i < 1000; i++) {
@@ -23,13 +50,18 @@ class PageRank {
 				double d = 0.0;
 				// adjacent vertices
 				for (int k : revdigraph.adj(j)) {
-					d += pageranks[k] / (double) digraph.outdegree(k);
+					d += (pageranks[k]) / (double) (digraph.outdegree(k));
 				}
 				pageranks[j] = d;
 			}
 		}
 		return pageranks[v];
 	}
+	/**
+	 * Returns a string representation of the object.
+	 *
+	 * @return     String representation of the object.
+	 */
 	public String toString() {
 		double d2 = getPR(0);
 		String str = "";
@@ -40,17 +72,28 @@ class PageRank {
 	}
 
 }
-
-class WebSearch {
-	private String filename;
-	WebSearch(PageRank pr1, String filename1) {
-		this.filename = filename;
+// class WebSearch {
+// 	private String filename;
+// 	WebSearch(PageRank pr1, String filename1) {
+// 		this.filename = filename;
+// 	}
+// }
+/**
+ * Class for solution.
+ */
+public final class Solution {
+	/**
+	 * Constructs the object.
+	 */
+	private Solution() {
+		// default constructor is not used.
 	}
-}
-
-
-public class Solution {
-	public static void main(String[] args) {
+	/**
+	 * main function.
+	 *
+	 * @param      args  The arguments
+	 */
+	public static void main(final String[] args) {
 		// read the first line of the input to get the number of vertices
 		Scanner scan = new Scanner(System.in);
 		int vertices = Integer.parseInt(scan.nextLine());
