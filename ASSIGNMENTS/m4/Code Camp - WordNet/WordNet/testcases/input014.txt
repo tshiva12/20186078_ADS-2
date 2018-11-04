@@ -1,3 +1,0 @@
-synsets3.txt
-hypernyms3InvalidCycle.txt
-Graph

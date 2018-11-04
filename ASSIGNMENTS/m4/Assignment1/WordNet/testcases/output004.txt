@@ -1,5 +1,0 @@
-distance = 0, ancestor = b
-distance = 0, ancestor = c
-distance = 0, ancestor = d
-distance = 0, ancestor = e
-distance = 0, ancestor = f
