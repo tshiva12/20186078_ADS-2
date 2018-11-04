@@ -1,7 +1,0 @@
-[master 4b7971b] "ads2_m2_a1_1: 24/24 testcases passed. Cannot run hidden testcases as Server is unreachablecheck_style score: 1/1 "
- 4 files changed, 14 insertions(+), 16 deletions(-)
- rewrite ASSIGNMENTS/m2/Assignment1/2.1 CC_Percolation/check_style_errors.txt (80%)
- rewrite ASSIGNMENTS/m2/Assignment1/2.1 CC_Percolation/result/score.json (92%)
-Branch 'master' set up to track remote branch 'master' from 'origin'.
-To https://github.com/tshiva12/20186078_ADS-2.git
-   f082265..4b7971b  master -> master
