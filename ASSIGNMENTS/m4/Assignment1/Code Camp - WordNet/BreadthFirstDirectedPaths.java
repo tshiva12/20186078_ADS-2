@@ -10,7 +10,7 @@ public class BreadthFirstDirectedPaths {
      * @param s the source vertex
      * @throws IllegalArgumentException unless {@code 0 <= v < V}
      */
-    BreadthFirstDirectedPaths(Digraph G, int s) {
+    public BreadthFirstDirectedPaths(Digraph G, int s) {
         marked = new boolean[G.vertices()];
         distTo = new int[G.vertices()];
         edgeTo = new int[G.vertices()];
