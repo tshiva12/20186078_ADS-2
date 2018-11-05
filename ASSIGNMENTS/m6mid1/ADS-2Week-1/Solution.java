@@ -60,7 +60,7 @@ class PageRank {
         final int thousand = 1000;
         double[] tempArray = new double[digraph.vertices()];
         // iterate through 1000 times.
-        for (int i = 1; i < thousand; i++) {
+        for (int i = 0; i < thousand; i++) {
             // iterate through for every node find page rank.
             for (int j = 0; j < digraph.vertices(); j++) {
                 double d = 0.0;
