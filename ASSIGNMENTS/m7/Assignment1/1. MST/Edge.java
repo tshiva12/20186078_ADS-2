@@ -3,15 +3,15 @@
  */
 public class Edge implements Comparable<Edge> {
     /**
-     * { var_description }.
+     * Integer variable..
      */
     private final int v;
     /**
-     * { var_description }.
+     * Integer variable.
      */
     private final int w;
     /**
-     * { var_description }.
+     * double variable.
      */
     private final double weight;
 

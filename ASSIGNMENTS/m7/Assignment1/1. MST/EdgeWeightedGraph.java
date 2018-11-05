@@ -3,19 +3,19 @@
  */
 public class EdgeWeightedGraph {
     /**
-     * { var_description }.
+     * Integer variable.
      */
     private static final String NEWLINE = System.getProperty("line.separator");
     /**
-     * { var_description }.
+     * Integer variable.
      */
     private final int vertices;
     /**
-     * { var_description }.
+     * Integer variable.
      */
     private int edges;
     /**
-     * { var_description }.
+     * Bag.
      */
     private Bag<Edge>[] adj;
     /**
