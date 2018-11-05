@@ -1,4 +1,5 @@
-import java.util.*;
+import java.util.Scanner;
+import java.util.Arrays;
 /**
  * class Solution.
  */
@@ -39,7 +40,7 @@ class PageRank {
         // the reverse digraph is used to find the incoming nodes in the graph.
         //vertices = revdigraph.vertices();
         // if there is no edge connect to all other nodes.
-        for (int i = 0; i < digraph.vertices();i++) {
+        for (int i = 0; i < digraph.vertices(); i++) {
             if (digraph.outdegree(i) == 0) {
                 for (int j = 0; j < digraph.vertices(); j++) {
                     if (i != j) {
