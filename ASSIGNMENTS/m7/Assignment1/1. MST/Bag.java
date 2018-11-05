@@ -7,68 +7,53 @@ import java.util.NoSuchElementException;
  */
 public class Bag<Item> implements Iterable<Item> {
     /**
-     * n.
+     * Number of elements in bag.
      */
-    private int n;         // number of elements in bag
+    private int n;
     /**
-     * first.
+     * Node variable.
      */
-    private Node first;    // beginning of bag
-    // helper linked list class
+    private Node first;
     /**
-     * Node.
+     * Class for node.
      */
     private class Node {
         /**
-         * { var_description }.
+         * variable to store the item value.
          */
         private Item item;
         /**
-         * { var_description }.
+         * Node variable.
          */
         private Node next;
     }
-
-   /**
-     * Create an empty stack.
-     */
     /**
-     * Constructs the object.
-     */
+    * Create an empty stack.
+    */
     public Bag() {
         first = null;
         n = 0;
     }
 
-   /**
-     * Is the BAG empty?
-     */
     /**
-     * Determines if empty.
+     * Is the BAG empty?
      *
      * @return     True if empty, False otherwise.
      */
     public boolean isEmpty() {
         return first == null;
     }
-
-   /**
-     * Return the number of items in the bag.
-     */
     /**
-     * size.
+     * Return the number of items in the bag.
      *
-     * @return     { description_of_the_return_value }
+     * @return     size of bag.
      */
     public int size() {
         return n;
     }
-
-   /**
-     * Add the item to the bag.
-     */
     /**
-     * add.
+     * Add the item to the bag.
+     * Time complexity is O(1).
      *
      * @param      item  The item
      */
@@ -79,27 +64,20 @@ public class Bag<Item> implements Iterable<Item> {
         first.next = oldfirst;
         n++;
     }
-
-
-   /**
-     * Return an iterator that iterates over the items in the bag.
-     */
     /**
-     * { function_description }.
+     * Return an iterator that iterates over the items in the bag.
      *
-     * @return     { description_of_the_return_value }
+     * @return     iterator.
      */
     public Iterator<Item> iterator()  {
         return new ListIterator();
     }
-
-    // an iterator, doesn't implement remove() since it's optional.
     /**
      * Class for list iterator.
      */
     private class ListIterator implements Iterator<Item> {
         /**
-         * { var_description }.
+         * Node variable.
          */
         private Node current = first;
         /**
@@ -111,15 +89,15 @@ public class Bag<Item> implements Iterable<Item> {
             return current != null;
         }
         /**
-         * remove.
+         * remove operation.
          */
         public void remove() {
             throw new UnsupportedOperationException();
         }
         /**
-         * next.
+         * next method returns the item.
          *
-         * @return     { description_of_the_return_value }
+         * @return     item in the bag.
          */
         public Item next() {
             if (!hasNext()) {
@@ -131,9 +109,6 @@ public class Bag<Item> implements Iterable<Item> {
         }
     }
 }
-
-
-
 
 
 

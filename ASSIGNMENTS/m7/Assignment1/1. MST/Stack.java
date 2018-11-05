@@ -7,32 +7,26 @@ import java.util.NoSuchElementException;
  */
 public class Stack<Item> implements Iterable<Item> {
     /**
-     * n.
+     * Integer variable.
      */
-    private int n;          // size of the stack
+    private int n;
     /**
-     *first.
+     * Node variable.
      */
-    private Node first;     // top of stack
-
-    // helper linked list class
+    private Node first;
     /**
-     *class.
+     * Class for node.
      */
     private class Node {
         /**
-         * item.
+         * Item.
          */
         private Item item;
         /**
-         * next.
+         * Node variable.
          */
         private Node next;
     }
-
-   /**
-     * Create an empty stack.
-     */
     /**
      * Constructs the object.
      */
@@ -40,10 +34,6 @@ public class Stack<Item> implements Iterable<Item> {
         first = null;
         n = 0;
     }
-
-   /**
-     * Is the stack empty?
-     */
     /**
      * Determines if empty.
      *
@@ -52,24 +42,16 @@ public class Stack<Item> implements Iterable<Item> {
     public boolean isEmpty() {
         return first == null;
     }
-
-   /**
-     * Return the number of items in the stack.
-     */
     /**
      * size.
      *
-     * @return     { description_of_the_return_value }
+     * @return     size.
      */
     public int size() {
         return n;
     }
-
-   /**
-     * Add the item to the stack.
-     */
     /**
-     * push.
+     * Push.
      *
      * @param      item  The item
      */
@@ -80,35 +62,24 @@ public class Stack<Item> implements Iterable<Item> {
         first.next = oldfirst;
         n++;
     }
-
-   /**
-     * Delete and return the item most recently added to the stack.
-     * Throw an exception if no such item exists because the stack is empty.
-     */
     /**
-     * pop.
+     * Pop.
      *
-     * @return     { description_of_the_return_value }
+     * @return     item.
      */
     public Item pop() {
         if (isEmpty()) {
             throw new RuntimeException("Stack underflow");
         }
-        Item item = first.item;        // save item to return
-        first = first.next;            // delete first node
+        Item item = first.item;
+        first = first.next;
         n--;
-        return item;                   // return the saved item
+        return item;
     }
-
-
-   /**
-     * Return the item most recently added to the stack.
-     * Throw an exception if no such item exists because the stack is empty.
-     */
     /**
      * peek.
      *
-     * @return     { description_of_the_return_value }
+     * @return     item.
      */
     public Item peek() {
         if (isEmpty()) {
@@ -116,10 +87,6 @@ public class Stack<Item> implements Iterable<Item> {
         }
         return first.item;
     }
-
-   /**
-     * Return string representation.
-     */
     /**
      * Returns a string representation of the object.
      *
@@ -132,23 +99,20 @@ public class Stack<Item> implements Iterable<Item> {
         }
         return s.toString();
     }
-
-   /**
-     * Return an iterator to the stack that iterates through the items in LIFO
-     * order.
+    /**
+     * Iterator.
      *
-     * @return     { description_of_the_return_value }
+     * @return   list iterator.
      */
     public Iterator<Item> iterator() {
         return new ListIterator();
     }
-    // an iterator, doesn't implement remove() since it's optional
     /**
-     *class.
+     * Class for list iterator.
      */
     private class ListIterator implements Iterator<Item> {
         /**
-         * { var_description }.
+         * Node variable.
          */
         private Node current = first;
         /**
@@ -156,7 +120,7 @@ public class Stack<Item> implements Iterable<Item> {
          *
          * @return     True if has next, False otherwise.
          */
-        public boolean hasNext()  {
+        public boolean hasNext() {
             return current != null;
         }
         /**
@@ -168,7 +132,7 @@ public class Stack<Item> implements Iterable<Item> {
         /**
          * next.
          *
-         * @return     { description_of_the_return_value }
+         * @return     item.
          */
         public Item next() {
             if (!hasNext()) {
@@ -179,23 +143,7 @@ public class Stack<Item> implements Iterable<Item> {
             return item;
         }
     }
-
-
-   /**
-     * A test client.
-     */
-/*    public static void main(String[] args) {
-        Stack<String> s = new Stack<String>();
-        while (!StdIn.isEmpty()) {
-            String item = StdIn.readString();
-            if (!item.equals("-")) s.push(item);
-            else if (!s.isEmpty()) StdOut.print(s.pop() + " ");
-        }
-        StdOut.println("(" + s.size() + " left on stack)");
-    }*/
 }
-
-
 
 
 

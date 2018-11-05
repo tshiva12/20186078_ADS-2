@@ -40,7 +40,7 @@ public class Queue<Item> implements Iterable<Item> {
     }
     /**
      * Is the queue empty?
-     * time complexity - O(1).
+     *
      * @return     True if empty, False otherwise.
      */
     public boolean isEmpty() {
@@ -48,7 +48,7 @@ public class Queue<Item> implements Iterable<Item> {
     }
     /**
      * Return the number of items in the queue.
-     * time complexity - O(1).
+     *
      * @return     number of elements.
      */
     public  int size() {
@@ -57,7 +57,7 @@ public class Queue<Item> implements Iterable<Item> {
     /**
      * Return the item least recently added to the queue. Throw an exception if
      * the queue is empty.
-     * time complexity - O(1).
+     *
      * @return     first item.
      */
     public Item peek() {
@@ -68,7 +68,7 @@ public class Queue<Item> implements Iterable<Item> {
     }
     /**
      * Add the item to the queue.
-     * time complexity - O(1).
+     *
      * @param      item  The item
      */
     public void enqueue(final Item item) {
