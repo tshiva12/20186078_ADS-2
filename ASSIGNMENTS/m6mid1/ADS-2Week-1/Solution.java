@@ -1,4 +1,4 @@
-import java.util.Scanner;
+import java.util.*;
 /**
  * class Solution.
  */
@@ -37,8 +37,18 @@ class PageRank {
      */
     public double getPR(final int v) {
         // the reverse digraph is used to find the incoming nodes in the graph.
+        //vertices = revdigraph.vertices();
+        // if there is no edge connect to all other nodes.
+        for (int i = 0; i < digraph.vertices();i++) {
+            if (digraph.outdegree(i) == 0) {
+                for (int j = 0; j < digraph.vertices(); j++) {
+                    if (i != j) {
+                        digraph.addEdge(i, j);
+                    }
+                }
+            }
+        }
         revdigraph = digraph.reverse();
-        vertices = revdigraph.vertices();
         // initially
         for (int i = 0; i < pageranks.length; i++) {
             pageranks[i] = 1.0 / digraph.vertices();
@@ -47,17 +57,19 @@ class PageRank {
          * Integer variable.
          */
         final int thousand = 1000;
+        double[] tempArray = new double[digraph.vertices()];
         // iterate through 1000 times.
         for (int i = 1; i < thousand; i++) {
-            // iterate through for every node
+            // iterate through for every node find page rank.
             for (int j = 0; j < digraph.vertices(); j++) {
                 double d = 0.0;
-                // adjacent vertices
+                // adjacent vertices and find page rank.
                 for (int k : revdigraph.adj(j)) {
                     d += (pageranks[k]) / (double) (digraph.outdegree(k));
                 }
-                pageranks[j] = d;
+                tempArray[j] = d;
             }
+        pageranks = Arrays.copyOf(tempArray, tempArray.length);
         }
         return pageranks[v];
     }

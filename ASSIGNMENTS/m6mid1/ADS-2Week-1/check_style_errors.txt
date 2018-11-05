@@ -5,6 +5,9 @@ Audit done.
 Starting audit...
 Audit done.
 Starting audit...
+[ERROR] G:\MSIT\1-1\20186078_ADS-2\ASSIGNMENTS\m6mid1\ADS-2Week-1\Solution.java:1: Using the '.*' form of import should be avoided - java.util.*. [AvoidStarImport]
+[ERROR] G:\MSIT\1-1\20186078_ADS-2\ASSIGNMENTS\m6mid1\ADS-2Week-1\Solution.java:42:48: ';' is not followed by whitespace. [WhitespaceAfter]
 Audit done.
+Checkstyle ends with 2 errors.
 Starting audit...
 Audit done.
