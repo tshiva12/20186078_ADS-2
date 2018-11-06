@@ -25,17 +25,19 @@ public class DijkstraUndirectedSP {
         distTo = new double[g.vertices()];
         edgeTo = new Edge[g.vertices()];
         validateVertex(s);
-        for (int v = 0; v < g.vertices(); v++)
+        for (int v = 0; v < g.vertices(); v++) {
             distTo[v] = Double.POSITIVE_INFINITY;
+        }
         distTo[s] = 0.0;
         pq = new IndexMinPQ<Double>(g.vertices());
         pq.insert(s, distTo[s]);
         while (!pq.isEmpty()) {
             int v = pq.delMin();
-            for (Edge e : g.adj(v))
+            for (Edge e : g.adj(v)) {
                 relax(e, v);
+            }
         }
-    }    
+    }
     /**
      * relax.
      *
@@ -134,9 +136,13 @@ public class DijkstraUndirectedSP {
             }
         }
         for (int w = 0; w < g1.vertices(); w++) {
-            if (edgeTo[w] == null) continue;
+            if (edgeTo[w] == null) {
+                continue;
+            }
             Edge e = edgeTo[w];
-            if (w != e.either() && w != e.other(e.either())) return false;
+            if (w != e.either() && w != e.other(e.either())) {
+                return false;
+            }
             int v = e.other(w);
             if (distTo[v] + e.weight() != distTo[w]) {
                 System.err.println("edge " + e + " on shortest path not tight");
@@ -152,7 +158,13 @@ public class DijkstraUndirectedSP {
      */
     private void validateVertex(final int v) {
         int vertices = distTo.length;
-        if (v < 0 || v >= vertices)
-            throw new IllegalArgumentException("vertex " + v + " is not between 0 and " + (vertices - 1));
+        if (v < 0 || v >= vertices) {
+            throw new IllegalArgumentException(
+                "vertex " + v + " is not between 0 and " + (vertices - 1));
+        }
     }
 }
+
+
+
+
