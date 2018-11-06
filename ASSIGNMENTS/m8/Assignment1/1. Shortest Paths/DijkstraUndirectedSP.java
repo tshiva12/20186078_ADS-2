@@ -36,27 +36,25 @@
 
 
 /**
- *  The {@code DijkstraUndirectedSP} class represents a data type for solving
- *  the single-source shortest paths problem in edge-weighted graphs
- *  where the edge weights are nonnegative.
- *  <p>
- *  This implementation uses Dijkstra's algorithm with a binary heap.
- *  The constructor takes time proportional to <em>E</em> log <em>V</em>,
- *  where <em>V</em> is the number of vertices and <em>E</em> is the number of edges.
- *  Afterwards, the {@code distTo()} and {@code hasPathTo()} methods take
- *  constant time and the {@code pathTo()} method takes time proportional to the
- *  number of edges in the shortest path returned.
- *  <p>
- *  For additional documentation,    
- *  see <a href="http://algs4.cs.princeton.edu/44sp">Section 4.4</a> of    
- *  <i>Algorithms, 4th Edition</i> by Robert Sedgewick and Kevin Wayne. 
- *  See {@link DijkstraSP} for a version on edge-weighted digraphs.
+ * The {@code DijkstraUndirectedSP} class represents a data type for solving the
+ * single-source shortest paths problem in edge-weighted graphs where the edge
+ * weights are nonnegative. <p> This implementation uses Dijkstra's algorithm
+ * with a binary heap. The constructor takes time proportional to <em>E</em> log
+ * <em>V</em>, where <em>V</em> is the number of vertices and <em>E</em> is the
+ * number of edges. Afterwards, the {@code distTo()} and {@code hasPathTo()}
+ * methods take constant time and the {@code pathTo()} method takes time
+ * proportional to the number of edges in the shortest path returned. <p> For
+ * additional documentation, see <a
+ * href="http://algs4.cs.princeton.edu/44sp">Section 4.4</a> of <i>Algorithms,
+ * 4th Edition</i> by Robert Sedgewick and Kevin Wayne. See {@link DijkstraSP}
+ * for} a version on edge-weighted digraphs.
  *
- *  @author Robert Sedgewick
- *  @author Kevin Wayne
- *  @author Nate Liu
+ * @author     Robert Sedgewick
+ * @author     Kevin Wayne
+ * @author     Nate Liu
  */
 public class DijkstraUndirectedSP {
+
     private double[] distTo;          // distTo[v] = distance  of shortest s->v path
     private Edge[] edgeTo;            // edgeTo[v] = last edge on shortest s->v path
     private IndexMinPQ<Double> pq;    // priority queue of vertices
@@ -93,7 +91,13 @@ public class DijkstraUndirectedSP {
         assert check(G, s);
     }
 
-    // relax edge e and update pq if changed
+    
+    /**
+     * { function_description }
+     *
+     * @param      e     { parameter_description }
+     * @param      v     { parameter_description }
+     */
     private void relax(Edge e, int v) {
         int w = e.other(v);
         if (distTo[w] > distTo[v] + e.weight()) {
