@@ -21,6 +21,7 @@ public final class Solution {
 				hash.get(str2[0]),
 				 hash.get(str2[1]),
 				  Double.parseDouble(str2[2])));
+		m--;
 		}
 		int i = Integer.parseInt(scan.nextLine());
 		while (i > 0) {
@@ -30,6 +31,7 @@ public final class Solution {
 			if (dij.hasPathTo(hash.get(str3[1]))) {
 				System.out.println((int) dij.distTo(hash.get(str3[1])));
 			}
+		i--;
 		}
 	}
 }
