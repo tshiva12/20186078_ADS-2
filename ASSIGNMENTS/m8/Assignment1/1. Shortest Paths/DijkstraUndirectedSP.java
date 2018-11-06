@@ -120,7 +120,9 @@ public class DijkstraUndirectedSP {
             return false;
         }
         for (int v = 0; v < g1.vertices(); v++) {
-            if (v == s) continue;
+            if (v == s) {
+                continue;
+            }
             if (edgeTo[v] == null && distTo[v] != Double.POSITIVE_INFINITY) {
                 System.err.println("distTo[] and edgeTo[] inconsistent");
                 return false;
