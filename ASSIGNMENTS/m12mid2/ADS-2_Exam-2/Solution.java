@@ -77,12 +77,13 @@ public final class Solution {
              = new DijkstraUndirectedSP(edgeweight, via);
             String path = "";
             if (dij1.hasPathTo(via) && dij2.hasPathTo(dest1)) {
-                for (Edge edge1 : dij1.pathTo(via)) {
+                for (int edge1 : dij1.pathTo(via)) {
                     path += edge1;
                 }
-                for (Edge edge2 : dij2.pathTo(dest1)) {
+                for (int edge2 : dij2.pathTo(dest1)) {
                     path += edge2;    
                 }
+                path += token2[2];
                 System.out.println(dij1.distTo(via) + dij2.distTo(dest1));
                 System.out.println(path);
             } else {
