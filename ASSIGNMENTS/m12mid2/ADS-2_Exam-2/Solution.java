@@ -73,8 +73,13 @@ public final class Solution {
             int dest1 = Integer.parseInt(token2[2]);
             DijkstraUndirectedSP dij1
              = new DijkstraUndirectedSP(edgeweight, src1);
+            String path = "";
             if (dij1.hasPathTo(dest1)) {
+                for (Edge edge1 : dij1.pathTo(dest1)) {
+                    path += edge1;    
+                }
                 System.out.println(dij1.distTo(dest1));
+                System.out.println(path);
             } else {
                 System.out.println("No Path Found.");
             }
