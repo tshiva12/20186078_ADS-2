@@ -3,9 +3,13 @@ Audit done.
 Starting audit...
 Audit done.
 Starting audit...
+Audit done.
+Starting audit...
 [ERROR] G:\MSIT\1-1\20186078_ADS-2\ASSIGNMENTS\m12mid2\ADS-2_Exam-2\EdgeWeightedGraph.java:0: File does not end with a newline. [NewlineAtEndOfFile]
 Audit done.
 Checkstyle ends with 1 errors.
+Starting audit...
+Audit done.
 Starting audit...
 [ERROR] G:\MSIT\1-1\20186078_ADS-2\ASSIGNMENTS\m12mid2\ADS-2_Exam-2\Solution.java:0: File does not end with a newline. [NewlineAtEndOfFile]
 [ERROR] G:\MSIT\1-1\20186078_ADS-2\ASSIGNMENTS\m12mid2\ADS-2_Exam-2\Solution.java:2: Class Solution should be declared as final. [FinalClass]
@@ -15,8 +19,8 @@ Starting audit...
 [ERROR] G:\MSIT\1-1\20186078_ADS-2\ASSIGNMENTS\m12mid2\ADS-2_Exam-2\Solution.java:6:9: Missing a Javadoc comment. [JavadocMethod]
 [ERROR] G:\MSIT\1-1\20186078_ADS-2\ASSIGNMENTS\m12mid2\ADS-2_Exam-2\Solution.java:6:33: Parameter args should be final. [FinalParameters]
 [ERROR] G:\MSIT\1-1\20186078_ADS-2\ASSIGNMENTS\m12mid2\ADS-2_Exam-2\Solution.java:34: Line is longer than 80 characters (found 90). [LineLength]
-[ERROR] G:\MSIT\1-1\20186078_ADS-2\ASSIGNMENTS\m12mid2\ADS-2_Exam-2\Solution.java:41: Line is longer than 80 characters (found 87). [LineLength]
-[ERROR] G:\MSIT\1-1\20186078_ADS-2\ASSIGNMENTS\m12mid2\ADS-2_Exam-2\Solution.java:42: Line is longer than 80 characters (found 110). [LineLength]
+[ERROR] G:\MSIT\1-1\20186078_ADS-2\ASSIGNMENTS\m12mid2\ADS-2_Exam-2\Solution.java:50: Line is longer than 80 characters (found 87). [LineLength]
+[ERROR] G:\MSIT\1-1\20186078_ADS-2\ASSIGNMENTS\m12mid2\ADS-2_Exam-2\Solution.java:51: Line is longer than 80 characters (found 110). [LineLength]
 Audit done.
 Checkstyle ends with 10 errors.
 Starting audit...

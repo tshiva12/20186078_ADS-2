@@ -35,8 +35,17 @@ public class Solution {
 			// First is the source and second is the destination.
 			// If the path exists print the distance between them.
 			// Other wise print "No Path Found."
+			String[] token1 = scan.nextLine().split(" ");
+			int src = Integer.parseInt(token1[0]);
+			int dest = Integer.parseInt(token1[1]);
+			DijkstraUndirectedSP dij
+			 = new DijkstraUndirectedSP(edgeweight, src);
+			if (dij.hasPathTo(dest)) {
+				System.out.println(dij.distTo(dest));
+			} else {
+				System.out.println("No Path Found.");
+			}
 			break;
-
 		case "ViaPaths":
 			// Handle the case of ViaPaths, where three integers are given.
 			// First is the source and second is the via is the one where path should pass throuh.
