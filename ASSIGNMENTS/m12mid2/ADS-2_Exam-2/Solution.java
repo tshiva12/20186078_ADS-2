@@ -81,7 +81,7 @@ public final class Solution {
                     path += edge1 + " ";
                 }
                 for (int edge2 : dij2.pathTo(dest1)) {
-                    path += edge2 + " ";    
+                    path += edge2 + " ";
                 }
                 path += token2[2];
                 System.out.println(dij1.distTo(via)
