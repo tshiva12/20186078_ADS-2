@@ -43,11 +43,10 @@ public final class Picture implements ActionListener {
      */
     private final int width, height;
     /**
-     * Creates a picture, with columns and rows,
-     *  where each pixel is black.
+     * Creates a picture, with columns and rows, where each pixel is black.
      *
-     * @param      width   the width of the picture
-     * @param      height  the height of the picture
+     * @param      width1   the width of the picture
+     * @param      height1  the height of the picture
      */
     public Picture(final int width1, final int height1) {
         this.width  = width1;
@@ -78,7 +77,7 @@ public final class Picture implements ActionListener {
     /**
      * Creates a picture by reading an image from a file or URL.
      *
-     * @param      filename  the name of the file (.png, .gif, or .jpg) or URL.
+     * @param      filename1  the name of the file (.png, .gif, or .jpg) or URL.
      * @throws     IllegalArgumentException  if cannot read image
      * @throws     IllegalArgumentException  if {@code filename} is {@code null}
      */
@@ -207,7 +206,7 @@ public final class Picture implements ActionListener {
         return width;
     }
     /**
-     * validateRowIndex
+     * validateRowIndex.
      *
      * @param      row   The row
      */

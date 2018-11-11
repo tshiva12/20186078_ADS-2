@@ -205,16 +205,21 @@ public final class StdOut {
     /**
      * Prints a formatted string to standard output, using the specified format
      * string and arguments, and then flushes standard output.
-     * @param args   the arguments accompanying the format string
+     *
+     * @param      format  The format
+     * @param      args    the arguments accompanying the format string
      */
     public static void printf(final String format, final Object... args) {
         out.printf(LOCALE, format, args);
         out.flush();
     }
     /**
-     * Prints a formatted string to standard output, using the locale and
-     * the specified format string and arguments; then flushes standard output.
-     * @param args   the arguments accompanying the format string
+     * Prints a formatted string to standard output, using the locale and the
+     * specified format string and arguments; then flushes standard output.
+     *
+     * @param      locale  The locale
+     * @param      format  The format
+     * @param      args    the arguments accompanying the format string
      */
     public static void printf(final Locale locale,
      final String format, final Object... args) {

@@ -1,14 +1,7 @@
 Starting audit...
 [ERROR] G:\MSIT\1-1\20186078_ADS-2\ASSIGNMENTS\m10\Seam Carving\Picture.java:0: File does not end with a newline. [NewlineAtEndOfFile]
-[ERROR] G:\MSIT\1-1\20186078_ADS-2\ASSIGNMENTS\m10\Seam Carving\Picture.java:49:8: Unused @param tag for 'width'. [JavadocMethod]
-[ERROR] G:\MSIT\1-1\20186078_ADS-2\ASSIGNMENTS\m10\Seam Carving\Picture.java:50:8: Unused @param tag for 'height'. [JavadocMethod]
-[ERROR] G:\MSIT\1-1\20186078_ADS-2\ASSIGNMENTS\m10\Seam Carving\Picture.java:52:30: Expected @param tag for 'width1'. [JavadocMethod]
-[ERROR] G:\MSIT\1-1\20186078_ADS-2\ASSIGNMENTS\m10\Seam Carving\Picture.java:52:48: Expected @param tag for 'height1'. [JavadocMethod]
-[ERROR] G:\MSIT\1-1\20186078_ADS-2\ASSIGNMENTS\m10\Seam Carving\Picture.java:81:8: Unused @param tag for 'filename'. [JavadocMethod]
-[ERROR] G:\MSIT\1-1\20186078_ADS-2\ASSIGNMENTS\m10\Seam Carving\Picture.java:85:33: Expected @param tag for 'filename1'. [JavadocMethod]
-[ERROR] G:\MSIT\1-1\20186078_ADS-2\ASSIGNMENTS\m10\Seam Carving\Picture.java:209: First sentence should end with a period. [JavadocStyle]
 Audit done.
-Checkstyle ends with 8 errors.
+Checkstyle ends with 1 errors.
 Starting audit...
 [ERROR] G:\MSIT\1-1\20186078_ADS-2\ASSIGNMENTS\m10\Seam Carving\SeamCarver.java:0: File does not end with a newline. [NewlineAtEndOfFile]
 Audit done.
@@ -19,8 +12,5 @@ Audit done.
 Checkstyle ends with 1 errors.
 Starting audit...
 [ERROR] G:\MSIT\1-1\20186078_ADS-2\ASSIGNMENTS\m10\Seam Carving\StdOut.java:0: File does not end with a newline. [NewlineAtEndOfFile]
-[ERROR] G:\MSIT\1-1\20186078_ADS-2\ASSIGNMENTS\m10\Seam Carving\StdOut.java:210:44: Expected @param tag for 'format'. [JavadocMethod]
-[ERROR] G:\MSIT\1-1\20186078_ADS-2\ASSIGNMENTS\m10\Seam Carving\StdOut.java:219:44: Expected @param tag for 'locale'. [JavadocMethod]
-[ERROR] G:\MSIT\1-1\20186078_ADS-2\ASSIGNMENTS\m10\Seam Carving\StdOut.java:220:19: Expected @param tag for 'format'. [JavadocMethod]
 Audit done.
-Checkstyle ends with 4 errors.
+Checkstyle ends with 1 errors.
