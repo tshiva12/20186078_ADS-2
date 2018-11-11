@@ -1,54 +1,103 @@
 import java.awt.Color;
+/**
+ * Class for seam carver.
+ */
 public class SeamCarver {
-	private Picture picture;
-	// create a seam carver object based on the given picture
-	public SeamCarver(Picture picture1) {
-		if (picture1 == null) {
-			throw new IllegalArgumentException("picture is null");
-		}
-		this.picture = picture1;
-	}
-	// current picture
-	public Picture picture() {
-		return picture;
-	}
-	// width of current picture
-	public int width() {
-		return picture.width();
-	}
-
-	// height of current picture
-	public int height() {
-		return picture.height();
-	}
-
-	// energy of pixel at column x and row y
-	public double energy(int x, int y) {
-		if (x == 0 || y == 0 || picture.width() - 1 == x || picture.height() - 1 == y) {
-			return 1000;
-		}
-		double energy = Math.sqrt(Horizontal(x, y) + Vertical(x, y));
-		return energy;
-	}
-	private double Horizontal(int x, int y) {
-		Color left = picture.get(x - 1, y);
-		Color right = picture.get(x + 1, y);
-		int red = right.getRed() - left.getRed();
-		int green = right.getGreen() - left.getGreen();
-		int blue = right.getBlue() - left.getBlue();
-		int horizontal = (red * red) + (green * green) + (blue * blue);
-		return horizontal;
-	}
-	private double Vertical(int x, int y) {
-		Color top = picture.get(x, y - 1);
-		Color bottom = picture.get(x, y + 1);
-		int redV = top.getRed() - bottom.getRed();
-		int greenV = top.getGreen() - bottom.getGreen();
-		int blueV = top.getBlue() - bottom.getBlue();
-		int vertical = (redV * redV) + (greenV * greenV) + (blueV * blueV);
-		return vertical;
-	}
-	private double[][] initEnergies() {
+    /**
+     * Picture object.
+     */
+    private Picture picture; 
+    /**
+     * Constructs the object.
+     * create a seam carver object based on the given picture.
+     *
+     * @param      picture1  The picture 1
+     */
+    public SeamCarver(Picture picture1) {
+        if (picture1 == null) {
+            throw new IllegalArgumentException("picture is null");
+        }
+        this.picture = picture1;
+    }
+    /**
+     * current picture.
+     *
+     * @return     picture.
+     */
+    public Picture picture() {
+        return picture;
+    }
+    /**
+     * width of current picture.
+     *
+     * @return     picture width.
+     */
+    public int width() {
+        return picture.width();
+    }
+    /**
+     * height of current picture.
+     *
+     * @return     picture height.
+     */
+    public int height() {
+        return picture.height();
+    }
+    /**
+     * energy of pixel at column x and row y.
+     *
+     * @param      x     Integer variable.
+     * @param      y     Integer variable.
+     *
+     * @return     energy
+     */
+    public double energy(final int x, final int y) {
+        if (x == 0 || y == 0 || picture.width() - 1 == x || picture.height() - 1 == y) {
+            return 1000;
+        }
+        double energy = Math.sqrt(Horizontal(x, y) + Vertical(x, y));
+        return energy;
+    }
+    /**
+     * Horizonatl value.
+     *
+     * @param      x     Integer variable.
+     * @param      y     Integer variable.
+     *
+     * @return     horizontal.
+     */
+    private double Horizontal(final int x, final int y) {
+        Color left = picture.get(x - 1, y);
+        Color right = picture.get(x + 1, y);
+        int red = right.getRed() - left.getRed();
+        int green = right.getGreen() - left.getGreen();
+        int blue = right.getBlue() - left.getBlue();
+        int horizontal = (red * red) + (green * green) + (blue * blue);
+        return horizontal;
+    }
+    /**
+     * Vertical value.
+     *
+     * @param      x     Integer variable.
+     * @param      y     Integer variable.
+     *
+     * @return     vertical.
+     */
+    private double Vertical(final int x, final int y) {
+        Color top = picture.get(x, y - 1);
+        Color bottom = picture.get(x, y + 1);
+        int redV = top.getRed() - bottom.getRed();
+        int greenV = top.getGreen() - bottom.getGreen();
+        int blueV = top.getBlue() - bottom.getBlue();
+        int vertical = (redV * redV) + (greenV * greenV) + (blueV * blueV);
+        return vertical;
+    }
+    /**
+     * InitEnergies.
+     *
+     * @return     energies.
+     */
+    private double[][] initEnergies() {
         double[][] energies = new double[height()][width()];
         for (int i = 0; i < height(); i++) {
             for (int j = 0; j < width(); j++) {
@@ -57,8 +106,12 @@ public class SeamCarver {
         }
         return energies;
     }
-    // pass through an array and mark the shorthest distance from top to entry
-    private void topologicalSort(double[][] energies) {
+    /**
+     * pass through an array and mark the shorthest distance from top to entry.
+     *
+     * @param      energies  The energies
+     */
+    private void topologicalSort(final double[][] energies) {
         int h = energies.length, w = energies[0].length;
         for (int row = 1; row < h; row++) {
             for (int col = 0; col < w; col++) {
@@ -73,13 +126,20 @@ public class SeamCarver {
                 if (col != (w - 1)) {
                     min = Math.min(min, energies[row - 1][col + 1]);
                 } else {
-                	min = min;
+                    min = min;
                 }
                 energies[row][col] += min;
             }
         }
     }
-    private double[][] transposeGrid(double[][] energies) {
+    /**
+     * Tranpose of the image or matrix.
+     *
+     * @param      energies  The energies
+     *
+     * @return     transpose energies.
+     */
+    private double[][] transposeGrid(final double[][] energies) {
         int h = energies.length, w = energies[0].length;
         double[][] trEnergies = new double[w][h];
         for (int row = 0; row < h; row++) {
@@ -89,7 +149,14 @@ public class SeamCarver {
         }
         return trEnergies;
     }
-    private int[] minVerticalPath(double[][] energies) {
+    /**
+     * minimum Vertical path.
+     *
+     * @param      energies  The energies
+     *
+     * @return     path.
+     */
+    private int[] minVerticalPath(final double[][] energies) {
         int h = energies.length, w = energies[0].length;
         int[] path = new int[h];
         topologicalSort(energies);
@@ -112,20 +179,32 @@ public class SeamCarver {
         }
         return path;
     }
-	// sequence of indices for horizontal seam
-	public int[] findHorizontalSeam() {
-		double[][] transposeEnergies = transposeGrid(initEnergies());
-		return minVerticalPath(transposeEnergies);
-	}
-
-	// sequence of indices for vertical seam
-	public int[] findVerticalSeam() {
-		double[][] normalEnergies = initEnergies();
-		return minVerticalPath(normalEnergies);
-	}
-	// remove horizontal seam from current picture
-	public void removeHorizontalSeam(int[] seam) {
-		if (height() <= 1 || !isValid(seam, width(), height() - 1))
+    /**
+     * sequence of indices for horizontal seam.
+     *
+     * @return     minimum Vertical path.
+     */
+    public int[] findHorizontalSeam() {
+        double[][] transposeEnergies = transposeGrid(initEnergies());
+        return minVerticalPath(transposeEnergies);
+    }
+    /**
+     * sequence of indices for vertical seam.
+     *
+     * @return     minimum vertical path.
+     */
+    public int[] findVerticalSeam() {
+        double[][] normalEnergies = initEnergies();
+        return minVerticalPath(normalEnergies);
+    }
+    /**
+     * Removes a horizontal seam.
+     * remove horizontal seam from current picture.
+     *
+     * @param      seam  The seam
+     */
+    public void removeHorizontalSeam(final int[] seam) {
+        if (height() <= 1 || !isValid(seam, width(), height() - 1))
             throw new IllegalArgumentException("IllegalArgumentException");
         Picture pic = new Picture(width(), height() - 1);
         for (int w = 0; w < width(); w++) {
@@ -139,10 +218,15 @@ public class SeamCarver {
 
         }
         this.picture = pic;
-	}
-	// remove vertical seam from current picture
-	public void removeVerticalSeam(int[] seam) {
-		if (width() <= 1 || !isValid(seam, height(), width()))
+    }
+    /**
+     * Removes a vertical seam.
+     * remove vertical seam from current picture.
+     *
+     * @param      seam  The seam
+     */
+    public void removeVerticalSeam(final int[] seam) {
+        if (width() <= 1 || !isValid(seam, height(), width()))
             throw new IllegalArgumentException("IllegalArgumentException");
         Picture pic = new Picture(width() - 1, height());
         for (int h = 0; h < height(); h++) {
@@ -157,9 +241,18 @@ public class SeamCarver {
 
         }
         this.picture = pic;
-	}
-	// return false if two consecutive entries differ by more than 1
-    private boolean isValid(int[] a, int len, int range) {
+    }
+    /**
+     * Determines if valid.
+     * return false if two consecutive entries differ by more than 1
+     *
+     * @param      a      Integer variable.
+     * @param      len    The length
+     * @param      range  The range
+     *
+     * @return     True if valid, False otherwise.
+     */
+    private boolean isValid(final int[] a, final int len, final int range) {
         if (a == null) {
             return false;
         }
