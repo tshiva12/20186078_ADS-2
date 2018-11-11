@@ -1,29 +1,14 @@
 Starting audit...
 [ERROR] G:\MSIT\1-1\20186078_ADS-2\ASSIGNMENTS\m10\Seam Carving\Picture.java:0: File does not end with a newline. [NewlineAtEndOfFile]
-[ERROR] G:\MSIT\1-1\20186078_ADS-2\ASSIGNMENTS\m10\Seam Carving\Picture.java:18:8: Unused import - javax.swing.JPanel. [UnusedImports]
-[ERROR] G:\MSIT\1-1\20186078_ADS-2\ASSIGNMENTS\m10\Seam Carving\Picture.java:53:30: 'width' hides a field. [HiddenField]
-[ERROR] G:\MSIT\1-1\20186078_ADS-2\ASSIGNMENTS\m10\Seam Carving\Picture.java:53:47: 'height' hides a field. [HiddenField]
-[ERROR] G:\MSIT\1-1\20186078_ADS-2\ASSIGNMENTS\m10\Seam Carving\Picture.java:57: Line is longer than 80 characters (found 84). [LineLength]
-[ERROR] G:\MSIT\1-1\20186078_ADS-2\ASSIGNMENTS\m10\Seam Carving\Picture.java:87:33: 'filename' hides a field. [HiddenField]
-[ERROR] G:\MSIT\1-1\20186078_ADS-2\ASSIGNMENTS\m10\Seam Carving\Picture.java:128:9: '}' at column 9 should be on the same line as the next part of a multi-block statement (one that directly contains multiple blocks: if/else-if/else, do/while or try/catch/finally). [RightCurly]
-[ERROR] G:\MSIT\1-1\20186078_ADS-2\ASSIGNMENTS\m10\Seam Carving\Picture.java:130: Line is longer than 80 characters (found 84). [LineLength]
-[ERROR] G:\MSIT\1-1\20186078_ADS-2\ASSIGNMENTS\m10\Seam Carving\Picture.java:176: Line has trailing spaces. [RegexpSingleline]
-[ERROR] G:\MSIT\1-1\20186078_ADS-2\ASSIGNMENTS\m10\Seam Carving\Picture.java:176: Line is longer than 80 characters (found 105). [LineLength]
-[ERROR] G:\MSIT\1-1\20186078_ADS-2\ASSIGNMENTS\m10\Seam Carving\Picture.java:212:5: Missing a Javadoc comment. [JavadocMethod]
-[ERROR] G:\MSIT\1-1\20186078_ADS-2\ASSIGNMENTS\m10\Seam Carving\Picture.java:215: Line is longer than 80 characters (found 82). [LineLength]
-[ERROR] G:\MSIT\1-1\20186078_ADS-2\ASSIGNMENTS\m10\Seam Carving\Picture.java:218:5: Missing a Javadoc comment. [JavadocMethod]
-[ERROR] G:\MSIT\1-1\20186078_ADS-2\ASSIGNMENTS\m10\Seam Carving\Picture.java:221: Line is longer than 80 characters (found 84). [LineLength]
-[ERROR] G:\MSIT\1-1\20186078_ADS-2\ASSIGNMENTS\m10\Seam Carving\Picture.java:231: Line is longer than 80 characters (found 85). [LineLength]
-[ERROR] G:\MSIT\1-1\20186078_ADS-2\ASSIGNMENTS\m10\Seam Carving\Picture.java:243: Line is longer than 80 characters (found 82). [LineLength]
-[ERROR] G:\MSIT\1-1\20186078_ADS-2\ASSIGNMENTS\m10\Seam Carving\Picture.java:248: Line is longer than 80 characters (found 90). [LineLength]
-[ERROR] G:\MSIT\1-1\20186078_ADS-2\ASSIGNMENTS\m10\Seam Carving\Picture.java:249: Line is longer than 80 characters (found 106). [LineLength]
-[ERROR] G:\MSIT\1-1\20186078_ADS-2\ASSIGNMENTS\m10\Seam Carving\Picture.java:267: Line is longer than 80 characters (found 106). [LineLength]
-[ERROR] G:\MSIT\1-1\20186078_ADS-2\ASSIGNMENTS\m10\Seam Carving\Picture.java:286: Line is longer than 80 characters (found 106). [LineLength]
-[ERROR] G:\MSIT\1-1\20186078_ADS-2\ASSIGNMENTS\m10\Seam Carving\Picture.java:302: Line is longer than 80 characters (found 82). [LineLength]
-[ERROR] G:\MSIT\1-1\20186078_ADS-2\ASSIGNMENTS\m10\Seam Carving\Picture.java:334: Line is longer than 80 characters (found 82). [LineLength]
-[ERROR] G:\MSIT\1-1\20186078_ADS-2\ASSIGNMENTS\m10\Seam Carving\Picture.java:393: 'if' construct must use '{}'s. [NeedBraces]
+[ERROR] G:\MSIT\1-1\20186078_ADS-2\ASSIGNMENTS\m10\Seam Carving\Picture.java:49:8: Unused @param tag for 'width'. [JavadocMethod]
+[ERROR] G:\MSIT\1-1\20186078_ADS-2\ASSIGNMENTS\m10\Seam Carving\Picture.java:50:8: Unused @param tag for 'height'. [JavadocMethod]
+[ERROR] G:\MSIT\1-1\20186078_ADS-2\ASSIGNMENTS\m10\Seam Carving\Picture.java:52:30: Expected @param tag for 'width1'. [JavadocMethod]
+[ERROR] G:\MSIT\1-1\20186078_ADS-2\ASSIGNMENTS\m10\Seam Carving\Picture.java:52:48: Expected @param tag for 'height1'. [JavadocMethod]
+[ERROR] G:\MSIT\1-1\20186078_ADS-2\ASSIGNMENTS\m10\Seam Carving\Picture.java:81:8: Unused @param tag for 'filename'. [JavadocMethod]
+[ERROR] G:\MSIT\1-1\20186078_ADS-2\ASSIGNMENTS\m10\Seam Carving\Picture.java:85:33: Expected @param tag for 'filename1'. [JavadocMethod]
+[ERROR] G:\MSIT\1-1\20186078_ADS-2\ASSIGNMENTS\m10\Seam Carving\Picture.java:209: First sentence should end with a period. [JavadocStyle]
 Audit done.
-Checkstyle ends with 23 errors.
+Checkstyle ends with 8 errors.
 Starting audit...
 [ERROR] G:\MSIT\1-1\20186078_ADS-2\ASSIGNMENTS\m10\Seam Carving\SeamCarver.java:0: File does not end with a newline. [NewlineAtEndOfFile]
 Audit done.
@@ -34,17 +19,8 @@ Audit done.
 Checkstyle ends with 1 errors.
 Starting audit...
 [ERROR] G:\MSIT\1-1\20186078_ADS-2\ASSIGNMENTS\m10\Seam Carving\StdOut.java:0: File does not end with a newline. [NewlineAtEndOfFile]
-[ERROR] G:\MSIT\1-1\20186078_ADS-2\ASSIGNMENTS\m10\Seam Carving\StdOut.java:26: Line is longer than 80 characters (found 90). [LineLength]
-[ERROR] G:\MSIT\1-1\20186078_ADS-2\ASSIGNMENTS\m10\Seam Carving\StdOut.java:27:9: '}' at column 9 should be on the same line as the next part of a multi-block statement (one that directly contains multiple blocks: if/else-if/else, do/while or try/catch/finally). [RightCurly]
-[ERROR] G:\MSIT\1-1\20186078_ADS-2\ASSIGNMENTS\m10\Seam Carving\StdOut.java:134: Line has trailing spaces. [RegexpSingleline]
-[ERROR] G:\MSIT\1-1\20186078_ADS-2\ASSIGNMENTS\m10\Seam Carving\StdOut.java:143: Line has trailing spaces. [RegexpSingleline]
-[ERROR] G:\MSIT\1-1\20186078_ADS-2\ASSIGNMENTS\m10\Seam Carving\StdOut.java:152: Line has trailing spaces. [RegexpSingleline]
-[ERROR] G:\MSIT\1-1\20186078_ADS-2\ASSIGNMENTS\m10\Seam Carving\StdOut.java:161: Line has trailing spaces. [RegexpSingleline]
-[ERROR] G:\MSIT\1-1\20186078_ADS-2\ASSIGNMENTS\m10\Seam Carving\StdOut.java:170: Line has trailing spaces. [RegexpSingleline]
-[ERROR] G:\MSIT\1-1\20186078_ADS-2\ASSIGNMENTS\m10\Seam Carving\StdOut.java:179: Line has trailing spaces. [RegexpSingleline]
-[ERROR] G:\MSIT\1-1\20186078_ADS-2\ASSIGNMENTS\m10\Seam Carving\StdOut.java:188: Line has trailing spaces. [RegexpSingleline]
-[ERROR] G:\MSIT\1-1\20186078_ADS-2\ASSIGNMENTS\m10\Seam Carving\StdOut.java:197: Line has trailing spaces. [RegexpSingleline]
-[ERROR] G:\MSIT\1-1\20186078_ADS-2\ASSIGNMENTS\m10\Seam Carving\StdOut.java:218: Line is longer than 80 characters (found 127). [LineLength]
-[ERROR] G:\MSIT\1-1\20186078_ADS-2\ASSIGNMENTS\m10\Seam Carving\StdOut.java:230: Line is longer than 80 characters (found 127). [LineLength]
+[ERROR] G:\MSIT\1-1\20186078_ADS-2\ASSIGNMENTS\m10\Seam Carving\StdOut.java:210:44: Expected @param tag for 'format'. [JavadocMethod]
+[ERROR] G:\MSIT\1-1\20186078_ADS-2\ASSIGNMENTS\m10\Seam Carving\StdOut.java:219:44: Expected @param tag for 'locale'. [JavadocMethod]
+[ERROR] G:\MSIT\1-1\20186078_ADS-2\ASSIGNMENTS\m10\Seam Carving\StdOut.java:220:19: Expected @param tag for 'format'. [JavadocMethod]
 Audit done.
-Checkstyle ends with 13 errors.
+Checkstyle ends with 4 errors.

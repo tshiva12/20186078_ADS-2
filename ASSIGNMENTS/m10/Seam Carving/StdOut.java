@@ -23,9 +23,9 @@ public final class StdOut {
      */
     static {
         try {
-            out = new PrintWriter(new OutputStreamWriter(System.out, CHARSET_NAME), true);
-        }
-        catch (UnsupportedEncodingException e) {
+            out = new PrintWriter(
+                new OutputStreamWriter(System.out, CHARSET_NAME), true);
+        } catch (UnsupportedEncodingException e) {
             System.out.println(e);
         }
     }
@@ -131,7 +131,6 @@ public final class StdOut {
     }
     /**
      * Prints an object to standard output and flushes standard output.
-     * 
      * @param x the object to print
      */
     public static void print(final Object x) {
@@ -140,7 +139,6 @@ public final class StdOut {
     }
     /**
      * Prints a boolean to standard output and flushes standard output.
-     * 
      * @param x the boolean to print
      */
     public static void print(final boolean x) {
@@ -149,7 +147,6 @@ public final class StdOut {
     }
     /**
      * Prints a character to standard output and flushes standard output.
-     * 
      * @param x the character to print
      */
     public static void print(final char x) {
@@ -158,7 +155,6 @@ public final class StdOut {
     }
     /**
      * Prints a double to standard output and flushes standard output.
-     * 
      * @param x the double to print
      */
     public static void print(final double x) {
@@ -167,7 +163,6 @@ public final class StdOut {
     }
     /**
      * Prints a float to standard output and flushes standard output.
-     * 
      * @param x the float to print
      */
     public static void print(final float x) {
@@ -176,7 +171,6 @@ public final class StdOut {
     }
     /**
      * Prints an integer to standard output and flushes standard output.
-     * 
      * @param x the integer to print
      */
     public static void print(final int x) {
@@ -185,7 +179,6 @@ public final class StdOut {
     }
     /**
      * Prints a long integer to standard output and flushes standard output.
-     * 
      * @param x the long integer to print
      */
     public static void print(final long x) {
@@ -194,7 +187,6 @@ public final class StdOut {
     }
     /**
      * Prints a short integer to standard output and flushes standard output.
-     * 
      * @param x the short integer to print
      */
     public static void print(final short x) {
@@ -213,9 +205,6 @@ public final class StdOut {
     /**
      * Prints a formatted string to standard output, using the specified format
      * string and arguments, and then flushes standard output.
-     *
-     *
-     * @param format the <a href = "http://docs.oracle.com/javase/7/docs/api/java/util/Formatter.html#syntax">format string</a>
      * @param args   the arguments accompanying the format string
      */
     public static void printf(final String format, final Object... args) {
@@ -225,9 +214,6 @@ public final class StdOut {
     /**
      * Prints a formatted string to standard output, using the locale and
      * the specified format string and arguments; then flushes standard output.
-     *
-     * @param locale the locale
-     * @param format the <a href = "http://docs.oracle.com/javase/7/docs/api/java/util/Formatter.html#syntax">format string</a>
      * @param args   the arguments accompanying the format string
      */
     public static void printf(final Locale locale,
