@@ -233,27 +233,15 @@ Audit done.
 Checkstyle ends with 13 errors.
 Starting audit...
 [ERROR] G:\MSIT\1-1\20186078_ADS-2\ASSIGNMENTS\m10\Seam Carving\Solution.java:0: File does not end with a newline. [NewlineAtEndOfFile]
-[ERROR] G:\MSIT\1-1\20186078_ADS-2\ASSIGNMENTS\m10\Seam Carving\Solution.java:3: Missing a Javadoc comment. [JavadocType]
-[ERROR] G:\MSIT\1-1\20186078_ADS-2\ASSIGNMENTS\m10\Seam Carving\Solution.java:3:1: Utility classes should not have a public or default constructor. [HideUtilityClassConstructor]
-[ERROR] G:\MSIT\1-1\20186078_ADS-2\ASSIGNMENTS\m10\Seam Carving\Solution.java:5:5: Missing a Javadoc comment. [JavadocMethod]
-[ERROR] G:\MSIT\1-1\20186078_ADS-2\ASSIGNMENTS\m10\Seam Carving\Solution.java:5:38: Parameter fileName should be final. [FinalParameters]
-[ERROR] G:\MSIT\1-1\20186078_ADS-2\ASSIGNMENTS\m10\Seam Carving\Solution.java:7: Line is longer than 80 characters (found 105). [LineLength]
-[ERROR] G:\MSIT\1-1\20186078_ADS-2\ASSIGNMENTS\m10\Seam Carving\Solution.java:11: 'for' construct must use '{}'s. [NeedBraces]
-[ERROR] G:\MSIT\1-1\20186078_ADS-2\ASSIGNMENTS\m10\Seam Carving\Solution.java:16: Line is longer than 80 characters (found 84). [LineLength]
-[ERROR] G:\MSIT\1-1\20186078_ADS-2\ASSIGNMENTS\m10\Seam Carving\Solution.java:16:5: Missing a Javadoc comment. [JavadocMethod]
-[ERROR] G:\MSIT\1-1\20186078_ADS-2\ASSIGNMENTS\m10\Seam Carving\Solution.java:16:34: Parameter carver should be final. [FinalParameters]
-[ERROR] G:\MSIT\1-1\20186078_ADS-2\ASSIGNMENTS\m10\Seam Carving\Solution.java:16:53: Parameter seam should be final. [FinalParameters]
-[ERROR] G:\MSIT\1-1\20186078_ADS-2\ASSIGNMENTS\m10\Seam Carving\Solution.java:16:65: Parameter direction should be final. [FinalParameters]
-[ERROR] G:\MSIT\1-1\20186078_ADS-2\ASSIGNMENTS\m10\Seam Carving\Solution.java:22:32: Expression can be simplified. [SimplifyBooleanExpression]
-[ERROR] G:\MSIT\1-1\20186078_ADS-2\ASSIGNMENTS\m10\Seam Carving\Solution.java:22:61: '||' should be on a new line. [OperatorWrap]
-[ERROR] G:\MSIT\1-1\20186078_ADS-2\ASSIGNMENTS\m10\Seam Carving\Solution.java:23:36: Expression can be simplified. [SimplifyBooleanExpression]
-[ERROR] G:\MSIT\1-1\20186078_ADS-2\ASSIGNMENTS\m10\Seam Carving\Solution.java:37:5: Missing a Javadoc comment. [JavadocMethod]
-[ERROR] G:\MSIT\1-1\20186078_ADS-2\ASSIGNMENTS\m10\Seam Carving\Solution.java:37:29: Parameter args should be final. [FinalParameters]
-[ERROR] G:\MSIT\1-1\20186078_ADS-2\ASSIGNMENTS\m10\Seam Carving\Solution.java:70: Line is longer than 80 characters (found 87). [LineLength]
-[ERROR] G:\MSIT\1-1\20186078_ADS-2\ASSIGNMENTS\m10\Seam Carving\Solution.java:78: Line is longer than 80 characters (found 89). [LineLength]
-[ERROR] G:\MSIT\1-1\20186078_ADS-2\ASSIGNMENTS\m10\Seam Carving\Solution.java:96: Line is longer than 80 characters (found 85). [LineLength]
+[ERROR] G:\MSIT\1-1\20186078_ADS-2\ASSIGNMENTS\m10\Seam Carving\Solution.java:25: 'for' construct must use '{}'s. [NeedBraces]
+[ERROR] G:\MSIT\1-1\20186078_ADS-2\ASSIGNMENTS\m10\Seam Carving\Solution.java:44:32: Expression can be simplified. [SimplifyBooleanExpression]
+[ERROR] G:\MSIT\1-1\20186078_ADS-2\ASSIGNMENTS\m10\Seam Carving\Solution.java:44:61: '||' should be on a new line. [OperatorWrap]
+[ERROR] G:\MSIT\1-1\20186078_ADS-2\ASSIGNMENTS\m10\Seam Carving\Solution.java:45:36: Expression can be simplified. [SimplifyBooleanExpression]
+[ERROR] G:\MSIT\1-1\20186078_ADS-2\ASSIGNMENTS\m10\Seam Carving\Solution.java:96: Line is longer than 80 characters (found 87). [LineLength]
+[ERROR] G:\MSIT\1-1\20186078_ADS-2\ASSIGNMENTS\m10\Seam Carving\Solution.java:104: Line is longer than 80 characters (found 89). [LineLength]
+[ERROR] G:\MSIT\1-1\20186078_ADS-2\ASSIGNMENTS\m10\Seam Carving\Solution.java:122: Line is longer than 80 characters (found 85). [LineLength]
 Audit done.
-Checkstyle ends with 20 errors.
+Checkstyle ends with 8 errors.
 Starting audit...
 [ERROR] G:\MSIT\1-1\20186078_ADS-2\ASSIGNMENTS\m10\Seam Carving\StdOut.java:0: File does not end with a newline. [NewlineAtEndOfFile]
 [ERROR] G:\MSIT\1-1\20186078_ADS-2\ASSIGNMENTS\m10\Seam Carving\StdOut.java:16: Line is longer than 80 characters (found 84). [LineLength]
