@@ -6,14 +6,14 @@ public class SeamCarver {
     /**
      * Picture object.
      */
-    private Picture picture; 
+    private Picture picture;
     /**
      * Constructs the object.
      * create a seam carver object based on the given picture.
      *
      * @param      picture1  The picture 1
      */
-    public SeamCarver(Picture picture1) {
+    public SeamCarver(final Picture picture1) {
         if (picture1 == null) {
             throw new IllegalArgumentException("picture is null");
         }
@@ -52,10 +52,12 @@ public class SeamCarver {
      * @return     energy
      */
     public double energy(final int x, final int y) {
-        if (x == 0 || y == 0 || picture.width() - 1 == x || picture.height() - 1 == y) {
-            return 1000;
+        final int thousand = 1000;
+        if (x == 0 || y == 0 || picture.width() - 1 == x
+         || picture.height() - 1 == y) {
+            return thousand;
         }
-        double energy = Math.sqrt(Horizontal(x, y) + Vertical(x, y));
+        double energy = Math.sqrt(horizontal(x, y) + vertical(x, y));
         return energy;
     }
     /**
@@ -66,7 +68,7 @@ public class SeamCarver {
      *
      * @return     horizontal.
      */
-    private double Horizontal(final int x, final int y) {
+    private double horizontal(final int x, final int y) {
         Color left = picture.get(x - 1, y);
         Color right = picture.get(x + 1, y);
         int red = right.getRed() - left.getRed();
@@ -83,7 +85,7 @@ public class SeamCarver {
      *
      * @return     vertical.
      */
-    private double Vertical(final int x, final int y) {
+    private double vertical(final int x, final int y) {
         Color top = picture.get(x, y - 1);
         Color bottom = picture.get(x, y + 1);
         int redV = top.getRed() - bottom.getRed();
@@ -163,8 +165,9 @@ public class SeamCarver {
         // find the lowest element in last row
         path[h - 1] = 0;
         for (int i = 0; i < w; i++) {
-            if (energies[h - 1][i] < energies[h - 1][path[h - 1]])
+            if (energies[h - 1][i] < energies[h - 1][path[h - 1]]) {
                 path[h - 1] = i;
+            }
         }
         // trace path back to first row
         // assuming we need the cheapest upper neighboring entry
@@ -172,10 +175,14 @@ public class SeamCarver {
             int col = path[row + 1];
             // three neighboring, priority to center
             path[row] = col;
-            if (col > 0 && energies[row][col - 1] < energies[row][path[row]])
+            if (col > 0 && energies[row][col - 1]
+             < energies[row][path[row]]) {
                 path[row] = col - 1;
-            if (col < (w - 2) && energies[row][col + 1] < energies[row][path[row]])
+            }
+            if (col < (w - 2) && energies[row][col + 1]
+             < energies[row][path[row]]) {
                 path[row] = col + 1;
+            }
         }
         return path;
     }
@@ -204,8 +211,9 @@ public class SeamCarver {
      * @param      seam  The seam
      */
     public void removeHorizontalSeam(final int[] seam) {
-        if (height() <= 1 || !isValid(seam, width(), height() - 1))
+        if (height() <= 1 || !isValid(seam, width(), height() - 1)) {
             throw new IllegalArgumentException("IllegalArgumentException");
+        }
         Picture pic = new Picture(width(), height() - 1);
         for (int w = 0; w < width(); w++) {
             for (int h = 0; h < seam[w]; h++) {
@@ -226,15 +234,14 @@ public class SeamCarver {
      * @param      seam  The seam
      */
     public void removeVerticalSeam(final int[] seam) {
-        if (width() <= 1 || !isValid(seam, height(), width()))
+        if (width() <= 1 || !isValid(seam, height(), width())) {
             throw new IllegalArgumentException("IllegalArgumentException");
+        }
         Picture pic = new Picture(width() - 1, height());
         for (int h = 0; h < height(); h++) {
             for (int w = 0; w < seam[h]; w++) {
                 pic.set(w, h, this.picture.get(w, h));
             }
-                
-
             for (int w = seam[h] + 1; w < width(); w++) {
                 pic.set(w - 1, h, this.picture.get(w, h));
             }
@@ -260,8 +267,10 @@ public class SeamCarver {
             return false;
         }
         for (int i = 1; i < len; i++) {
-            if (a[i] < Math.max(0, a[i - 1] - 1) || a[i] > Math.min(range, a[i - 1] + 1))
+            if (a[i] < Math.max(0, a[i - 1] - 1)
+             || a[i] > Math.min(range, a[i - 1] + 1)) {
                 return false;
+            }
         }
         return true;
     }
