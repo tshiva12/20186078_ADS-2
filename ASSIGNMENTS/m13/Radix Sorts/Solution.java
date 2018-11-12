@@ -1,4 +1,5 @@
 import java.util.Scanner;
+import java.util.Arrays;
 class LSD {
     private static final int BITS_PER_BYTE = 8;
 
@@ -51,5 +52,6 @@ public final class Solution {
 		}
 		LSD lsd = new LSD();
 		lsd.sort(str1, str1[0].length());
+		System.out.println(Arrays.toString(str1));
 	}
 }
