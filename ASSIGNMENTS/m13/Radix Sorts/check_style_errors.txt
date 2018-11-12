@@ -1,10 +1,2 @@
 Starting audit...
-[ERROR] G:\MSIT\1-1\20186078_ADS-2\ASSIGNMENTS\m13\Radix Sorts\Solution.java:0: File does not end with a newline. [NewlineAtEndOfFile]
-[ERROR] G:\MSIT\1-1\20186078_ADS-2\ASSIGNMENTS\m13\Radix Sorts\Solution.java:7: First sentence should end with a period. [JavadocStyle]
-[ERROR] G:\MSIT\1-1\20186078_ADS-2\ASSIGNMENTS\m13\Radix Sorts\Solution.java:7:1: File contains tab characters (this is the first instance). [FileTabCharacter]
-[ERROR] G:\MSIT\1-1\20186078_ADS-2\ASSIGNMENTS\m13\Radix Sorts\Solution.java:15: Line has trailing spaces. [RegexpSingleline]
-[ERROR] G:\MSIT\1-1\20186078_ADS-2\ASSIGNMENTS\m13\Radix Sorts\Solution.java:21:29: Parameter a should be final. [FinalParameters]
-[ERROR] G:\MSIT\1-1\20186078_ADS-2\ASSIGNMENTS\m13\Radix Sorts\Solution.java:21:41: Parameter w should be final. [FinalParameters]
-[ERROR] G:\MSIT\1-1\20186078_ADS-2\ASSIGNMENTS\m13\Radix Sorts\Solution.java:23:17: '256' is a magic number. [MagicNumber]
 Audit done.
-Checkstyle ends with 7 errors.
