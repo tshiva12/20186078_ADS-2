@@ -5,13 +5,6 @@ Starting audit...
 [ERROR] G:\MSIT\1-1\20186078_ADS-2\ASSIGNMENTS\m13\Radix Sorts\Solution.java:15: Line has trailing spaces. [RegexpSingleline]
 [ERROR] G:\MSIT\1-1\20186078_ADS-2\ASSIGNMENTS\m13\Radix Sorts\Solution.java:21:29: Parameter a should be final. [FinalParameters]
 [ERROR] G:\MSIT\1-1\20186078_ADS-2\ASSIGNMENTS\m13\Radix Sorts\Solution.java:21:41: Parameter w should be final. [FinalParameters]
-[ERROR] G:\MSIT\1-1\20186078_ADS-2\ASSIGNMENTS\m13\Radix Sorts\Solution.java:23:13: Name 'R' must match pattern '^[a-z][a-zA-Z0-9]*$'. [LocalVariableName]
 [ERROR] G:\MSIT\1-1\20186078_ADS-2\ASSIGNMENTS\m13\Radix Sorts\Solution.java:23:17: '256' is a magic number. [MagicNumber]
-[ERROR] G:\MSIT\1-1\20186078_ADS-2\ASSIGNMENTS\m13\Radix Sorts\Solution.java:25:23: '-' is not preceded with whitespace. [WhitespaceAround]
-[ERROR] G:\MSIT\1-1\20186078_ADS-2\ASSIGNMENTS\m13\Radix Sorts\Solution.java:25:24: '-' is not followed by whitespace. [WhitespaceAround]
-[ERROR] G:\MSIT\1-1\20186078_ADS-2\ASSIGNMENTS\m13\Radix Sorts\Solution.java:28:36: '+' is not preceded with whitespace. [WhitespaceAround]
-[ERROR] G:\MSIT\1-1\20186078_ADS-2\ASSIGNMENTS\m13\Radix Sorts\Solution.java:28:37: '+' is not followed by whitespace. [WhitespaceAround]
-[ERROR] G:\MSIT\1-1\20186078_ADS-2\ASSIGNMENTS\m13\Radix Sorts\Solution.java:34:24: '+' is not preceded with whitespace. [WhitespaceAround]
-[ERROR] G:\MSIT\1-1\20186078_ADS-2\ASSIGNMENTS\m13\Radix Sorts\Solution.java:34:25: '+' is not followed by whitespace. [WhitespaceAround]
 Audit done.
-Checkstyle ends with 14 errors.
+Checkstyle ends with 7 errors.
