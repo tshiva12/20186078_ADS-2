@@ -53,20 +53,23 @@ public class TST<Value> {
      */
     public boolean contains(final String key) {
         if (key == null) {
-            throw new IllegalArgumentException("argument to contains() is null");
+            throw new IllegalArgumentException(
+                "argument to contains() is null");
         }
         return get(key) != null;
     }
     /**
      * Returns the value associated with the given key.
      * @param key the key
-     * @return the value associated with the given key if the key is in the symbol table
+     * @return the value associated with the given key
+     *  if the key is in the symbol table
      *     and {@code null} if the key is not in the symbol table
      * @throws IllegalArgumentException if {@code key} is {@code null}
      */
     public Value get(final String key) {
         if (key == null) {
-            throw new IllegalArgumentException("calls get() with null argument");
+            throw new IllegalArgumentException(
+                "calls get() with null argument");
         }
         if (key.length() == 0) {
             throw new IllegalArgumentException("key must have length >= 1");
@@ -78,7 +81,7 @@ public class TST<Value> {
         return x.val;
     }
     /**
-     * return subtrie corresponding to given key
+     * return subtrie corresponding to given key.
      *
      * @param      x     Node object.
      * @param      key   The key
@@ -86,8 +89,11 @@ public class TST<Value> {
      *
      * @return     { description_of_the_return_value }
      */
-    private Node<Value> get(final Node<Value> x, final String key, final int d) {
-        if (x == null) return null;
+    private Node<Value> get(final Node<Value> x, final String key,
+     final int d) {
+        if (x == null) {
+            return null;
+        }
         if (key.length() == 0) {
             throw new IllegalArgumentException("key must have length >= 1");
         }
@@ -97,15 +103,17 @@ public class TST<Value> {
         } else if (c > x.c) {
             return get(x.right, key, d);
         } else if (d < key.length() - 1) {
-            return get(x.mid,   key, d+1);
+            return get(x.mid,   key, d + 1);
         } else {
             return x;
         }
     }
     /**
-     * Inserts the key-value pair into the symbol table, overwriting the old value
+     * Inserts the key-value pair into the symbol table,
+     *  overwriting the old value
      * with the new value if the key is already in the symbol table.
-     * If the value is {@code null}, this effectively deletes the key from the symbol table.
+     * If the value is {@code null},
+     *  this effectively deletes the key from the symbol table.
      * @param key the key
      * @param val the value
      * @throws IllegalArgumentException if {@code key} is {@code null}
@@ -129,7 +137,8 @@ public class TST<Value> {
      *
      * @return     Node.
      */
-    private Node<Value> put(final Node<Value> x, final String key, final Value val, final int d) {
+    private Node<Value> put(final Node<Value> x, final String key,
+     final Value val, final int d) {
         char c = key.charAt(d);
         Node<Value> x1 = x;
         if (x1 == null) {
@@ -141,23 +150,26 @@ public class TST<Value> {
         } else if (c > x1.c) {
             x1.right = put(x1.right, key, val, d);
         } else if (d < key.length() - 1) {
-            x1.mid   = put(x1.mid,   key, val, d+1);
+            x1.mid   = put(x1.mid,   key, val, d + 1);
         } else {
             x1.val   = val;
         }
         return x1;
     }
     /**
-     * Returns the string in the symbol table that is the longest prefix of {@code query},
+     * Returns the string in the symbol table that
+     *  is the longest prefix of query},
      * or {@code null}, if no such string.
      * @param query the query string
-     * @return the string in the symbol table that is the longest prefix of {@code query},
+     * @return the string in the symbol table that
+     *  is the longest prefix of query},
      *     or {@code null} if no such string
      * @throws IllegalArgumentException if {@code query} is {@code null}
      */
     public String longestPrefixOf(final String query) {
         if (query == null) {
-            throw new IllegalArgumentException("calls longestPrefixOf() with null argument");
+            throw new IllegalArgumentException(
+                "calls longestPrefixOf() with null argument");
         }
         if (query.length() == 0) {
             return null;
@@ -201,7 +213,8 @@ public class TST<Value> {
      */
     public Iterable<String> keysWithPrefix(final String prefix) {
         if (prefix == null) {
-            throw new IllegalArgumentException("calls keysWithPrefix() with null argument");
+            throw new IllegalArgumentException(
+                "calls keysWithPrefix() with null argument");
         }
         Queue<String> queue = new Queue<String>();
         Node<Value> x = get(root, prefix, 0);
@@ -221,7 +234,8 @@ public class TST<Value> {
      * @param      prefix  The prefix
      * @param      queue   The queue
      */
-    private void collect(final Node<Value> x, final StringBuilder prefix, final Queue<String> queue) {
+    private void collect(final Node<Value> x, final StringBuilder prefix,
+     final Queue<String> queue) {
         if (x == null) {
             return;
         }
@@ -268,7 +282,7 @@ public class TST<Value> {
                 queue.enqueue(prefix.toString() + x.c);
             }
             if (i < pattern.length() - 1) {
-                collect(x.mid, prefix.append(x.c), i+1, pattern, queue);
+                collect(x.mid, prefix.append(x.c), i + 1, pattern, queue);
                 prefix.deleteCharAt(prefix.length() - 1);
             }
         }

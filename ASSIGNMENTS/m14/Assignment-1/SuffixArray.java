@@ -14,14 +14,15 @@ public class SuffixArray {
     public SuffixArray(final String text) {
         int n = text.length();
         this.suffixes = new Suffix[n];
-        for (int i = 0; i < n; i++)
+        for (int i = 0; i < n; i++) {
             suffixes[i] = new Suffix(text, i);
+        }
         Arrays.sort(suffixes);
     }
     /**
      * Class for suffix.
      */
-    private static class Suffix implements Comparable<Suffix> {
+    private static final class Suffix implements Comparable<Suffix> {
         /**
          * String variable.
          */
@@ -33,12 +34,12 @@ public class SuffixArray {
         /**
          * Constructs the object.
          *
-         * @param      text   The text
-         * @param      index  The index
+         * @param      text1   The text
+         * @param      index1  The index
          */
-        private Suffix(final String text, final int index) {
-            this.text = text;
-            this.index = index;
+        private Suffix(final String text1, final int index1) {
+            this.text = text1;
+            this.index = index1;
         }
         /**
          * length.
@@ -80,7 +81,11 @@ public class SuffixArray {
             }
             return this.length() - that.length();
         }
-
+        /**
+         * Returns a string representation of the object.
+         *
+         * @return     String representation of the object.
+         */
         public String toString() {
             return text.substring(index);
         }
@@ -93,10 +98,10 @@ public class SuffixArray {
         return suffixes.length;
     }
     /**
-     * Returns the index into the original string of the <em>i</em>th smallest suffix.
-     * That is, {@code text.substring(sa.index(i))} is the <em>i</em>th smallest suffix.
-     * @param i an integer between 0 and <em>n</em>-1
-     * @return the index into the original string of the <em>i</em>th smallest suffix
+     * Returns the index into the original string of the smallest suffix.
+     * That is, text.substring(sa.index(i)) is the smallest suffix.
+     * @param i an integer between 0 and -1
+     * @return the index into the original string of the smallest suffix
      * @throws java.lang.IllegalArgumentException unless {@code 0 <= i < n}
      */
     public int index(final int i) {
@@ -117,9 +122,16 @@ public class SuffixArray {
         if (i < 1 || i >= suffixes.length) {
             throw new IllegalArgumentException();
         }
-        return lcpSuffix(suffixes[i], suffixes[i-1]);
+        return lcpSuffix(suffixes[i], suffixes[i - 1]);
     }
-    // longest common prefix of s and t
+    /**
+     * longest common prefix of s and t.
+     *
+     * @param      s     suffix object.
+     * @param      t     suffix object.
+     *
+     * @return     n.
+     */
     private static int lcpSuffix(final Suffix s, final Suffix t) {
         int n = Math.min(s.length(), t.length());
         for (int i = 0; i < n; i++) {
@@ -142,7 +154,8 @@ public class SuffixArray {
         return suffixes[i].toString();
     }
     /**
-     * Returns the number of suffixes strictly less than the {@code query} string.
+     * Returns the number of suffixes strictly less
+     *  than the {@code query} string.
      * We note that {@code rank(select(i))} equals {@code i} for each {@code i}
      * between 0 and <em>n</em>-1.
      * @param query the query string

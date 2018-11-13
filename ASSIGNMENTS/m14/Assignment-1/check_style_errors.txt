@@ -150,41 +150,9 @@ Audit done.
 Checkstyle ends with 1 errors.
 Starting audit...
 [ERROR] G:\MSIT\1-1\20186078_ADS-2\ASSIGNMENTS\m14\Assignment-1\SuffixArray.java:0: File does not end with a newline. [NewlineAtEndOfFile]
-[ERROR] G:\MSIT\1-1\20186078_ADS-2\ASSIGNMENTS\m14\Assignment-1\SuffixArray.java:17: 'for' construct must use '{}'s. [NeedBraces]
-[ERROR] G:\MSIT\1-1\20186078_ADS-2\ASSIGNMENTS\m14\Assignment-1\SuffixArray.java:24: Class Suffix should be declared as final. [FinalClass]
-[ERROR] G:\MSIT\1-1\20186078_ADS-2\ASSIGNMENTS\m14\Assignment-1\SuffixArray.java:39:37: 'text' hides a field. [HiddenField]
-[ERROR] G:\MSIT\1-1\20186078_ADS-2\ASSIGNMENTS\m14\Assignment-1\SuffixArray.java:39:53: 'index' hides a field. [HiddenField]
-[ERROR] G:\MSIT\1-1\20186078_ADS-2\ASSIGNMENTS\m14\Assignment-1\SuffixArray.java:84:9: Missing a Javadoc comment. [JavadocMethod]
-[ERROR] G:\MSIT\1-1\20186078_ADS-2\ASSIGNMENTS\m14\Assignment-1\SuffixArray.java:96: Line is longer than 80 characters (found 86). [LineLength]
-[ERROR] G:\MSIT\1-1\20186078_ADS-2\ASSIGNMENTS\m14\Assignment-1\SuffixArray.java:97: Line is longer than 80 characters (found 88). [LineLength]
-[ERROR] G:\MSIT\1-1\20186078_ADS-2\ASSIGNMENTS\m14\Assignment-1\SuffixArray.java:99: Line is longer than 80 characters (found 85). [LineLength]
-[ERROR] G:\MSIT\1-1\20186078_ADS-2\ASSIGNMENTS\m14\Assignment-1\SuffixArray.java:120:49: '-' is not preceded with whitespace. [WhitespaceAround]
-[ERROR] G:\MSIT\1-1\20186078_ADS-2\ASSIGNMENTS\m14\Assignment-1\SuffixArray.java:120:50: '-' is not followed by whitespace. [WhitespaceAround]
-[ERROR] G:\MSIT\1-1\20186078_ADS-2\ASSIGNMENTS\m14\Assignment-1\SuffixArray.java:123:5: Missing a Javadoc comment. [JavadocMethod]
-[ERROR] G:\MSIT\1-1\20186078_ADS-2\ASSIGNMENTS\m14\Assignment-1\SuffixArray.java:145: Line is longer than 80 characters (found 82). [LineLength]
 Audit done.
-Checkstyle ends with 13 errors.
+Checkstyle ends with 1 errors.
 Starting audit...
 [ERROR] G:\MSIT\1-1\20186078_ADS-2\ASSIGNMENTS\m14\Assignment-1\TST.java:0: File does not end with a newline. [NewlineAtEndOfFile]
-[ERROR] G:\MSIT\1-1\20186078_ADS-2\ASSIGNMENTS\m14\Assignment-1\TST.java:56: Line is longer than 80 characters (found 81). [LineLength]
-[ERROR] G:\MSIT\1-1\20186078_ADS-2\ASSIGNMENTS\m14\Assignment-1\TST.java:63: Line is longer than 80 characters (found 88). [LineLength]
-[ERROR] G:\MSIT\1-1\20186078_ADS-2\ASSIGNMENTS\m14\Assignment-1\TST.java:69: Line is longer than 80 characters (found 81). [LineLength]
-[ERROR] G:\MSIT\1-1\20186078_ADS-2\ASSIGNMENTS\m14\Assignment-1\TST.java:80: First sentence should end with a period. [JavadocStyle]
-[ERROR] G:\MSIT\1-1\20186078_ADS-2\ASSIGNMENTS\m14\Assignment-1\TST.java:89: Line is longer than 80 characters (found 81). [LineLength]
-[ERROR] G:\MSIT\1-1\20186078_ADS-2\ASSIGNMENTS\m14\Assignment-1\TST.java:90: 'if' construct must use '{}'s. [NeedBraces]
-[ERROR] G:\MSIT\1-1\20186078_ADS-2\ASSIGNMENTS\m14\Assignment-1\TST.java:100:39: '+' is not preceded with whitespace. [WhitespaceAround]
-[ERROR] G:\MSIT\1-1\20186078_ADS-2\ASSIGNMENTS\m14\Assignment-1\TST.java:100:40: '+' is not followed by whitespace. [WhitespaceAround]
-[ERROR] G:\MSIT\1-1\20186078_ADS-2\ASSIGNMENTS\m14\Assignment-1\TST.java:106: Line is longer than 80 characters (found 82). [LineLength]
-[ERROR] G:\MSIT\1-1\20186078_ADS-2\ASSIGNMENTS\m14\Assignment-1\TST.java:108: Line is longer than 80 characters (found 92). [LineLength]
-[ERROR] G:\MSIT\1-1\20186078_ADS-2\ASSIGNMENTS\m14\Assignment-1\TST.java:132: Line is longer than 80 characters (found 98). [LineLength]
-[ERROR] G:\MSIT\1-1\20186078_ADS-2\ASSIGNMENTS\m14\Assignment-1\TST.java:144:49: '+' is not preceded with whitespace. [WhitespaceAround]
-[ERROR] G:\MSIT\1-1\20186078_ADS-2\ASSIGNMENTS\m14\Assignment-1\TST.java:144:50: '+' is not followed by whitespace. [WhitespaceAround]
-[ERROR] G:\MSIT\1-1\20186078_ADS-2\ASSIGNMENTS\m14\Assignment-1\TST.java:151: Line is longer than 80 characters (found 90). [LineLength]
-[ERROR] G:\MSIT\1-1\20186078_ADS-2\ASSIGNMENTS\m14\Assignment-1\TST.java:154: Line is longer than 80 characters (found 90). [LineLength]
-[ERROR] G:\MSIT\1-1\20186078_ADS-2\ASSIGNMENTS\m14\Assignment-1\TST.java:160: Line is longer than 80 characters (found 93). [LineLength]
-[ERROR] G:\MSIT\1-1\20186078_ADS-2\ASSIGNMENTS\m14\Assignment-1\TST.java:204: Line is longer than 80 characters (found 92). [LineLength]
-[ERROR] G:\MSIT\1-1\20186078_ADS-2\ASSIGNMENTS\m14\Assignment-1\TST.java:224: Line is longer than 80 characters (found 102). [LineLength]
-[ERROR] G:\MSIT\1-1\20186078_ADS-2\ASSIGNMENTS\m14\Assignment-1\TST.java:271:53: '+' is not preceded with whitespace. [WhitespaceAround]
-[ERROR] G:\MSIT\1-1\20186078_ADS-2\ASSIGNMENTS\m14\Assignment-1\TST.java:271:54: '+' is not followed by whitespace. [WhitespaceAround]
 Audit done.
-Checkstyle ends with 21 errors.
+Checkstyle ends with 1 errors.
