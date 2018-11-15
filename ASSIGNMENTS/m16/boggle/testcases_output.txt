@@ -3,7 +3,14 @@ Expected Output:
 Score = 33
 
 Your Output: 
-Score = 0
+Exception in thread "main" java.lang.NoClassDefFoundError: Bag
+	at BoggleSolver.getAllValidWords(BoggleSolver.java:21)
+	at Solution.main(Solution.java:31)
+Caused by: java.lang.ClassNotFoundException: Bag
+	at java.base/jdk.internal.loader.BuiltinClassLoader.loadClass(BuiltinClassLoader.java:582)
+	at java.base/jdk.internal.loader.ClassLoaders$AppClassLoader.loadClass(ClassLoaders.java:190)
+	at java.base/java.lang.ClassLoader.loadClass(ClassLoader.java:499)
+	... 2 more
 ----------------------------------------
 
 ########## Testcase 1: Failed ##########
@@ -11,7 +18,14 @@ Expected Output:
 Score = 84
 
 Your Output: 
-Score = 0
+Exception in thread "main" java.lang.NoClassDefFoundError: Bag
+	at BoggleSolver.getAllValidWords(BoggleSolver.java:21)
+	at Solution.main(Solution.java:31)
+Caused by: java.lang.ClassNotFoundException: Bag
+	at java.base/jdk.internal.loader.BuiltinClassLoader.loadClass(BuiltinClassLoader.java:582)
+	at java.base/jdk.internal.loader.ClassLoaders$AppClassLoader.loadClass(ClassLoaders.java:190)
+	at java.base/java.lang.ClassLoader.loadClass(ClassLoader.java:499)
+	... 2 more
 ----------------------------------------
 
 ########## Testcase 2: Failed ##########
@@ -19,7 +33,14 @@ Expected Output:
 Score = 1
 
 Your Output: 
-Score = 0
+Exception in thread "main" java.lang.NoClassDefFoundError: Bag
+	at BoggleSolver.getAllValidWords(BoggleSolver.java:21)
+	at Solution.main(Solution.java:31)
+Caused by: java.lang.ClassNotFoundException: Bag
+	at java.base/jdk.internal.loader.BuiltinClassLoader.loadClass(BuiltinClassLoader.java:582)
+	at java.base/jdk.internal.loader.ClassLoaders$AppClassLoader.loadClass(ClassLoaders.java:190)
+	at java.base/java.lang.ClassLoader.loadClass(ClassLoader.java:499)
+	... 2 more
 ----------------------------------------
 
 ########## Testcase 3: Failed ##########
@@ -27,7 +48,14 @@ Expected Output:
 Score = 2
 
 Your Output: 
-Score = 0
+Exception in thread "main" java.lang.NoClassDefFoundError: Bag
+	at BoggleSolver.getAllValidWords(BoggleSolver.java:21)
+	at Solution.main(Solution.java:31)
+Caused by: java.lang.ClassNotFoundException: Bag
+	at java.base/jdk.internal.loader.BuiltinClassLoader.loadClass(BuiltinClassLoader.java:582)
+	at java.base/jdk.internal.loader.ClassLoaders$AppClassLoader.loadClass(ClassLoaders.java:190)
+	at java.base/java.lang.ClassLoader.loadClass(ClassLoader.java:499)
+	... 2 more
 ----------------------------------------
 
 ########## Testcase 4: Failed ##########
@@ -35,7 +63,14 @@ Expected Output:
 Score = 3
 
 Your Output: 
-Score = 0
+Exception in thread "main" java.lang.NoClassDefFoundError: Bag
+	at BoggleSolver.getAllValidWords(BoggleSolver.java:21)
+	at Solution.main(Solution.java:31)
+Caused by: java.lang.ClassNotFoundException: Bag
+	at java.base/jdk.internal.loader.BuiltinClassLoader.loadClass(BuiltinClassLoader.java:582)
+	at java.base/jdk.internal.loader.ClassLoaders$AppClassLoader.loadClass(ClassLoaders.java:190)
+	at java.base/java.lang.ClassLoader.loadClass(ClassLoader.java:499)
+	... 2 more
 ----------------------------------------
 
 ########## Testcase 5: Failed ##########
@@ -43,7 +78,14 @@ Expected Output:
 Score = 1000
 
 Your Output: 
-Score = 0
+Exception in thread "main" java.lang.NoClassDefFoundError: Bag
+	at BoggleSolver.getAllValidWords(BoggleSolver.java:21)
+	at Solution.main(Solution.java:31)
+Caused by: java.lang.ClassNotFoundException: Bag
+	at java.base/jdk.internal.loader.BuiltinClassLoader.loadClass(BuiltinClassLoader.java:582)
+	at java.base/jdk.internal.loader.ClassLoaders$AppClassLoader.loadClass(ClassLoaders.java:190)
+	at java.base/java.lang.ClassLoader.loadClass(ClassLoader.java:499)
+	... 2 more
 ----------------------------------------
 
 ########## Testcase 6: Failed ##########
@@ -51,7 +93,14 @@ Expected Output:
 Score = 400
 
 Your Output: 
-Score = 0
+Exception in thread "main" java.lang.NoClassDefFoundError: Bag
+	at BoggleSolver.getAllValidWords(BoggleSolver.java:21)
+	at Solution.main(Solution.java:31)
+Caused by: java.lang.ClassNotFoundException: Bag
+	at java.base/jdk.internal.loader.BuiltinClassLoader.loadClass(BuiltinClassLoader.java:582)
+	at java.base/jdk.internal.loader.ClassLoaders$AppClassLoader.loadClass(ClassLoaders.java:190)
+	at java.base/java.lang.ClassLoader.loadClass(ClassLoader.java:499)
+	... 2 more
 ----------------------------------------
 
 ########## Testcase 7: Failed ##########
@@ -59,7 +108,14 @@ Expected Output:
 Score = 7
 
 Your Output: 
-Score = 0
+Exception in thread "main" java.lang.NoClassDefFoundError: Bag
+	at BoggleSolver.getAllValidWords(BoggleSolver.java:21)
+	at Solution.main(Solution.java:31)
+Caused by: java.lang.ClassNotFoundException: Bag
+	at java.base/jdk.internal.loader.BuiltinClassLoader.loadClass(BuiltinClassLoader.java:582)
+	at java.base/jdk.internal.loader.ClassLoaders$AppClassLoader.loadClass(ClassLoaders.java:190)
+	at java.base/java.lang.ClassLoader.loadClass(ClassLoader.java:499)
+	... 2 more
 ----------------------------------------
 
 ########## Testcase 8: Failed ##########
@@ -67,7 +123,14 @@ Expected Output:
 Score = 155
 
 Your Output: 
-Score = 0
+Exception in thread "main" java.lang.NoClassDefFoundError: Bag
+	at BoggleSolver.getAllValidWords(BoggleSolver.java:21)
+	at Solution.main(Solution.java:31)
+Caused by: java.lang.ClassNotFoundException: Bag
+	at java.base/jdk.internal.loader.BuiltinClassLoader.loadClass(BuiltinClassLoader.java:582)
+	at java.base/jdk.internal.loader.ClassLoaders$AppClassLoader.loadClass(ClassLoaders.java:190)
+	at java.base/java.lang.ClassLoader.loadClass(ClassLoader.java:499)
+	... 2 more
 ----------------------------------------
 
 ########## Testcase 9: Failed ##########
@@ -75,7 +138,14 @@ Expected Output:
 Score = 172
 
 Your Output: 
-Score = 0
+Exception in thread "main" java.lang.NoClassDefFoundError: Bag
+	at BoggleSolver.getAllValidWords(BoggleSolver.java:21)
+	at Solution.main(Solution.java:31)
+Caused by: java.lang.ClassNotFoundException: Bag
+	at java.base/jdk.internal.loader.BuiltinClassLoader.loadClass(BuiltinClassLoader.java:582)
+	at java.base/jdk.internal.loader.ClassLoaders$AppClassLoader.loadClass(ClassLoaders.java:190)
+	at java.base/java.lang.ClassLoader.loadClass(ClassLoader.java:499)
+	... 2 more
 ----------------------------------------
 
 ########## Testcase 10: Failed ##########
@@ -83,7 +153,14 @@ Expected Output:
 Score = 68
 
 Your Output: 
-Score = 0
+Exception in thread "main" java.lang.NoClassDefFoundError: Bag
+	at BoggleSolver.getAllValidWords(BoggleSolver.java:21)
+	at Solution.main(Solution.java:31)
+Caused by: java.lang.ClassNotFoundException: Bag
+	at java.base/jdk.internal.loader.BuiltinClassLoader.loadClass(BuiltinClassLoader.java:582)
+	at java.base/jdk.internal.loader.ClassLoaders$AppClassLoader.loadClass(ClassLoaders.java:190)
+	at java.base/java.lang.ClassLoader.loadClass(ClassLoader.java:499)
+	... 2 more
 ----------------------------------------
 
 ########## Testcase 11: Failed ##########
@@ -91,7 +168,14 @@ Expected Output:
 Score = 147
 
 Your Output: 
-Score = 0
+Exception in thread "main" java.lang.NoClassDefFoundError: Bag
+	at BoggleSolver.getAllValidWords(BoggleSolver.java:21)
+	at Solution.main(Solution.java:31)
+Caused by: java.lang.ClassNotFoundException: Bag
+	at java.base/jdk.internal.loader.BuiltinClassLoader.loadClass(BuiltinClassLoader.java:582)
+	at java.base/jdk.internal.loader.ClassLoaders$AppClassLoader.loadClass(ClassLoaders.java:190)
+	at java.base/java.lang.ClassLoader.loadClass(ClassLoader.java:499)
+	... 2 more
 ----------------------------------------
 
 ########## Testcase 12: Failed ##########
@@ -99,15 +183,29 @@ Expected Output:
 Score = 687
 
 Your Output: 
-Score = 0
+Exception in thread "main" java.lang.NoClassDefFoundError: Bag
+	at BoggleSolver.getAllValidWords(BoggleSolver.java:21)
+	at Solution.main(Solution.java:31)
+Caused by: java.lang.ClassNotFoundException: Bag
+	at java.base/jdk.internal.loader.BuiltinClassLoader.loadClass(BuiltinClassLoader.java:582)
+	at java.base/jdk.internal.loader.ClassLoaders$AppClassLoader.loadClass(ClassLoaders.java:190)
+	at java.base/java.lang.ClassLoader.loadClass(ClassLoader.java:499)
+	... 2 more
 ----------------------------------------
 
-########## Testcase 13: Passed ##########
+########## Testcase 13: Failed ##########
 Expected Output: 
 Score = 0
 
 Your Output: 
-Score = 0
+Exception in thread "main" java.lang.NoClassDefFoundError: Bag
+	at BoggleSolver.getAllValidWords(BoggleSolver.java:21)
+	at Solution.main(Solution.java:31)
+Caused by: java.lang.ClassNotFoundException: Bag
+	at java.base/jdk.internal.loader.BuiltinClassLoader.loadClass(BuiltinClassLoader.java:582)
+	at java.base/jdk.internal.loader.ClassLoaders$AppClassLoader.loadClass(ClassLoaders.java:190)
+	at java.base/java.lang.ClassLoader.loadClass(ClassLoader.java:499)
+	... 2 more
 ----------------------------------------
 
 ########## Testcase 14: Failed ##########
@@ -115,7 +213,14 @@ Expected Output:
 Score = 172
 
 Your Output: 
-Score = 0
+Exception in thread "main" java.lang.NoClassDefFoundError: Bag
+	at BoggleSolver.getAllValidWords(BoggleSolver.java:21)
+	at Solution.main(Solution.java:31)
+Caused by: java.lang.ClassNotFoundException: Bag
+	at java.base/jdk.internal.loader.BuiltinClassLoader.loadClass(BuiltinClassLoader.java:582)
+	at java.base/jdk.internal.loader.ClassLoaders$AppClassLoader.loadClass(ClassLoaders.java:190)
+	at java.base/java.lang.ClassLoader.loadClass(ClassLoader.java:499)
+	... 2 more
 ----------------------------------------
 
 ########## Testcase 15: Failed ##########
@@ -123,7 +228,14 @@ Expected Output:
 Score = 129
 
 Your Output: 
-Score = 0
+Exception in thread "main" java.lang.NoClassDefFoundError: Bag
+	at BoggleSolver.getAllValidWords(BoggleSolver.java:21)
+	at Solution.main(Solution.java:31)
+Caused by: java.lang.ClassNotFoundException: Bag
+	at java.base/jdk.internal.loader.BuiltinClassLoader.loadClass(BuiltinClassLoader.java:582)
+	at java.base/jdk.internal.loader.ClassLoaders$AppClassLoader.loadClass(ClassLoaders.java:190)
+	at java.base/java.lang.ClassLoader.loadClass(ClassLoader.java:499)
+	... 2 more
 ----------------------------------------
 
 ########## Testcase 16: Failed ##########
@@ -131,7 +243,14 @@ Expected Output:
 Score = 2
 
 Your Output: 
-Score = 0
+Exception in thread "main" java.lang.NoClassDefFoundError: Bag
+	at BoggleSolver.getAllValidWords(BoggleSolver.java:21)
+	at Solution.main(Solution.java:31)
+Caused by: java.lang.ClassNotFoundException: Bag
+	at java.base/jdk.internal.loader.BuiltinClassLoader.loadClass(BuiltinClassLoader.java:582)
+	at java.base/jdk.internal.loader.ClassLoaders$AppClassLoader.loadClass(ClassLoaders.java:190)
+	at java.base/java.lang.ClassLoader.loadClass(ClassLoader.java:499)
+	... 2 more
 ----------------------------------------
 
 ########## Testcase 17: Failed ##########
@@ -139,7 +258,14 @@ Expected Output:
 Score = 1
 
 Your Output: 
-Score = 0
+Exception in thread "main" java.lang.NoClassDefFoundError: Bag
+	at BoggleSolver.getAllValidWords(BoggleSolver.java:21)
+	at Solution.main(Solution.java:31)
+Caused by: java.lang.ClassNotFoundException: Bag
+	at java.base/jdk.internal.loader.BuiltinClassLoader.loadClass(BuiltinClassLoader.java:582)
+	at java.base/jdk.internal.loader.ClassLoaders$AppClassLoader.loadClass(ClassLoaders.java:190)
+	at java.base/java.lang.ClassLoader.loadClass(ClassLoader.java:499)
+	... 2 more
 ----------------------------------------
 
 ########## Testcase 18: Failed ##########
@@ -147,7 +273,14 @@ Expected Output:
 Score = 14
 
 Your Output: 
-Score = 0
+Exception in thread "main" java.lang.NoClassDefFoundError: Bag
+	at BoggleSolver.getAllValidWords(BoggleSolver.java:21)
+	at Solution.main(Solution.java:31)
+Caused by: java.lang.ClassNotFoundException: Bag
+	at java.base/jdk.internal.loader.BuiltinClassLoader.loadClass(BuiltinClassLoader.java:582)
+	at java.base/jdk.internal.loader.ClassLoaders$AppClassLoader.loadClass(ClassLoaders.java:190)
+	at java.base/java.lang.ClassLoader.loadClass(ClassLoader.java:499)
+	... 2 more
 ----------------------------------------
 
 ########## Testcase 19: Failed ##########
@@ -155,7 +288,14 @@ Expected Output:
 Score = 11
 
 Your Output: 
-Score = 0
+Exception in thread "main" java.lang.NoClassDefFoundError: Bag
+	at BoggleSolver.getAllValidWords(BoggleSolver.java:21)
+	at Solution.main(Solution.java:31)
+Caused by: java.lang.ClassNotFoundException: Bag
+	at java.base/jdk.internal.loader.BuiltinClassLoader.loadClass(BuiltinClassLoader.java:582)
+	at java.base/jdk.internal.loader.ClassLoaders$AppClassLoader.loadClass(ClassLoaders.java:190)
+	at java.base/java.lang.ClassLoader.loadClass(ClassLoader.java:499)
+	... 2 more
 ----------------------------------------
 
 ########## Testcase 20: Failed ##########
@@ -163,7 +303,14 @@ Expected Output:
 Score = 33
 
 Your Output: 
-Score = 0
+Exception in thread "main" java.lang.NoClassDefFoundError: Bag
+	at BoggleSolver.getAllValidWords(BoggleSolver.java:21)
+	at Solution.main(Solution.java:31)
+Caused by: java.lang.ClassNotFoundException: Bag
+	at java.base/jdk.internal.loader.BuiltinClassLoader.loadClass(BuiltinClassLoader.java:582)
+	at java.base/jdk.internal.loader.ClassLoaders$AppClassLoader.loadClass(ClassLoaders.java:190)
+	at java.base/java.lang.ClassLoader.loadClass(ClassLoader.java:499)
+	... 2 more
 ----------------------------------------
 
 ########## Testcase 21: Failed ##########
@@ -171,7 +318,14 @@ Expected Output:
 Score = 23
 
 Your Output: 
-Score = 0
+Exception in thread "main" java.lang.NoClassDefFoundError: Bag
+	at BoggleSolver.getAllValidWords(BoggleSolver.java:21)
+	at Solution.main(Solution.java:31)
+Caused by: java.lang.ClassNotFoundException: Bag
+	at java.base/jdk.internal.loader.BuiltinClassLoader.loadClass(BuiltinClassLoader.java:582)
+	at java.base/jdk.internal.loader.ClassLoaders$AppClassLoader.loadClass(ClassLoaders.java:190)
+	at java.base/java.lang.ClassLoader.loadClass(ClassLoader.java:499)
+	... 2 more
 ----------------------------------------
 
 ########## Testcase 22: Failed ##########
@@ -179,7 +333,14 @@ Expected Output:
 Score = 24
 
 Your Output: 
-Score = 0
+Exception in thread "main" java.lang.NoClassDefFoundError: Bag
+	at BoggleSolver.getAllValidWords(BoggleSolver.java:21)
+	at Solution.main(Solution.java:31)
+Caused by: java.lang.ClassNotFoundException: Bag
+	at java.base/jdk.internal.loader.BuiltinClassLoader.loadClass(BuiltinClassLoader.java:582)
+	at java.base/jdk.internal.loader.ClassLoaders$AppClassLoader.loadClass(ClassLoaders.java:190)
+	at java.base/java.lang.ClassLoader.loadClass(ClassLoader.java:499)
+	... 2 more
 ----------------------------------------
 
 ########## Testcase 23: Failed ##########
@@ -187,15 +348,29 @@ Expected Output:
 Score = 30
 
 Your Output: 
-Score = 0
+Exception in thread "main" java.lang.NoClassDefFoundError: Bag
+	at BoggleSolver.getAllValidWords(BoggleSolver.java:21)
+	at Solution.main(Solution.java:31)
+Caused by: java.lang.ClassNotFoundException: Bag
+	at java.base/jdk.internal.loader.BuiltinClassLoader.loadClass(BuiltinClassLoader.java:582)
+	at java.base/jdk.internal.loader.ClassLoaders$AppClassLoader.loadClass(ClassLoaders.java:190)
+	at java.base/java.lang.ClassLoader.loadClass(ClassLoader.java:499)
+	... 2 more
 ----------------------------------------
 
-########## Testcase 24: Passed ##########
+########## Testcase 24: Failed ##########
 Expected Output: 
 Score = 0
 
 Your Output: 
-Score = 0
+Exception in thread "main" java.lang.NoClassDefFoundError: Bag
+	at BoggleSolver.getAllValidWords(BoggleSolver.java:21)
+	at Solution.main(Solution.java:31)
+Caused by: java.lang.ClassNotFoundException: Bag
+	at java.base/jdk.internal.loader.BuiltinClassLoader.loadClass(BuiltinClassLoader.java:582)
+	at java.base/jdk.internal.loader.ClassLoaders$AppClassLoader.loadClass(ClassLoaders.java:190)
+	at java.base/java.lang.ClassLoader.loadClass(ClassLoader.java:499)
+	... 2 more
 ----------------------------------------
 
 ########## Testcase 25: Failed ##########
@@ -203,7 +378,14 @@ Expected Output:
 Score = 26539
 
 Your Output: 
-Score = 0
+Exception in thread "main" java.lang.NoClassDefFoundError: Bag
+	at BoggleSolver.getAllValidWords(BoggleSolver.java:21)
+	at Solution.main(Solution.java:31)
+Caused by: java.lang.ClassNotFoundException: Bag
+	at java.base/jdk.internal.loader.BuiltinClassLoader.loadClass(BuiltinClassLoader.java:582)
+	at java.base/jdk.internal.loader.ClassLoaders$AppClassLoader.loadClass(ClassLoaders.java:190)
+	at java.base/java.lang.ClassLoader.loadClass(ClassLoader.java:499)
+	... 2 more
 ----------------------------------------
 
 ########## Testcase 26: Failed ##########
@@ -211,7 +393,14 @@ Expected Output:
 Score = 19797
 
 Your Output: 
-Score = 0
+Exception in thread "main" java.lang.NoClassDefFoundError: Bag
+	at BoggleSolver.getAllValidWords(BoggleSolver.java:21)
+	at Solution.main(Solution.java:31)
+Caused by: java.lang.ClassNotFoundException: Bag
+	at java.base/jdk.internal.loader.BuiltinClassLoader.loadClass(BuiltinClassLoader.java:582)
+	at java.base/jdk.internal.loader.ClassLoaders$AppClassLoader.loadClass(ClassLoaders.java:190)
+	at java.base/java.lang.ClassLoader.loadClass(ClassLoader.java:499)
+	... 2 more
 ----------------------------------------
 
 ########## Testcase 27: Failed ##########
@@ -219,7 +408,14 @@ Expected Output:
 Score = 27325
 
 Your Output: 
-Score = 0
+Exception in thread "main" java.lang.NoClassDefFoundError: Bag
+	at BoggleSolver.getAllValidWords(BoggleSolver.java:21)
+	at Solution.main(Solution.java:31)
+Caused by: java.lang.ClassNotFoundException: Bag
+	at java.base/jdk.internal.loader.BuiltinClassLoader.loadClass(BuiltinClassLoader.java:582)
+	at java.base/jdk.internal.loader.ClassLoaders$AppClassLoader.loadClass(ClassLoaders.java:190)
+	at java.base/java.lang.ClassLoader.loadClass(ClassLoader.java:499)
+	... 2 more
 ----------------------------------------
 
 ########## Testcase 28: Failed ##########
@@ -227,7 +423,14 @@ Expected Output:
 Score = 32175
 
 Your Output: 
-Score = 0
+Exception in thread "main" java.lang.NoClassDefFoundError: Bag
+	at BoggleSolver.getAllValidWords(BoggleSolver.java:21)
+	at Solution.main(Solution.java:31)
+Caused by: java.lang.ClassNotFoundException: Bag
+	at java.base/jdk.internal.loader.BuiltinClassLoader.loadClass(BuiltinClassLoader.java:582)
+	at java.base/jdk.internal.loader.ClassLoaders$AppClassLoader.loadClass(ClassLoaders.java:190)
+	at java.base/java.lang.ClassLoader.loadClass(ClassLoader.java:499)
+	... 2 more
 ----------------------------------------
 
 ########## Testcase 29: Failed ##########
@@ -235,6 +438,13 @@ Expected Output:
 board is null
 
 Your Output: 
-Score = 0
+Exception in thread "main" java.lang.NoClassDefFoundError: Bag
+	at BoggleSolver.getAllValidWords(BoggleSolver.java:21)
+	at Solution.main(Solution.java:45)
+Caused by: java.lang.ClassNotFoundException: Bag
+	at java.base/jdk.internal.loader.BuiltinClassLoader.loadClass(BuiltinClassLoader.java:582)
+	at java.base/jdk.internal.loader.ClassLoaders$AppClassLoader.loadClass(ClassLoaders.java:190)
+	at java.base/java.lang.ClassLoader.loadClass(ClassLoader.java:499)
+	... 2 more
 ----------------------------------------
 
