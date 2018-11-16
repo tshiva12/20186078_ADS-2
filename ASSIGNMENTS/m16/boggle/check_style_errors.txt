@@ -489,13 +489,8 @@ Starting audit...
 Audit done.
 Checkstyle ends with 1 errors.
 Starting audit...
-[ERROR] G:\MSIT\1-1\20186078_ADS-2\ASSIGNMENTS\m16\boggle\StdOut.java:5: Missing a Javadoc comment. [JavadocType]
-[ERROR] G:\MSIT\1-1\20186078_ADS-2\ASSIGNMENTS\m16\boggle\StdOut.java:152: Line has trailing spaces. [RegexpSingleline]
 Audit done.
-Checkstyle ends with 2 errors.
 Starting audit...
 Audit done.
 Starting audit...
-[ERROR] G:\MSIT\1-1\20186078_ADS-2\ASSIGNMENTS\m16\boggle\TrieST.java:135:6: File contains tab characters (this is the first instance). [FileTabCharacter]
 Audit done.
-Checkstyle ends with 1 errors.

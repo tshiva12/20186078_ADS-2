@@ -2,6 +2,9 @@ import java.io.OutputStreamWriter;
 import java.io.PrintWriter;
 import java.io.UnsupportedEncodingException;
 import java.util.Locale;
+/**
+ * class StdOut.
+ */
 public final class StdOut {
     /**
      * String variable.
@@ -149,7 +152,6 @@ public final class StdOut {
     }
     /**
      * Prints a double to standard output and flushes standard output.
-     * 
      * @param x the double to print
      */
     public static void print(final double x) {

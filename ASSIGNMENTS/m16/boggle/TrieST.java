@@ -132,7 +132,7 @@ public class TrieST<Value> {
      */
     private Node put(final Node x, final String key,
      final Value val, final int d) {
-     	final int b = 65;
+        final int b = 65;
         Node x1 = x;
         if (x1 == null) {
             x1 = new Node();
