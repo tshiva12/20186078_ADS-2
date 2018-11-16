@@ -571,4 +571,6 @@ Starting audit...
 Audit done.
 Checkstyle ends with 4 errors.
 Starting audit...
+[ERROR] G:\MSIT\1-1\20186078_ADS-2\ASSIGNMENTS\m16\boggle\TrieST.java:97:30: Parameter str should be final. [FinalParameters]
 Audit done.
+Checkstyle ends with 1 errors.

@@ -88,6 +88,17 @@ public class TrieST<Value> {
         return get(x.next[c], key, d + 1);
     }
     /**
+     * Determines if it has prefix.
+     *
+     * @param      str   The string
+     *
+     * @return     True if has prefix, False otherwise.
+     */
+    public boolean hasPrefix(String str) {
+        Node x = get(root, str, 0);
+        return x != null;
+    }
+    /**
      * Inserts the key-value pair into the symbol table,
      *  overwriting the old value.
      * with the new value if the key is already in the symbol table.
