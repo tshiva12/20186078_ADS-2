@@ -95,8 +95,8 @@ public class TrieST<Value> {
      * @return     True if has prefix, False otherwise.
      */
     public boolean hasPrefix(String str) {
-        Queue x = keysWithPrefix(str);
-        return x.size() != 0;
+        Node x = get(root, str, 0);
+        return x != null;
     }
     /**
      * Inserts the key-value pair into the symbol table,
@@ -176,7 +176,7 @@ public class TrieST<Value> {
      * @return all of the keys in the set that start with {@code prefix},
      *     as an iterable
      */
-    public Queue keysWithPrefix(final String prefix) {
+    public Iterable<String> keysWithPrefix(final String prefix) {
         Queue<String> results = new Queue<String>();
         Node x = get(root, prefix, 0);
         collect(x, new StringBuilder(prefix), results);

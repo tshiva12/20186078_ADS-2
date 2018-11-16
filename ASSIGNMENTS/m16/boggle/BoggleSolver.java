@@ -49,6 +49,9 @@ public class BoggleSolver {
 		return tries.contains(word);
 	}
 	public void dfs(BoggleBoard board, boolean[][] check, int rows, int cols, String word) {
+		if (!tries.hasPrefix(word)) {
+			return;
+		}
 		if (isValid(word)) {
 			validwords.add(word);
 		}
