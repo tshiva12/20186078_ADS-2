@@ -85,7 +85,7 @@ public class TrieST<Value> {
             return x;
         }
         char c = key.charAt(d);
-        return get(x.next[c], key, d + 1);
+        return get(x.next[c - 65], key, d + 1);
     }
     /**
      * Determines if it has prefix.
@@ -143,7 +143,7 @@ public class TrieST<Value> {
             return x1;
         }
         char c = key.charAt(d);
-        x1.next[c] = put(x1.next[c], key, val, d + 1);
+        x1.next[c - 65] = put(x1.next[c - 65], key, val, d + 1);
         return x1;
     }
     /**

@@ -230,11 +230,11 @@ Your Output:
 
 ----------------------------------------
 
-########## Testcase 29: Passed ##########
+########## Testcase 29: Failed ##########
 Expected Output: 
 board is null
 
 Your Output: 
-board is null
+-20
 ----------------------------------------
 
