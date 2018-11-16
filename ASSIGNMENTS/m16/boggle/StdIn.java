@@ -105,8 +105,8 @@ public final class StdIn {
         try {
             scanner.useDelimiter(EMPTY_PATTERN);
             String ch = scanner.next();
-            assert ch.length() == 1 : "Internal (Std)In.readChar() error!"
-                + " Please contact the authors.";
+            // assert ch.length() == 1 : "Internal (Std)In.readChar() error!"
+            //     + " Please contact the authors.";
             scanner.useDelimiter(WHITESPACE_PATTERN);
             return ch.charAt(0);
         } catch (NoSuchElementException e) {

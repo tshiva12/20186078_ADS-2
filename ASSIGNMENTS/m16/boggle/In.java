@@ -238,8 +238,8 @@ public final class In {
         scanner.useDelimiter(EMPTY_PATTERN);
         try {
             String ch = scanner.next();
-            assert ch.length() == 1 : "Internal (Std)In.readChar() error!"
-                + " Please contact the authors.";
+            // assert ch.length() == 1 : "Internal (Std)In.readChar() error!"
+            //     + " Please contact the authors.";
             scanner.useDelimiter(WHITESPACE_PATTERN);
             return ch.charAt(0);
         } catch (NoSuchElementException e) {
