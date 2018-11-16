@@ -18,12 +18,18 @@ public class BoggleSolver {
 
 	// Returns the set of all valid words in the given Boggle board, as an Iterable.
 	public Iterable<String> getAllValidWords(BoggleBoard board) {
+		if (board == null) {
+			throw new IllegalArgumentException("board is null");
+		}
 		return new Bag<String>();
 	}
 
 	// Returns the score of the given word if it is in the dictionary, zero otherwise.
 	// (You can assume the word contains only the uppercase letters A through Z.)
-	public int scoreOf(String word) {
+	public int scoreOf(final String word) {
+		if (word == null) {
+			return 0;
+		}
 		if (tries.contains(word)) {
 			return tries.get(word);
 		} else {

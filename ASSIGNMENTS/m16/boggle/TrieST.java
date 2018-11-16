@@ -7,7 +7,7 @@ public class TrieST<Value> {
     /**
      * extended ASCII.
      */
-    private static final int asc = 256;
+    private static final int a = 256;
     /**
      * root of trie.
      */
@@ -21,8 +21,14 @@ public class TrieST<Value> {
      * R-way trie node.
      */
     private static class Node {
+        /**
+         * Object variable.
+         */
         private Object val;
-        private Node[] next = new Node[asc];
+        /**
+         * Node array.
+         */
+        private Node[] next = new Node[a];
     }
     /**
      * Initializes an empty string symbol table.
@@ -33,7 +39,8 @@ public class TrieST<Value> {
     /**
      * Returns the value associated with the given key.
      * @param key the key
-     * @return the value associated with the given key if the key is in the symbol table
+     * @return the value associated with the given key
+     *  if the key is in the symbol table
      *     and {@code null} if the key is not in the symbol table
      * @throws IllegalArgumentException if {@code key} is {@code null}
      */
@@ -56,10 +63,20 @@ public class TrieST<Value> {
      */
     public boolean contains(final String key) {
         if (key == null) {
-            throw new IllegalArgumentException("argument to contains() is null");
+            throw new IllegalArgumentException(
+                "argument to contains() is null");
         }
         return get(key) != null;
     }
+    /**
+     * get.
+     *
+     * @param      x     Node object.
+     * @param      key   The key
+     * @param      d     Integer variable.
+     *
+     * @return     { description_of_the_return_value }
+     */
     private Node get(final Node x, final String key, final int d) {
         if (x == null) {
             return null;
@@ -71,23 +88,38 @@ public class TrieST<Value> {
         return get(x.next[c], key, d + 1);
     }
     /**
-     * Inserts the key-value pair into the symbol table, overwriting the old value
+     * Inserts the key-value pair into the symbol table,
+     *  overwriting the old value.
      * with the new value if the key is already in the symbol table.
-     * If the value is {@code null}, this effectively deletes the key from the symbol table.
+     * If the value is {@code null}, this effectively deletes the key
+     *  from the symbol table.
      * @param key the key
      * @param val the value
      * @throws IllegalArgumentException if {@code key} is {@code null}
      */
     public void put(final String key, final Value val) {
         if (key == null) {
-            throw new IllegalArgumentException("first argument to put() is null");
+            throw new IllegalArgumentException(
+                "first argument to put() is null");
         }
         if (val == null) {
             delete(key);
+        } else { 
+            root = put(root, key, val, 0);
         }
-        else root = put(root, key, val, 0);
     }
-    private Node put(final Node x, final String key, final Value val, final int d) {
+    /**
+     * put.
+     *
+     * @param      x     Node object.
+     * @param      key   The key
+     * @param      val   The value
+     * @param      d     Integer variable.
+     *
+     * @return     { description_of_the_return_value }
+     */
+    private Node put(final Node x, final String key,
+     final Value val, final int d) {
         Node x1 = x;
         if (x1 == null) {
             x1 = new Node();
@@ -112,7 +144,8 @@ public class TrieST<Value> {
     }
     /**
      * Is this symbol table empty?
-     * @return {@code true} if this symbol table is empty and {@code false} otherwise
+     * @return {@code true} if this symbol table is empty
+     *  and {@code false} otherwise
      */
     public boolean isEmpty() {
         return size() == 0;
@@ -138,14 +171,22 @@ public class TrieST<Value> {
         collect(x, new StringBuilder(prefix), results);
         return results;
     }
-    private void collect(final Node x, final StringBuilder prefix, final Queue<String> results) {
+    /**
+     * Collect.
+     *
+     * @param      x        { parameter_description }
+     * @param      prefix   The prefix
+     * @param      results  The results
+     */
+    private void collect(final Node x, final StringBuilder prefix,
+     final Queue<String> results) {
         if (x == null) {
             return;
         }
         if (x.val != null) {
             results.enqueue(prefix.toString());
         }
-        for (char c = 0; c < asc; c++) {
+        for (char c = 0; c < a; c++) {
             prefix.append(c);
             collect(x.next[c], prefix, results);
             prefix.deleteCharAt(prefix.length() - 1);
@@ -163,7 +204,16 @@ public class TrieST<Value> {
         collect(root, new StringBuilder(), pattern, results);
         return results;
     }
-    private void collect(final Node x, final StringBuilder prefix, final String pattern, final Queue<String> results) {
+    /**
+     * Collect.
+     *
+     * @param      x        { parameter_description }
+     * @param      prefix   The prefix
+     * @param      pattern  The pattern
+     * @param      results  The results
+     */
+    private void collect(final Node x, final StringBuilder prefix,
+     final String pattern, final Queue<String> results) {
         if (x == null) {
             return;
         }
@@ -176,7 +226,7 @@ public class TrieST<Value> {
         }
         char c = pattern.charAt(d);
         if (c == '.') {
-            for (char ch = 0; ch < asc; ch++) {
+            for (char ch = 0; ch < a; ch++) {
                 prefix.append(ch);
                 collect(x.next[ch], prefix, pattern, results);
                 prefix.deleteCharAt(prefix.length() - 1);
@@ -188,16 +238,19 @@ public class TrieST<Value> {
         }
     }
     /**
-     * Returns the string in the symbol table that is the longest prefix of {@code query},
+     * Returns the string in the symbol table that is the
+     *  longest prefix of {@code query},
      * or {@code null}, if no such string.
      * @param query the query string
-     * @return the string in the symbol table that is the longest prefix of {@code query},
+     * @return the string in the symbol table that is the
+     *  longest prefix of {@code query},
      *     or {@code null} if no such string
      * @throws IllegalArgumentException if {@code query} is {@code null}
      */
     public String longestPrefixOf(final String query) {
         if (query == null) {
-            throw new IllegalArgumentException("argument to longestPrefixOf() is null");
+            throw new IllegalArgumentException(
+                "argument to longestPrefixOf() is null");
         }
         int length = longestPrefixOf(root, query, 0, -1);
         if (length == -1) {
@@ -210,7 +263,18 @@ public class TrieST<Value> {
     // rooted at x that is a prefix of the query string,
     // assuming the first d character match and we have already
     // found a prefix match of given length (-1 if no such match)
-    private int longestPrefixOf(final Node x, final String query, final int d, final int length) {
+    /**
+     * LongestPrefixOf.
+     *
+     * @param      x       Node object
+     * @param      query   The query
+     * @param      d       Integer variable.
+     * @param      length  The length
+     *
+     * @return     { description_of_the_return_value }
+     */
+    private int longestPrefixOf(final Node x, final String query,
+     final int d, final int length) {
         int length1 = length;
         if (x == null) {
             return length1;
@@ -261,7 +325,7 @@ public class TrieST<Value> {
         if (x.val != null) {
             return x;
         }
-        for (int c = 0; c < asc; c++) {
+        for (int c = 0; c < a; c++) {
             if (x.next[c] != null) {
                 return x;
             }

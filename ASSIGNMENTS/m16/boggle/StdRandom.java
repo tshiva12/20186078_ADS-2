@@ -56,9 +56,8 @@ public final class StdRandom {
     }
     /**
      * Returns a random integer uniformly in [0, n).
-     * 
      * @param n number of possible integers
-     * @return a random integer uniformly between 0 (inclusive) and {@code n} (exclusive)
+     * @return a random integer uniformly between 0  and n
      * @throws IllegalArgumentException if {@code n <= 0}
      */
     public static int uniform(final int n) {
@@ -69,7 +68,6 @@ public final class StdRandom {
     }
     /**
      * Returns a random real number uniformly in [0, 1).
-     * 
      * @return     a random real number uniformly in [0, 1)
      * @deprecated Replaced by {@link #uniform()}.
      */
@@ -79,7 +77,6 @@ public final class StdRandom {
     }
     /**
      * Returns a random integer uniformly in [a, b).
-     * 
      * @param  a the left endpoint
      * @param  b the right endpoint
      * @return a random integer uniformly in (a, b)
@@ -95,7 +92,6 @@ public final class StdRandom {
     }
     /**
      * Returns a random real number uniformly in [a, b).
-     * 
      * @param  a the left endpoint
      * @param  b the right endpoint
      * @return a random real number uniformly in [a, b)
@@ -106,7 +102,7 @@ public final class StdRandom {
             throw new IllegalArgumentException(
                 "invalid range: [" + a + ", " + b + "]");
         }
-        return a + uniform() * (b-a);
+        return a + uniform() * (b - a);
     }
     /**
      * Returns a random boolean from a Bernoulli distribution with success
@@ -115,7 +111,7 @@ public final class StdRandom {
      * @param  p the probability of returning {@code true}
      * @return {@code true} with probability {@code p} and
      *         {@code false} with probability {@code p}
-     * @throws IllegalArgumentException unless {@code 0} &le; {@code p} &le; {@code 1.0}
+     * @throws IllegalArgumentException
      */
     public static boolean bernoulli(final double p) {
         if (!(p >= 0.0 && p <= 1.0)) {
@@ -127,36 +123,35 @@ public final class StdRandom {
     /**
      * Returns a random boolean from a Bernoulli distribution with success
      * probability 1/2.
-     * 
      * @return {@code true} with probability 1/2 and
      *         {@code false} with probability 1/2
      */
     public static boolean bernoulli() {
-        return bernoulli(0.5);
+        final double y = 0.5;
+        return bernoulli(y);
     }
     /**
      * Returns a random real number from a standard Gaussian distribution.
-     * 
      * @return a random real number from a standard Gaussian distribution
      *         (mean 0 and standard deviation 1).
      */
     public static double gaussian() {
         // use the polar form of the Box-Muller transform
         double r, x, y;
+        final int b = -2;
         do {
             x = uniform(-1.0, 1.0);
             y = uniform(-1.0, 1.0);
-            r = x*x + y*y;
+            r = x * x + y * y;
         } while (r >= 1 || r == 0);
-        return x * Math.sqrt(-2 * Math.log(r) / r);
+        return x * Math.sqrt(b * Math.log(r) / r);
 
         // Remark:  y * Math.sqrt(-2 * Math.log(r) / r)
         // is an independent random gaussian
     }
     /**
      * Returns a random real number from a Gaussian distribution with mean &mu;
-     * and standard deviation &sigma;.
-     * 
+     * and standard deviation &sigma;
      * @param  mu the mean
      * @param  sigma the standard deviation
      * @return a real number distributed according to the Gaussian distribution
@@ -168,12 +163,12 @@ public final class StdRandom {
     /**
      * Returns a random integer from a geometric distribution with success
      * probability <em>p</em>.
-     * 
      * @param  p the parameter of the geometric distribution
      * @return a random integer from a geometric distribution with success
      *         probability {@code p}; or {@code Integer.MAX_VALUE} if
      *         {@code p} is (nearly) equal to {@code 1.0}.
-     * @throws IllegalArgumentException unless {@code p >= 0.0} and {@code p <= 1.0}
+     * @throws IllegalArgumentException
+     *  unless {@code p >= 0.0} and {@code p <= 1.0}
      */
     public static int geometric(final double p) {
         if (!(p >= 0.0 && p <= 1.0)) {
@@ -187,8 +182,9 @@ public final class StdRandom {
      * Returns a random integer from a Poisson distribution with mean &lambda;.
      *
      * @param  lambda the mean of the Poisson distribution
-     * @return a random integer from a Poisson distribution with mean {@code lambda}
-     * @throws IllegalArgumentException unless {@code lambda > 0.0} and not infinite
+     * @return a random integer from a Poisson distribution with mean lambda
+     * @throws IllegalArgumentException
+     *  unless {@code lambda > 0.0} and not infinite
      */
     public static int poisson(final double lambda) {
         if (!(lambda > 0.0)) {
@@ -206,7 +202,7 @@ public final class StdRandom {
             k++;
             p *= uniform();
         } while (p >= expLambda);
-        return k-1;
+        return k - 1;
     }
     /**
      * Returns a random real number from the standard Pareto distribution.
@@ -229,7 +225,7 @@ public final class StdRandom {
         if (!(alpha > 0.0)) {
             throw new IllegalArgumentException("alpha must be positive");
         }
-        return Math.pow(1 - uniform(), -1.0/alpha) - 1.0;
+        return Math.pow(1 - uniform(), -1.0 / alpha) - 1.0;
     }
     /**
      * Returns a random real number from the Cauchy distribution.
@@ -237,7 +233,8 @@ public final class StdRandom {
      * @return a random real number from the Cauchy distribution.
      */
     public static double cauchy() {
-        return Math.tan(Math.PI * (uniform() - 0.5));
+        final double z = 0.5;
+        return Math.tan(Math.PI * (uniform() - z));
     }
     /**
      * Returns a random integer from the specified discrete distribution.
@@ -246,8 +243,10 @@ public final class StdRandom {
      * @return a random integer from a discrete distribution:
      *         {@code i} with probability {@code probabilities[i]}
      * @throws IllegalArgumentException if {@code probabilities} is {@code null}
-     * @throws IllegalArgumentException if sum of array entries is not (very nearly) equal to {@code 1.0}
-     * @throws IllegalArgumentException unless {@code probabilities[i] >= 0.0} for each index {@code i}
+     * @throws IllegalArgumentException
+     *  if sum of array entries is not (very nearly) equal to {@code 1.0}
+     * @throws IllegalArgumentException
+     *  unless {@code probabilities[i] >= 0.0} for each index {@code i}
      */
     public static int discrete(final double[] probabilities) {
         if (probabilities == null) {
@@ -258,16 +257,15 @@ public final class StdRandom {
         for (int i = 0; i < probabilities.length; i++) {
             if (!(probabilities[i] >= 0.0)) {
                 throw new IllegalArgumentException(
-                    "array entry " + i + " must be nonnegative: " + probabilities[i]);
+                    "array entry " + i + " must be nonnegative: "
+                     + probabilities[i]);
             }
             sum += probabilities[i];
         }
         if (sum > 1.0 + EPSILON || sum < 1.0 - EPSILON) {
             throw new IllegalArgumentException(
-                "sum of array entries does not approximately equal 1.0: " + sum);
+            "sum of array entries does not approximately equal 1.0: " + sum);
         }
-        // the for loop may not return a value when both r is (nearly) 1.0 and when the
-        // cumulative sum is less than 1.0 (as a result of floating-point roundoff error)
         while (true) {
             double r = uniform();
             sum = 0.0;
@@ -287,8 +285,10 @@ public final class StdRandom {
      *         {@code i} with probability proportional to {@code frequencies[i]}
      * @throws IllegalArgumentException if {@code frequencies} is {@code null}
      * @throws IllegalArgumentException if all array entries are {@code 0}
-     * @throws IllegalArgumentException if {@code frequencies[i]} is negative for any index {@code i}
-     * @throws IllegalArgumentException if sum of frequencies exceeds {@code Integer.MAX_VALUE} (2<sup>31</sup> - 1)
+     * @throws IllegalArgumentException if {@code frequencies[i]}
+     *  is negative for any index {@code i}
+     * @throws IllegalArgumentException if sum of frequencies
+     *  exceeds Integer.MAX_VALUE} (2<sup>31</sup> - 1)
      */
     public static int discrete(final int[] frequencies) {
         if (frequencies == null) {
@@ -298,7 +298,8 @@ public final class StdRandom {
         for (int i = 0; i < frequencies.length; i++) {
             if (frequencies[i] < 0) {
                 throw new IllegalArgumentException(
-                    "array entry " + i + " must be nonnegative: " + frequencies[i]);
+                    "array entry " + i + " must be nonnegative: "
+                     + frequencies[i]);
             }
             sum += frequencies[i];
         }
@@ -324,7 +325,6 @@ public final class StdRandom {
     /**
      * Returns a random real number from an exponential distribution
      * with rate &lambda;.
-     * 
      * @param  lambda the rate of the exponential distribution
      * @return a random real number from an exponential distribution with
      *         rate {@code lambda}
@@ -348,7 +348,7 @@ public final class StdRandom {
         }
         int n = a.length;
         for (int i = 0; i < n; i++) {
-            int r = i + uniform(n-i);     // between i and n-1
+            int r = i + uniform(n - i);     // between i and n-1
             Object temp = a[i];
             a[i] = a[r];
             a[r] = temp;
@@ -366,7 +366,7 @@ public final class StdRandom {
         }
         int n = a.length;
         for (int i = 0; i < n; i++) {
-            int r = i + uniform(n-i);     // between i and n-1
+            int r = i + uniform(n - i);     // between i and n-1
             double temp = a[i];
             a[i] = a[r];
             a[r] = temp;
@@ -384,7 +384,7 @@ public final class StdRandom {
         }
         int n = a.length;
         for (int i = 0; i < n; i++) {
-            int r = i + uniform(n-i);     // between i and n-1
+            int r = i + uniform(n - i);     // between i and n-1
             int temp = a[i];
             a[i] = a[r];
             a[r] = temp;
@@ -402,21 +402,22 @@ public final class StdRandom {
         }
         int n = a.length;
         for (int i = 0; i < n; i++) {
-            int r = i + uniform(n-i);     // between i and n-1
+            int r = i + uniform(n - i);     // between i and n-1
             char temp = a[i];
             a[i] = a[r];
             a[r] = temp;
         }
     }
     /**
-     * Rearranges the elements of the specified subarray in uniformly random order.
+     * Rearranges the elements of the specified
+     *  subarray in uniformly random order.
      *
      * @param  a the array to shuffle
      * @param  lo the left endpoint (inclusive)
      * @param  hi the right endpoint (exclusive)
      * @throws IllegalArgumentException if {@code a} is {@code null}
-     * @throws IndexOutOfBoundsException unless {@code (0 <= lo) && (lo < hi) && (hi <= a.length)}
-     * 
+     * @throws IndexOutOfBoundsException 
+     * unless (0 <= lo) && (lo < hi) && (hi <= a.length)}
      */
     public static void shuffle(final Object[] a, final int lo, final int hi) {
         if (a == null) {
@@ -427,20 +428,22 @@ public final class StdRandom {
                 "invalid subarray range: [" + lo + ", " + hi + ")");
         }
         for (int i = lo; i < hi; i++) {
-            int r = i + uniform(hi-i);     // between i and hi-1
+            int r = i + uniform(hi - i);     // between i and hi-1
             Object temp = a[i];
             a[i] = a[r];
             a[r] = temp;
         }
     }
     /**
-     * Rearranges the elements of the specified subarray in uniformly random order.
+     * Rearranges the elements of the specified
+     *  subarray in uniformly random order.
      *
      * @param  a the array to shuffle
      * @param  lo the left endpoint (inclusive)
      * @param  hi the right endpoint (exclusive)
      * @throws IllegalArgumentException if {@code a} is {@code null}
-     * @throws IndexOutOfBoundsException unless {@code (0 <= lo) && (lo < hi) && (hi <= a.length)}
+     * @throws IndexOutOfBoundsException
+     *  unless (0 <= lo) && (lo < hi) && (hi <= a.length)}
      */
     public static void shuffle(final double[] a, final int lo, final int hi) {
         if (a == null) {
@@ -451,42 +454,45 @@ public final class StdRandom {
                 "invalid subarray range: [" + lo + ", " + hi + ")");
         }
         for (int i = lo; i < hi; i++) {
-            int r = i + uniform(hi-i);     // between i and hi-1
+            int r = i + uniform(hi - i);     // between i and hi-1
             double temp = a[i];
             a[i] = a[r];
             a[r] = temp;
         }
     }
     /**
-     * Rearranges the elements of the specified subarray in uniformly random order.
+     * Rearranges the elements of the specified
+     *  subarray in uniformly random order.
      *
      * @param  a the array to shuffle
      * @param  lo the left endpoint (inclusive)
      * @param  hi the right endpoint (exclusive)
      * @throws IllegalArgumentException if {@code a} is {@code null}
-     * @throws IndexOutOfBoundsException unless {@code (0 <= lo) && (lo < hi) && (hi <= a.length)}
+     * @throws IndexOutOfBoundsException
+     *  unless (0 <= lo) && (lo < hi) && (hi <= a.length)}
      */
     public static void shuffle(final int[] a, final int lo, final int hi) {
         if (a == null) {
             throw new IllegalArgumentException("argument array is null");
         }
         if (lo < 0 || lo >= hi || hi > a.length) {
-            throw new IndexOutOfBoundsException("invalid subarray range: [" + lo + ", " + hi + ")");
+            throw new IndexOutOfBoundsException(
+                "invalid subarray range: [" + lo + ", " + hi + ")");
         }
         for (int i = lo; i < hi; i++) {
-            int r = i + uniform(hi-i);     // between i and hi-1
+            int r = i + uniform(hi - i);     // between i and hi-1
             int temp = a[i];
             a[i] = a[r];
             a[r] = temp;
         }
     }
     /**
-     * Returns a uniformly random permutation of <em>n</em> elements
+     * Returns a uniformly random permutation of n elements.
      *
      * @param  n number of elements
      * @throws IllegalArgumentException if {@code n} is negative
-     * @return an array of length {@code n} that is a uniformly random permutation
-     *         of {@code 0}, {@code 1}, ..., {@code n-1}
+     * @return an array of length n that is a uniformly random permutation
+     *         of 0,1, ..., n-1
      */
     public static int[] permutation(final int n) {
         if (n < 0) {
@@ -500,14 +506,14 @@ public final class StdRandom {
         return perm;
     }
     /**
-     * Returns a uniformly random permutation of <em>k</em> of <em>n</em> elements
+     * Returns a uniformly random permutation of k of n elements.
      *
      * @param  n number of elements
      * @param  k number of elements to select
      * @throws IllegalArgumentException if {@code n} is negative
      * @throws IllegalArgumentException unless {@code 0 <= k <= n}
-     * @return an array of length {@code k} that is a uniformly random permutation
-     *         of {@code k} of the elements from {@code 0}, {@code 1}, ..., {@code n-1}
+     * @return an array of length k that is a uniformly random permutation
+     *         of k of the elements from 0, 1, ...,n-1}
      */
     public static int[] permutation(final int n, final int k) {
         if (n < 0) {
@@ -518,13 +524,15 @@ public final class StdRandom {
         }
         int[] perm = new int[k];
         for (int i = 0; i < k; i++) {
-            int r = uniform(i+1);    // between 0 and i
+            int r = uniform(i + 1);    // between 0 and i
             perm[i] = perm[r];
             perm[r] = i;
         }
         for (int i = k; i < n; i++) {
-            int r = uniform(i+1);    // between 0 and i
-            if (r < k) perm[r] = i;
+            int r = uniform(i + 1);    // between 0 and i
+            if (r < k) {
+                perm[r] = i;
+            }
         }
         return perm;
     }

@@ -4,6 +4,9 @@ import java.util.Locale;
 import java.util.NoSuchElementException;
 import java.util.Scanner;
 import java.util.regex.Pattern;
+/**
+ * class StdIn
+ */
 public final class StdIn {
     /**
      * String variable.
@@ -16,7 +19,8 @@ public final class StdIn {
     /**
      * Pattern object.
      */
-    private static final Pattern WHITESPACE_PATTERN = Pattern.compile("\\p{javaWhitespace}+");
+    private static final Pattern WHITESPACE_PATTERN
+     = Pattern.compile("\\p{javaWhitespace}+");
     /**
      * Pattern object.
      */
@@ -37,7 +41,8 @@ public final class StdIn {
     }
     /**
      * Returns true if standard input is empty (except possibly for whitespace).
-     * Use this method to know whether the next call to {@link #readString()}, 
+     * Use this method to know whether the next
+     *  call to {@link #readString()}, 
      * {@link #readDouble()}, etc will succeed.
      *
      * @return {@code true} if standard input is empty (except possibly
@@ -52,7 +57,8 @@ public final class StdIn {
      * next call to {@link #readLine()} will succeed.
      * This method is functionally equivalent to {@link #hasNextChar()}.
      *
-     * @return {@code true} if standard input has more input (including whitespace);
+     * @return {@code true} if standard input has more input
+     *  (including whitespace);
      *         {@code false} otherwise
      */
     public static boolean hasNextLine() {
@@ -60,10 +66,12 @@ public final class StdIn {
     }
     /**
      * Returns true if standard input has more input (including whitespace).
-     * Use this method to know whether the next call to {@link #readChar()} will succeed.
+     * Use this method to know whether the next call
+     * to {@link #readChar()} will succeed.
      * This method is functionally equivalent to {@link #hasNextLine()}.
      *
-     * @return {@code true} if standard input has more input (including whitespace);
+     * @return {@code true} if standard input has more input
+     *  (including whitespace);
      *         {@code false} otherwise
      */
     public static boolean hasNextChar() {
@@ -106,7 +114,7 @@ public final class StdIn {
                 "attempts to read a 'char' value from standard input, "
                     + "but no more tokens are available");
         }
-    }  
+    }
     /**
      * Reads and returns the remainder of the input, as a string.
      *
@@ -138,11 +146,13 @@ public final class StdIn {
         }
     }
     /**
-     * Reads the next token from standard input, parses it as an integer, and returns the integer.
+     * Reads the next token from standard input,
+     *  parses it as an integer, and returns the integer.
      *
      * @return the next integer on standard input
      * @throws NoSuchElementException if standard input is empty
-     * @throws InputMismatchException if the next token cannot be parsed as an {@code int}
+     * @throws InputMismatchException if the next token cannot be
+     *  parsed as an {@code int}
      */
     public static int readInt() {
         try {
@@ -160,11 +170,13 @@ public final class StdIn {
 
     }
     /**
-     * Reads the next token from standard input, parses it as a double, and returns the double.
+     * Reads the next token from standard input,
+     *  parses it as a double, and returns the double.
      *
      * @return the next double on standard input
      * @throws NoSuchElementException if standard input is empty
-     * @throws InputMismatchException if the next token cannot be parsed as a {@code double}
+     * @throws InputMismatchException if the next token cannot be
+     *  parsed as a {@code double}
      */
     public static double readDouble() {
         try {
@@ -181,11 +193,13 @@ public final class StdIn {
         }
     }
     /**
-     * Reads the next token from standard input, parses it as a float, and returns the float.
+     * Reads the next token from standard input,
+     *  parses it as a float, and returns the float.
      *
      * @return the next float on standard input
      * @throws NoSuchElementException if standard input is empty
-     * @throws InputMismatchException if the next token cannot be parsed as a {@code float}
+     * @throws InputMismatchException if the next token cannot be
+     *  parsed as a {@code float}
      */
     public static float readFloat() {
         try {
@@ -202,11 +216,13 @@ public final class StdIn {
         }
     }
     /**
-     * Reads the next token from standard input, parses it as a long integer, and returns the long integer.
+     * Reads the next token from standard input,
+     *  parses it as a long integer, and returns the long integer.
      *
      * @return the next long integer on standard input
      * @throws NoSuchElementException if standard input is empty
-     * @throws InputMismatchException if the next token cannot be parsed as a {@code long}
+     * @throws InputMismatchException if the next token cannot be
+     *  parsed as a {@code long}
      */
     public static long readLong() {
         try {
@@ -217,16 +233,19 @@ public final class StdIn {
                 "attempts to read a 'long' value from standard input, "
                     + "but the next token is \"" + token + "\"");
         } catch (NoSuchElementException e) {
-            throw new NoSuchElementException("attempts to read a 'long' value from standard input, "
+            throw new NoSuchElementException(
+                "attempts to read a 'long' value from standard input, "
                 + "but no more tokens are available");
         }
     }
     /**
-     * Reads the next token from standard input, parses it as a short integer, and returns the short integer.
+     * Reads the next token from standard input,
+     *  parses it as a short integer, and returns the short integer.
      *
      * @return the next short integer on standard input
      * @throws NoSuchElementException if standard input is empty
-     * @throws InputMismatchException if the next token cannot be parsed as a {@code short}
+     * @throws InputMismatchException if the next token cannot be
+     *  parsed as a {@code short}
      */
     public static short readShort() {
         try {
@@ -243,7 +262,8 @@ public final class StdIn {
         }
     }
     /**
-     * Reads the next token from standard input, parses it as a byte, and returns the byte.
+     * Reads the next token from standard input,
+     *  parses it as a byte, and returns the byte.
      *
      * @return the next byte on standard input
      * @throws NoSuchElementException if standard input is empty
@@ -269,9 +289,9 @@ public final class StdIn {
      *
      * @return the next boolean on standard input
      * @throws NoSuchElementException if standard input is empty
-     * @throws InputMismatchException if the next token cannot be parsed as a {@code boolean}:
-     *    {@code true} or {@code 1} for true, and {@code false} or {@code 0} for false,
-     *    ignoring case
+     * @throws InputMismatchException if the next token cannot
+     *  be parsed as a boolean: true or 1 for true,
+     *   and false or 0 for false, inoring case
      */
     public static boolean readBoolean() {
         try {
@@ -292,13 +312,15 @@ public final class StdIn {
                 "attempts to read a 'boolean' value from standard input, "
                     + "but the next token is \"" + token + "\"");
         } catch (NoSuchElementException e) {
-            throw new NoSuchElementException("attempts to read a 'boolean' value from standard input, "
+            throw new NoSuchElementException(
+                "attempts to read a 'boolean' value from standard input, "
                 + "but no more tokens are available");
         }
 
     }
     /**
-     * Reads all remaining tokens from standard input and returns them as an array of strings.
+     * Reads all remaining tokens from standard input and
+     *  returns them as an array of strings.
      *
      * @return all remaining tokens on standard input, as an array of strings
      */
@@ -310,14 +332,15 @@ public final class StdIn {
             return tokens;
         }
         // don't include first token if it is leading whitespace
-        String[] decapitokens = new String[tokens.length-1];
+        String[] decapitokens = new String[tokens.length - 1];
         for (int i = 0; i < tokens.length - 1; i++) {
             decapitokens[i] = tokens[i + 1];
         }
         return decapitokens;
     }
     /**
-     * Reads all remaining lines from standard input and returns them as an array of strings.
+     * Reads all remaining lines from standard input
+     *  and returns them as an array of strings.
      * @return all remaining lines on standard input, as an array of strings
      */
     public static String[] readAllLines() {
@@ -328,10 +351,12 @@ public final class StdIn {
         return lines.toArray(new String[lines.size()]);
     }
     /**
-     * Reads all remaining tokens from standard input, parses them as integers, and returns
+     * Reads all remaining tokens from standard input,
+     *  parses them as integers, and returns
      * them as an array of integers.
      * @return all remaining integers on standard input, as an array
-     * @throws InputMismatchException if any token cannot be parsed as an {@code int}
+     * @throws InputMismatchException if any token cannot be
+     *  parsed as an {@code int}
      */
     public static int[] readAllInts() {
         String[] fields = readAllStrings();
@@ -342,10 +367,12 @@ public final class StdIn {
         return vals;
     }
     /**
-     * Reads all remaining tokens from standard input, parses them as longs, and returns
+     * Reads all remaining tokens from standard input,
+     *  parses them as longs, and returns
      * them as an array of longs.
      * @return all remaining longs on standard input, as an array
-     * @throws InputMismatchException if any token cannot be parsed as a {@code long}
+     * @throws InputMismatchException if any token cannot be
+     *  parsed as a {@code long}
      */
     public static long[] readAllLongs() {
         String[] fields = readAllStrings();
@@ -356,10 +383,12 @@ public final class StdIn {
         return vals;
     }
     /**
-     * Reads all remaining tokens from standard input, parses them as doubles, and returns
+     * Reads all remaining tokens from standard input,
+     *  parses them as doubles, and returns
      * them as an array of doubles.
      * @return all remaining doubles on standard input, as an array
-     * @throws InputMismatchException if any token cannot be parsed as a {@code double}
+     * @throws InputMismatchException if any token cannot be
+     *  parsed as a {@code double}
      */
     public static double[] readAllDoubles() {
         String[] fields = readAllStrings();
@@ -382,15 +411,21 @@ public final class StdIn {
         setScanner(new Scanner(
             new java.io.BufferedInputStream(System.in), CHARSET_NAME));
     }
-    private static void setScanner(Scanner scanner) {
-        StdIn.scanner = scanner;
+    /**
+     * Sets the scanner.
+     *
+     * @param      scanner1  The scanner 1
+     */
+    private static void setScanner(final Scanner scanner1) {
+        StdIn.scanner = scanner1;
         StdIn.scanner.useLocale(LOCALE);
     }
     /**
      * Reads all remaining tokens, parses them as integers, and returns
      * them as an array of integers.
      * @return all remaining integers, as an array
-     * @throws InputMismatchException if any token cannot be parsed as an {@code int}
+     * @throws InputMismatchException if any token cannot be
+     *  parsed as an {@code int}
      * @deprecated Replaced by {@link #readAllInts()}.
      */
     @Deprecated
@@ -401,7 +436,8 @@ public final class StdIn {
      * Reads all remaining tokens, parses them as doubles, and returns
      * them as an array of doubles.
      * @return all remaining doubles, as an array
-     * @throws InputMismatchException if any token cannot be parsed as a {@code double}
+     * @throws InputMismatchException if any token cannot be
+     *  parsed as a {@code double}
      * @deprecated Replaced by {@link #readAllDoubles()}.
      */
     @Deprecated
