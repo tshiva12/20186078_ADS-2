@@ -7,7 +7,7 @@ public class TrieST<Value> {
     /**
      * extended ASCII.
      */
-    private static final int a = 256;
+    private static final int R = 256;
     /**
      * root of trie.
      */
@@ -28,7 +28,7 @@ public class TrieST<Value> {
         /**
          * Node array.
          */
-        private Node[] next = new Node[a];
+        private Node[] next = new Node[R];
     }
     /**
      * Initializes an empty string symbol table.
@@ -104,7 +104,7 @@ public class TrieST<Value> {
         }
         if (val == null) {
             delete(key);
-        } else { 
+        } else {
             root = put(root, key, val, 0);
         }
     }
@@ -186,7 +186,7 @@ public class TrieST<Value> {
         if (x.val != null) {
             results.enqueue(prefix.toString());
         }
-        for (char c = 0; c < a; c++) {
+        for (char c = 0; c < R; c++) {
             prefix.append(c);
             collect(x.next[c], prefix, results);
             prefix.deleteCharAt(prefix.length() - 1);
@@ -226,7 +226,7 @@ public class TrieST<Value> {
         }
         char c = pattern.charAt(d);
         if (c == '.') {
-            for (char ch = 0; ch < a; ch++) {
+            for (char ch = 0; ch < R; ch++) {
                 prefix.append(ch);
                 collect(x.next[ch], prefix, pattern, results);
                 prefix.deleteCharAt(prefix.length() - 1);
@@ -325,7 +325,7 @@ public class TrieST<Value> {
         if (x.val != null) {
             return x;
         }
-        for (int c = 0; c < a; c++) {
+        for (int c = 0; c < R; c++) {
             if (x.next[c] != null) {
                 return x;
             }
@@ -333,3 +333,6 @@ public class TrieST<Value> {
         return null;
     }
 }
+
+
+
