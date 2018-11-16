@@ -508,6 +508,8 @@ Starting audit...
 [ERROR] G:\MSIT\1-1\20186078_ADS-2\ASSIGNMENTS\m16\boggle\BoggleSolver.java:38:9: Missing a Javadoc comment. [JavadocMethod]
 [ERROR] G:\MSIT\1-1\20186078_ADS-2\ASSIGNMENTS\m16\boggle\BoggleSolver.java:38:32: Parameter str should be final. [FinalParameters]
 [ERROR] G:\MSIT\1-1\20186078_ADS-2\ASSIGNMENTS\m16\boggle\BoggleSolver.java:38:44: Parameter c should be final. [FinalParameters]
+[ERROR] G:\MSIT\1-1\20186078_ADS-2\ASSIGNMENTS\m16\boggle\BoggleSolver.java:40:36: Inner assignments should be avoided. [InnerAssignment]
+[ERROR] G:\MSIT\1-1\20186078_ADS-2\ASSIGNMENTS\m16\boggle\BoggleSolver.java:42:36: Inner assignments should be avoided. [InnerAssignment]
 [ERROR] G:\MSIT\1-1\20186078_ADS-2\ASSIGNMENTS\m16\boggle\BoggleSolver.java:45:9: Missing a Javadoc comment. [JavadocMethod]
 [ERROR] G:\MSIT\1-1\20186078_ADS-2\ASSIGNMENTS\m16\boggle\BoggleSolver.java:45:33: Parameter word should be final. [FinalParameters]
 [ERROR] G:\MSIT\1-1\20186078_ADS-2\ASSIGNMENTS\m16\boggle\BoggleSolver.java:46:37: '3' is a magic number. [MagicNumber]
@@ -532,7 +534,7 @@ Starting audit...
 [ERROR] G:\MSIT\1-1\20186078_ADS-2\ASSIGNMENTS\m16\boggle\BoggleSolver.java:71:9: Class 'BoggleSolver' looks like designed for extension (can be subclassed), but the method 'scoreOf' does not have javadoc that explains how to do that safely. If class is not designed for extension consider making the class 'BoggleSolver' final or making the method 'scoreOf' static/final/abstract/empty, or adding allowed annotation for the method. [DesignForExtension]
 [ERROR] G:\MSIT\1-1\20186078_ADS-2\ASSIGNMENTS\m16\boggle\BoggleSolver.java:71:9: Missing a Javadoc comment. [JavadocMethod]
 Audit done.
-Checkstyle ends with 47 errors.
+Checkstyle ends with 49 errors.
 Starting audit...
 Audit done.
 Starting audit...

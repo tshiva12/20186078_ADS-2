@@ -37,9 +37,9 @@ public class BoggleSolver {
 	}
 	private String addChar(String str, char c) {
 		if (c == 'Q') {
-			return str + "QU";
+			return str += "QU";
 		} else {
-			return str + c;
+			return str += c;
 		}
 	}
 	private boolean isValid(String word) {
