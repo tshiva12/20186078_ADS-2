@@ -2,19 +2,8 @@ Starting audit...
 Audit done.
 Starting audit...
 [ERROR] G:\MSIT\1-1\20186078_ADS-2\ASSIGNMENTS\m16\boggle\BoggleBoard.java:0: File does not end with a newline. [NewlineAtEndOfFile]
-[ERROR] G:\MSIT\1-1\20186078_ADS-2\ASSIGNMENTS\m16\boggle\BoggleBoard.java:73:13: '4' is a magic number. [MagicNumber]
-[ERROR] G:\MSIT\1-1\20186078_ADS-2\ASSIGNMENTS\m16\boggle\BoggleBoard.java:74:13: '4' is a magic number. [MagicNumber]
-[ERROR] G:\MSIT\1-1\20186078_ADS-2\ASSIGNMENTS\m16\boggle\BoggleBoard.java:79:47: '*' is not preceded with whitespace. [WhitespaceAround]
-[ERROR] G:\MSIT\1-1\20186078_ADS-2\ASSIGNMENTS\m16\boggle\BoggleBoard.java:79:48: '*' is not followed by whitespace. [WhitespaceAround]
-[ERROR] G:\MSIT\1-1\20186078_ADS-2\ASSIGNMENTS\m16\boggle\BoggleBoard.java:79:49: '+' is not preceded with whitespace. [WhitespaceAround]
-[ERROR] G:\MSIT\1-1\20186078_ADS-2\ASSIGNMENTS\m16\boggle\BoggleBoard.java:79:50: '+' is not followed by whitespace. [WhitespaceAround]
-[ERROR] G:\MSIT\1-1\20186078_ADS-2\ASSIGNMENTS\m16\boggle\BoggleBoard.java:105: Line has trailing spaces. [RegexpSingleline]
-[ERROR] G:\MSIT\1-1\20186078_ADS-2\ASSIGNMENTS\m16\boggle\BoggleBoard.java:117:34: 'm' hides a field. [HiddenField]
-[ERROR] G:\MSIT\1-1\20186078_ADS-2\ASSIGNMENTS\m16\boggle\BoggleBoard.java:117:47: 'n' hides a field. [HiddenField]
-[ERROR] G:\MSIT\1-1\20186078_ADS-2\ASSIGNMENTS\m16\boggle\BoggleBoard.java:201: 'if' construct must use '{}'s. [NeedBraces]
-[ERROR] G:\MSIT\1-1\20186078_ADS-2\ASSIGNMENTS\m16\boggle\BoggleBoard.java:202: 'else' construct must use '{}'s. [NeedBraces]
 Audit done.
-Checkstyle ends with 12 errors.
+Checkstyle ends with 1 errors.
 Starting audit...
 [ERROR] G:\MSIT\1-1\20186078_ADS-2\ASSIGNMENTS\m16\boggle\BoggleGame.java:0: File does not end with a newline. [NewlineAtEndOfFile]
 [ERROR] G:\MSIT\1-1\20186078_ADS-2\ASSIGNMENTS\m16\boggle\BoggleGame.java:4: Line has trailing spaces. [RegexpSingleline]
@@ -485,29 +474,8 @@ Audit done.
 Checkstyle ends with 465 errors.
 Starting audit...
 [ERROR] G:\MSIT\1-1\20186078_ADS-2\ASSIGNMENTS\m16\boggle\BoggleSolver.java:0: File does not end with a newline. [NewlineAtEndOfFile]
-[ERROR] G:\MSIT\1-1\20186078_ADS-2\ASSIGNMENTS\m16\boggle\BoggleSolver.java:7:1: File contains tab characters (this is the first instance). [FileTabCharacter]
-[ERROR] G:\MSIT\1-1\20186078_ADS-2\ASSIGNMENTS\m16\boggle\BoggleSolver.java:19: Line is longer than 80 characters (found 93). [LineLength]
-[ERROR] G:\MSIT\1-1\20186078_ADS-2\ASSIGNMENTS\m16\boggle\BoggleSolver.java:20: Line is longer than 80 characters (found 104). [LineLength]
-[ERROR] G:\MSIT\1-1\20186078_ADS-2\ASSIGNMENTS\m16\boggle\BoggleSolver.java:29:51: '3' is a magic number. [MagicNumber]
-[ERROR] G:\MSIT\1-1\20186078_ADS-2\ASSIGNMENTS\m16\boggle\BoggleSolver.java:29:54: '5' is a magic number. [MagicNumber]
-[ERROR] G:\MSIT\1-1\20186078_ADS-2\ASSIGNMENTS\m16\boggle\BoggleSolver.java:29:57: '11' is a magic number. [MagicNumber]
-[ERROR] G:\MSIT\1-1\20186078_ADS-2\ASSIGNMENTS\m16\boggle\BoggleSolver.java:31:50: '8' is a magic number. [MagicNumber]
-[ERROR] G:\MSIT\1-1\20186078_ADS-2\ASSIGNMENTS\m16\boggle\BoggleSolver.java:32:53: '11' is a magic number. [MagicNumber]
-[ERROR] G:\MSIT\1-1\20186078_ADS-2\ASSIGNMENTS\m16\boggle\BoggleSolver.java:40: Line is longer than 80 characters (found 88). [LineLength]
-[ERROR] G:\MSIT\1-1\20186078_ADS-2\ASSIGNMENTS\m16\boggle\BoggleSolver.java:54: Line has trailing spaces. [RegexpSingleline]
-[ERROR] G:\MSIT\1-1\20186078_ADS-2\ASSIGNMENTS\m16\boggle\BoggleSolver.java:54: Line is longer than 80 characters (found 88). [LineLength]
-[ERROR] G:\MSIT\1-1\20186078_ADS-2\ASSIGNMENTS\m16\boggle\BoggleSolver.java:85:37: '3' is a magic number. [MagicNumber]
-[ERROR] G:\MSIT\1-1\20186078_ADS-2\ASSIGNMENTS\m16\boggle\BoggleSolver.java:99:68: 'check' hides a field. [HiddenField]
-[ERROR] G:\MSIT\1-1\20186078_ADS-2\ASSIGNMENTS\m16\boggle\BoggleSolver.java:100:10: Parameter rows should be final. [FinalParameters]
-[ERROR] G:\MSIT\1-1\20186078_ADS-2\ASSIGNMENTS\m16\boggle\BoggleSolver.java:100:20: Parameter cols should be final. [FinalParameters]
-[ERROR] G:\MSIT\1-1\20186078_ADS-2\ASSIGNMENTS\m16\boggle\BoggleSolver.java:100:30: Parameter word should be final. [FinalParameters]
-[ERROR] G:\MSIT\1-1\20186078_ADS-2\ASSIGNMENTS\m16\boggle\BoggleSolver.java:110: Line is longer than 80 characters (found 84). [LineLength]
-[ERROR] G:\MSIT\1-1\20186078_ADS-2\ASSIGNMENTS\m16\boggle\BoggleSolver.java:111: Line is longer than 80 characters (found 91). [LineLength]
-[ERROR] G:\MSIT\1-1\20186078_ADS-2\ASSIGNMENTS\m16\boggle\BoggleSolver.java:127: Line is longer than 80 characters (found 97). [LineLength]
-[ERROR] G:\MSIT\1-1\20186078_ADS-2\ASSIGNMENTS\m16\boggle\BoggleSolver.java:128: Line is longer than 80 characters (found 90). [LineLength]
-[ERROR] G:\MSIT\1-1\20186078_ADS-2\ASSIGNMENTS\m16\boggle\BoggleSolver.java:131: Line is longer than 80 characters (found 90). [LineLength]
 Audit done.
-Checkstyle ends with 22 errors.
+Checkstyle ends with 1 errors.
 Starting audit...
 Audit done.
 Starting audit...
@@ -518,37 +486,16 @@ Audit done.
 Checkstyle ends with 1 errors.
 Starting audit...
 [ERROR] G:\MSIT\1-1\20186078_ADS-2\ASSIGNMENTS\m16\boggle\StdIn.java:0: File does not end with a newline. [NewlineAtEndOfFile]
-[ERROR] G:\MSIT\1-1\20186078_ADS-2\ASSIGNMENTS\m16\boggle\StdIn.java:7: First sentence should end with a period. [JavadocStyle]
-[ERROR] G:\MSIT\1-1\20186078_ADS-2\ASSIGNMENTS\m16\boggle\StdIn.java:45: Line has trailing spaces. [RegexpSingleline]
-[ERROR] G:\MSIT\1-1\20186078_ADS-2\ASSIGNMENTS\m16\boggle\StdIn.java:270: Line is longer than 80 characters (found 90). [LineLength]
 Audit done.
-Checkstyle ends with 4 errors.
+Checkstyle ends with 1 errors.
 Starting audit...
 [ERROR] G:\MSIT\1-1\20186078_ADS-2\ASSIGNMENTS\m16\boggle\StdOut.java:5: Missing a Javadoc comment. [JavadocType]
-[ERROR] G:\MSIT\1-1\20186078_ADS-2\ASSIGNMENTS\m16\boggle\StdOut.java:14: First sentence should end with a period. [JavadocStyle]
-[ERROR] G:\MSIT\1-1\20186078_ADS-2\ASSIGNMENTS\m16\boggle\StdOut.java:128: Line has trailing spaces. [RegexpSingleline]
-[ERROR] G:\MSIT\1-1\20186078_ADS-2\ASSIGNMENTS\m16\boggle\StdOut.java:137: Line has trailing spaces. [RegexpSingleline]
-[ERROR] G:\MSIT\1-1\20186078_ADS-2\ASSIGNMENTS\m16\boggle\StdOut.java:146: Line has trailing spaces. [RegexpSingleline]
-[ERROR] G:\MSIT\1-1\20186078_ADS-2\ASSIGNMENTS\m16\boggle\StdOut.java:155: Line has trailing spaces. [RegexpSingleline]
-[ERROR] G:\MSIT\1-1\20186078_ADS-2\ASSIGNMENTS\m16\boggle\StdOut.java:164: Line has trailing spaces. [RegexpSingleline]
-[ERROR] G:\MSIT\1-1\20186078_ADS-2\ASSIGNMENTS\m16\boggle\StdOut.java:173: Line has trailing spaces. [RegexpSingleline]
-[ERROR] G:\MSIT\1-1\20186078_ADS-2\ASSIGNMENTS\m16\boggle\StdOut.java:182: Line has trailing spaces. [RegexpSingleline]
-[ERROR] G:\MSIT\1-1\20186078_ADS-2\ASSIGNMENTS\m16\boggle\StdOut.java:191: Line has trailing spaces. [RegexpSingleline]
-[ERROR] G:\MSIT\1-1\20186078_ADS-2\ASSIGNMENTS\m16\boggle\StdOut.java:212:44: Expected @param tag for 'format'. [JavadocMethod]
-[ERROR] G:\MSIT\1-1\20186078_ADS-2\ASSIGNMENTS\m16\boggle\StdOut.java:223:19: Expected @param tag for 'format'. [JavadocMethod]
+[ERROR] G:\MSIT\1-1\20186078_ADS-2\ASSIGNMENTS\m16\boggle\StdOut.java:152: Line has trailing spaces. [RegexpSingleline]
 Audit done.
-Checkstyle ends with 12 errors.
+Checkstyle ends with 2 errors.
 Starting audit...
-[ERROR] G:\MSIT\1-1\20186078_ADS-2\ASSIGNMENTS\m16\boggle\StdRandom.java:152: First sentence should end with a period. [JavadocStyle]
-[ERROR] G:\MSIT\1-1\20186078_ADS-2\ASSIGNMENTS\m16\boggle\StdRandom.java:255:16: Name 'EPSILON' must match pattern '^[a-z][a-zA-Z0-9]*$'. [LocalVariableName]
-[ERROR] G:\MSIT\1-1\20186078_ADS-2\ASSIGNMENTS\m16\boggle\StdRandom.java:255:26: '1E-14' is a magic number. [MagicNumber]
-[ERROR] G:\MSIT\1-1\20186078_ADS-2\ASSIGNMENTS\m16\boggle\StdRandom.java:419: Line has trailing spaces. [RegexpSingleline]
 Audit done.
-Checkstyle ends with 4 errors.
 Starting audit...
-[ERROR] G:\MSIT\1-1\20186078_ADS-2\ASSIGNMENTS\m16\boggle\TrieST.java:88:31: '65' is a magic number. [MagicNumber]
-[ERROR] G:\MSIT\1-1\20186078_ADS-2\ASSIGNMENTS\m16\boggle\TrieST.java:97:30: Parameter str should be final. [FinalParameters]
-[ERROR] G:\MSIT\1-1\20186078_ADS-2\ASSIGNMENTS\m16\boggle\TrieST.java:146:21: '65' is a magic number. [MagicNumber]
-[ERROR] G:\MSIT\1-1\20186078_ADS-2\ASSIGNMENTS\m16\boggle\TrieST.java:146:43: '65' is a magic number. [MagicNumber]
+[ERROR] G:\MSIT\1-1\20186078_ADS-2\ASSIGNMENTS\m16\boggle\TrieST.java:135:6: File contains tab characters (this is the first instance). [FileTabCharacter]
 Audit done.
-Checkstyle ends with 4 errors.
+Checkstyle ends with 1 errors.

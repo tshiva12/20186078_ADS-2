@@ -5,7 +5,7 @@ import java.util.NoSuchElementException;
 import java.util.Scanner;
 import java.util.regex.Pattern;
 /**
- * class StdIn
+ * class StdIn.
  */
 public final class StdIn {
     /**
@@ -42,7 +42,7 @@ public final class StdIn {
     /**
      * Returns true if standard input is empty (except possibly for whitespace).
      * Use this method to know whether the next
-     *  call to {@link #readString()}, 
+     *  call to {@link #readString()},
      * {@link #readDouble()}, etc will succeed.
      *
      * @return {@code true} if standard input is empty (except possibly
@@ -267,7 +267,8 @@ public final class StdIn {
      *
      * @return the next byte on standard input
      * @throws NoSuchElementException if standard input is empty
-     * @throws InputMismatchException if the next token cannot be parsed as a {@code byte}
+     * @throws InputMismatchException if the next token cannot be
+     *  parsed as a {@code byte}
      */
     public static byte readByte() {
         try {

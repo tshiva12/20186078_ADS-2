@@ -70,13 +70,13 @@ public class BoggleBoard {
      * Initializes a random 4-by-4 board, by rolling the Hasbro dice.
      */
     public BoggleBoard() {
-        m = 4;
-        n = 4;
+        m = 2 * 2;
+        n = 2 * 2;
         StdRandom.shuffle(BOGGLE_1992);
         board = new char[m][n];
         for (int i = 0; i < m; i++) {
             for (int j = 0; j < n; j++) {
-                String letters = BOGGLE_1992[n*i+j];
+                String letters = BOGGLE_1992[n * i + j];
                 int r = StdRandom.uniform(letters.length());
                 board[i][j] = letters.charAt(r);
             }
@@ -102,7 +102,7 @@ public class BoggleBoard {
                 } else if (!ALPHABET.contains(letter)) {
                     throw new IllegalArgumentException(
                         "invalid character: " + letter);
-                } else { 
+                } else {
                     board[i][j] = letter.charAt(0);
                 }
             }
@@ -111,23 +111,23 @@ public class BoggleBoard {
     /**
      * Initializes a random m-by-n board, according to the frequency
      * of letters in the English language.
-     * @param m the number of rows
-     * @param n the number of columns
+     * @param m1 the number of rows
+     * @param n1 the number of columns
      */
-    public BoggleBoard(final int m, final int n) {
-        this.m = m;
-        this.n = n;
-        if (m <= 0) {
+    public BoggleBoard(final int m1, final int n1) {
+        this.m = m1;
+        this.n = n1;
+        if (m1 <= 0) {
             throw new IllegalArgumentException(
                 "number of rows must be a positive integer");
         }
-        if (n <= 0) {
+        if (n1 <= 0) {
             throw new IllegalArgumentException(
                 "number of columns must be a positive integer");
         }
-        board = new char[m][n];
-        for (int i = 0; i < m; i++) {
-            for (int j = 0; j < n; j++) {
+        board = new char[m1][n1];
+        for (int i = 0; i < m1; i++) {
+            for (int j = 0; j < n1; j++) {
                 int r = StdRandom.discrete(FREQUENCIES);
                 board[i][j] = ALPHABET.charAt(r);
             }
@@ -198,8 +198,11 @@ public class BoggleBoard {
         for (int i = 0; i < m; i++) {
             for (int j = 0; j < n; j++) {
                 sb.append(board[i][j]);
-                if (board[i][j] == 'Q') sb.append("u ");
-                else sb.append("  ");
+                if (board[i][j] == 'Q') {
+                    sb.append("u ");
+                } else  {
+                    sb.append("  ");
+                }
             }
             sb.append("\n");
         }

@@ -150,8 +150,8 @@ public final class StdRandom {
         // is an independent random gaussian
     }
     /**
-     * Returns a random real number from a Gaussian distribution with mean &mu;
-     * and standard deviation &sigma;
+     * Returns a random real number from a Gaussian distribution with mean
+     * and standard deviation.
      * @param  mu the mean
      * @param  sigma the standard deviation
      * @return a real number distributed according to the Gaussian distribution
@@ -252,7 +252,7 @@ public final class StdRandom {
         if (probabilities == null) {
             throw new IllegalArgumentException("argument array is null");
         }
-        double EPSILON = 1E-14;
+        final double epsilon = 1E-14;
         double sum = 0.0;
         for (int i = 0; i < probabilities.length; i++) {
             if (!(probabilities[i] >= 0.0)) {
@@ -262,7 +262,7 @@ public final class StdRandom {
             }
             sum += probabilities[i];
         }
-        if (sum > 1.0 + EPSILON || sum < 1.0 - EPSILON) {
+        if (sum > 1.0 + epsilon || sum < 1.0 - epsilon) {
             throw new IllegalArgumentException(
             "sum of array entries does not approximately equal 1.0: " + sum);
         }
@@ -416,7 +416,7 @@ public final class StdRandom {
      * @param  lo the left endpoint (inclusive)
      * @param  hi the right endpoint (exclusive)
      * @throws IllegalArgumentException if {@code a} is {@code null}
-     * @throws IndexOutOfBoundsException 
+     * @throws IndexOutOfBoundsException
      * unless (0 <= lo) && (lo < hi) && (hi <= a.length)}
      */
     public static void shuffle(final Object[] a, final int lo, final int hi) {
