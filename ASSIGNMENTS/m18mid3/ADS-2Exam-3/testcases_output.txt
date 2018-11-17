@@ -58,7 +58,11 @@ going
 
 Your Output: 
 Exception in thread "main" java.lang.NullPointerException
-	at Solution.main(Solution.java:35)
+	at TST$Node.access$100(TST.java:22)
+	at TST.put(TST.java:136)
+	at TST.put(TST.java:126)
+	at T9.<init>(Solution.java:126)
+	at Solution.main(Solution.java:32)
 ----------------------------------------
 
 ########## Testcase 2: Failed ##########
@@ -127,7 +131,11 @@ seeking
 
 Your Output: 
 Exception in thread "main" java.lang.NullPointerException
-	at Solution.main(Solution.java:46)
+	at TST$Node.access$100(TST.java:22)
+	at TST.put(TST.java:136)
+	at TST.put(TST.java:126)
+	at T9.<init>(Solution.java:126)
+	at Solution.main(Solution.java:42)
 ----------------------------------------
 
 ########## Testcase 3: Failed ##########
@@ -139,7 +147,11 @@ words
 
 Your Output: 
 Exception in thread "main" java.lang.NullPointerException
-	at Solution.main(Solution.java:64)
+	at TST$Node.access$100(TST.java:22)
+	at TST.put(TST.java:136)
+	at TST.put(TST.java:126)
+	at T9.<init>(Solution.java:126)
+	at Solution.main(Solution.java:57)
 ----------------------------------------
 
 ########## Testcase 4: Failed ##########
@@ -192,6 +204,10 @@ keep
 
 Your Output: 
 Exception in thread "main" java.lang.NullPointerException
-	at Solution.main(Solution.java:75)
+	at TST$Node.access$100(TST.java:22)
+	at TST.put(TST.java:136)
+	at TST.put(TST.java:126)
+	at T9.<init>(Solution.java:126)
+	at Solution.main(Solution.java:70)
 ----------------------------------------
 

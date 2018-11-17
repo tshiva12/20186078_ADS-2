@@ -115,13 +115,16 @@ public class Solution {
 	}
 }
 class T9 {
-	private TST tst = new TST();
+	TST tst = new TST();
 	/**
 	 * Constructs the object.
 	 *
 	 * @param      st    BinarySearch object.
 	 */
 	public T9(BinarySearchST<String, Integer> st) {
+		for (String each : st.keys()) {
+			tst.put(each, st.get(each));
+		}
 		// your code goes here
 	}
 	// get all the prefixes that match with given prefix.
@@ -134,7 +137,7 @@ class T9 {
 	 */
 	public Iterable<String> getAllWords(String prefix) {
 		// your code goes here
-		return null;
+			return tst.keysWithPrefix(prefix);
 	}
 	/**
 	 * potential words.
@@ -145,6 +148,36 @@ class T9 {
 	 */
 	public Iterable<String> potentialWords(String t9Signature) {
 		// your code goes here
+		// int length1 = t9Signature.length();
+  // 		String str = " ";
+  // 		for(int i = 0; i < length1; i++) {
+  //  			char ch = t9Signature.charAt(i);
+  //  			if(ch=='a'||ch=='b'||ch=='c') {
+  //   			str +=  2;
+  //  			}
+  //   		if(ch=='d'||ch=='e'||ch=='f') {
+  //     			str += 3;
+  //   		}
+  //   		if(ch=='g'||ch=='h'||ch=='i') {
+  //     			str += 4;
+  //   		}
+  //   		if(ch=='j'||ch=='k'||ch=='l') {
+  //     			str += 5;
+  //   		}
+  //   		if(ch=='m'||ch=='n'||ch=='o') {
+  //     			str += 6;
+  //   		}
+  //   		if(ch=='p'||ch=='q'||ch=='r'|| ch=='s') {
+  //     			str += 7;
+  //   		}
+  //   		if(ch=='t'||ch=='u'||ch=='v') {
+  //     			str += 8;
+  //   		}
+  //   		if(ch=='w'||ch=='x'||ch=='y'||ch=='z') {
+  //     			str += 9;
+  //   		}
+  // 		}
+  // 		return str;
 		return null;
 	}
 	// return all possibilities(words), find top k with highest frequency.
