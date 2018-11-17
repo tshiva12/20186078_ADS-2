@@ -137,28 +137,19 @@ Starting audit...
 Audit done.
 Starting audit...
 [ERROR] G:\MSIT\1-1\20186078_ADS-2\ASSIGNMENTS\m18mid3\ADS-2Exam-3\Solution.java:0: File does not end with a newline. [NewlineAtEndOfFile]
-[ERROR] G:\MSIT\1-1\20186078_ADS-2\ASSIGNMENTS\m18mid3\ADS-2Exam-3\Solution.java:5: Class Solution should be declared as final. [FinalClass]
 [ERROR] G:\MSIT\1-1\20186078_ADS-2\ASSIGNMENTS\m18mid3\ADS-2Exam-3\Solution.java:6:1: File contains tab characters (this is the first instance). [FileTabCharacter]
-[ERROR] G:\MSIT\1-1\20186078_ADS-2\ASSIGNMENTS\m18mid3\ADS-2Exam-3\Solution.java:18:33: Parameter args should be final. [FinalParameters]
 [ERROR] G:\MSIT\1-1\20186078_ADS-2\ASSIGNMENTS\m18mid3\ADS-2Exam-3\Solution.java:24: Line is longer than 80 characters (found 95). [LineLength]
 [ERROR] G:\MSIT\1-1\20186078_ADS-2\ASSIGNMENTS\m18mid3\ADS-2Exam-3\Solution.java:46: Line is longer than 80 characters (found 84). [LineLength]
-[ERROR] G:\MSIT\1-1\20186078_ADS-2\ASSIGNMENTS\m18mid3\ADS-2Exam-3\Solution.java:92:43: Parameter file should be final. [FinalParameters]
-[ERROR] G:\MSIT\1-1\20186078_ADS-2\ASSIGNMENTS\m18mid3\ADS-2Exam-3\Solution.java:103: Line is longer than 80 characters (found 83). [LineLength]
-[ERROR] G:\MSIT\1-1\20186078_ADS-2\ASSIGNMENTS\m18mid3\ADS-2Exam-3\Solution.java:103:70: Parameter file should be final. [FinalParameters]
+[ERROR] G:\MSIT\1-1\20186078_ADS-2\ASSIGNMENTS\m18mid3\ADS-2Exam-3\Solution.java:103: Line is longer than 80 characters (found 89). [LineLength]
 [ERROR] G:\MSIT\1-1\20186078_ADS-2\ASSIGNMENTS\m18mid3\ADS-2Exam-3\Solution.java:104: Line is longer than 80 characters (found 92). [LineLength]
 [ERROR] G:\MSIT\1-1\20186078_ADS-2\ASSIGNMENTS\m18mid3\ADS-2Exam-3\Solution.java:117: Missing a Javadoc comment. [JavadocType]
 [ERROR] G:\MSIT\1-1\20186078_ADS-2\ASSIGNMENTS\m18mid3\ADS-2Exam-3\Solution.java:118:9: Missing a Javadoc comment. [JavadocVariable]
 [ERROR] G:\MSIT\1-1\20186078_ADS-2\ASSIGNMENTS\m18mid3\ADS-2Exam-3\Solution.java:118:13: Variable 'tst' must be private and have accessor methods. [VisibilityModifier]
 [ERROR] G:\MSIT\1-1\20186078_ADS-2\ASSIGNMENTS\m18mid3\ADS-2Exam-3\Solution.java:124:9: Redundant 'public' modifier. [RedundantModifier]
 [ERROR] G:\MSIT\1-1\20186078_ADS-2\ASSIGNMENTS\m18mid3\ADS-2Exam-3\Solution.java:124:19: Parameter st should be final. [FinalParameters]
-[ERROR] G:\MSIT\1-1\20186078_ADS-2\ASSIGNMENTS\m18mid3\ADS-2Exam-3\Solution.java:138:45: Parameter prefix should be final. [FinalParameters]
-[ERROR] G:\MSIT\1-1\20186078_ADS-2\ASSIGNMENTS\m18mid3\ADS-2Exam-3\Solution.java:149:48: Parameter t9Signature should be final. [FinalParameters]
-[ERROR] G:\MSIT\1-1\20186078_ADS-2\ASSIGNMENTS\m18mid3\ADS-2Exam-3\Solution.java:192:48: Parameter words should be final. [FinalParameters]
-[ERROR] G:\MSIT\1-1\20186078_ADS-2\ASSIGNMENTS\m18mid3\ADS-2Exam-3\Solution.java:192:72: Parameter k should be final. [FinalParameters]
-[ERROR] G:\MSIT\1-1\20186078_ADS-2\ASSIGNMENTS\m18mid3\ADS-2Exam-3\Solution.java:206:36: Parameter t9Signature should be final. [FinalParameters]
-[ERROR] G:\MSIT\1-1\20186078_ADS-2\ASSIGNMENTS\m18mid3\ADS-2Exam-3\Solution.java:206:56: Parameter k should be final. [FinalParameters]
+[ERROR] G:\MSIT\1-1\20186078_ADS-2\ASSIGNMENTS\m18mid3\ADS-2Exam-3\Solution.java:192: Line is longer than 80 characters (found 91). [LineLength]
 Audit done.
-Checkstyle ends with 21 errors.
+Checkstyle ends with 12 errors.
 Starting audit...
 [ERROR] G:\MSIT\1-1\20186078_ADS-2\ASSIGNMENTS\m18mid3\ADS-2Exam-3\TST.java:0: File does not end with a newline. [NewlineAtEndOfFile]
 [ERROR] G:\MSIT\1-1\20186078_ADS-2\ASSIGNMENTS\m18mid3\ADS-2Exam-3\TST.java:48: Line is longer than 80 characters (found 84). [LineLength]
