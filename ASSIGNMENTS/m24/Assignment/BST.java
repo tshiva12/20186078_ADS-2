@@ -364,7 +364,7 @@ class BST {
             switch (tokens[0]) {
             case"put":
                 bst.put(Integer.parseInt(tokens[1]), tokens[2]);
-                // System.out.println(sw.elapsedTime()+" put");
+                System.out.println(sw.elapsedTime()+" put");
 
                 break;
             case"get":
